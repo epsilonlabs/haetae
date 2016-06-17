@@ -32,6 +32,11 @@
                id="org.eclipse.epsilon.haetae.dt.action3"
                label="Transform to ETL Model">
          </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2VREOLAction"
+               id="org.eclipse.epsilon.haetae.dt.action4"
+               label="Get variable resolved EOL Model">
+         </action>
       </objectContribution>
    </extension>
 
