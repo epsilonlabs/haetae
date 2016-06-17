@@ -1,0 +1,9 @@
+context OO!NamedElement {
+	constraint HasName {
+		check: self.name <> ""
+  	}
+  	critique NameMustStartWithLowerCase {
+  		check : self.name.substring(0,1) = 
+      		self.name.substring(0,1).toLowerCase()
+  	}
+}
