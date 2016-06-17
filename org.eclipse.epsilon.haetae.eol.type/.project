@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.eclipse.epsilon.haetae.eol.type</name>
+	<name>org.eclipse.epsilon.eol.visitor.resolution.type.naive</name>
 	<comment></comment>
 	<projects>
 	</projects>
