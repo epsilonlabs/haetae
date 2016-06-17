@@ -47,7 +47,7 @@ public class AST2EOLAction implements IObjectActionDelegate{
 		if (!path.getFileExtension().equals("eol")) {
 			MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
 				    "AST2EOL converter only works for .eol files", MessageDialog.ERROR, new String[] { "OK" }, 0);
-				int result = dialog.open();
+				dialog.open();
 		}
 		else {
 			EolModule eolModule = new EolModule();
@@ -58,11 +58,18 @@ public class AST2EOLAction implements IObjectActionDelegate{
 				e.printStackTrace();
 				MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
 					    "Unable to parse file, please ensure the .eol file does not contain syntax errors", MessageDialog.ERROR, new String[] { "OK" }, 0);
-					int result = dialog.open();
+					dialog.open();
 			}
 
 			Ast2EolContext context = new Ast2EolContext(eolModule);
-			EOLElement dom = (EOLElement) context.getEolElementCreatorFactory().createEOLElement(eolModule.getAst(), null, context);
+			EOLElement dom = null;
+			try {
+				dom = (EOLElement) context.getEolElementCreatorFactory().createEOLElement(eolModule.getAst(), null, context);
+			} catch (Exception e) {
+				MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
+					    "Unable to parse file, please ensure the .eol file does not contain syntax errors", MessageDialog.ERROR, new String[] { "OK" }, 0);
+					dialog.open();
+			}
 			
 			ResourceSet resourceSet = new ResourceSetImpl();
 			resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
@@ -75,12 +82,12 @@ public class AST2EOLAction implements IObjectActionDelegate{
 				e.printStackTrace();
 				MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
 					    "Unable to save file", MessageDialog.ERROR, new String[] { "OK" }, 0);
-					int result = dialog.open();
+					dialog.open();
 			}
 			
 			MessageDialog dialog = new MessageDialog(shell, "Haetae says:", null,
 				    "Transformation completed, " + path.toFile().getName() + ".model saved to directory", MessageDialog.INFORMATION, new String[] { "OK" }, 0);
-				int result = dialog.open();
+				dialog.open();
 		}
 	}
 
