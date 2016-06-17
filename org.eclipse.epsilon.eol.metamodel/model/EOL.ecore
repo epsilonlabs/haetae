@@ -385,6 +385,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PseudoType" abstract="true" eSuperTypes="#//AnyType"/>
   <eClassifiers xsi:type="ecore:EClass" name="SelfType" eSuperTypes="#//PseudoType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SelfContentType" eSuperTypes="#//PseudoType"/>
   <eClassifiers xsi:type="ecore:EClass" name="MapType" eSuperTypes="#//AnyType">
     <eStructuralFeatures xsi:type="ecore:EReference" name="keyType" eType="#//AnyType"
         containment="true"/>

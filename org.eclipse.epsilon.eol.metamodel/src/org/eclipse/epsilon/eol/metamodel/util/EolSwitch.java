@@ -887,6 +887,16 @@ public class EolSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case EolPackage.SELF_CONTENT_TYPE: {
+				SelfContentType selfContentType = (SelfContentType)theEObject;
+				T result = caseSelfContentType(selfContentType);
+				if (result == null) result = casePseudoType(selfContentType);
+				if (result == null) result = caseAnyType(selfContentType);
+				if (result == null) result = caseType(selfContentType);
+				if (result == null) result = caseEOLElement(selfContentType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case EolPackage.MAP_TYPE: {
 				MapType mapType = (MapType)theEObject;
 				T result = caseMapType(mapType);
@@ -2468,6 +2478,21 @@ public class EolSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSelfType(SelfType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Self Content Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Self Content Type</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSelfContentType(SelfContentType object) {
 		return null;
 	}
 

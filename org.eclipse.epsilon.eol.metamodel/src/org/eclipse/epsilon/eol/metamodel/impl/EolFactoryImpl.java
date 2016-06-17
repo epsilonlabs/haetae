@@ -130,6 +130,7 @@ public class EolFactoryImpl extends EFactoryImpl implements EolFactory {
 			case EolPackage.MODEL_TYPE: return createModelType();
 			case EolPackage.MODEL_ELEMENT_TYPE: return createModelElementType();
 			case EolPackage.SELF_TYPE: return createSelfType();
+			case EolPackage.SELF_CONTENT_TYPE: return createSelfContentType();
 			case EolPackage.MAP_TYPE: return createMapType();
 			case EolPackage.NATIVE_TYPE: return createNativeType();
 			case EolPackage.VOID_TYPE: return createVoidType();
@@ -886,6 +887,16 @@ public class EolFactoryImpl extends EFactoryImpl implements EolFactory {
 	public SelfType createSelfType() {
 		SelfTypeImpl selfType = new SelfTypeImpl();
 		return selfType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SelfContentType createSelfContentType() {
+		SelfContentTypeImpl selfContentType = new SelfContentTypeImpl();
+		return selfContentType;
 	}
 
 	/**

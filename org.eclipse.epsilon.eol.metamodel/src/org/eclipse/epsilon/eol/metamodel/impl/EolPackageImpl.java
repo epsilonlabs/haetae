@@ -788,6 +788,13 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass selfContentTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass mapTypeEClass = null;
 
 	/**
@@ -2874,6 +2881,15 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSelfContentType() {
+		return selfContentTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getMapType() {
 		return mapTypeEClass;
 	}
@@ -3399,6 +3415,8 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 
 		selfTypeEClass = createEClass(SELF_TYPE);
 
+		selfContentTypeEClass = createEClass(SELF_CONTENT_TYPE);
+
 		mapTypeEClass = createEClass(MAP_TYPE);
 		createEReference(mapTypeEClass, MAP_TYPE__KEY_TYPE);
 		createEReference(mapTypeEClass, MAP_TYPE__VALUE_TYPE);
@@ -3562,6 +3580,7 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 		modelElementTypeEClass.getESuperTypes().add(this.getAnyType());
 		pseudoTypeEClass.getESuperTypes().add(this.getAnyType());
 		selfTypeEClass.getESuperTypes().add(this.getPseudoType());
+		selfContentTypeEClass.getESuperTypes().add(this.getPseudoType());
 		mapTypeEClass.getESuperTypes().add(this.getAnyType());
 		nativeTypeEClass.getESuperTypes().add(this.getAnyType());
 		voidTypeEClass.getESuperTypes().add(this.getAnyType());
@@ -3888,6 +3907,8 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 		initEClass(pseudoTypeEClass, PseudoType.class, "PseudoType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(selfTypeEClass, SelfType.class, "SelfType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(selfContentTypeEClass, SelfContentType.class, "SelfContentType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(mapTypeEClass, MapType.class, "MapType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMapType_KeyType(), this.getAnyType(), null, "keyType", null, 0, 1, MapType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
