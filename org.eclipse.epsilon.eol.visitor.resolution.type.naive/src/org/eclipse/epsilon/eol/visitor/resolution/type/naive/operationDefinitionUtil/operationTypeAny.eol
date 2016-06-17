@@ -1,0 +1,58 @@
+operation Any asBag() : Bag(SelfType){} //done ---------------------------/
+
+operation Any asInteger() : Integer{} //done ---------------------------/
+
+operation Any asReal() : Real{} //done ---------------------------/
+
+operation Any asBoolean() : Boolean{} //done ---------------------------/
+
+operation Any asSequence() : Sequence(SelfType){} //done ---------------------------/
+
+operation Any asSet() : Set(SelfType){} //done ---------------------------/
+
+operation Any asOrderedSet() : OrderedSet(SelfType){} //done ---------------------------/
+
+operation Any asString() : String{} //done ---------------------------/
+
+operation Any isDefined() : Boolean{} //done no helper ---------------------------/
+
+operation Any isUndefined() : Boolean{} //done no helper ---------------------------/
+
+operation Any ifUndefined(alt: Any) : Any{} //done HANDLER/
+
+operation Any isTypeOf(type: Type) : Boolean{} //done ---------------------------/
+
+operation Any isKindOf(type: Type) : Boolean{} //done ---------------------------/
+
+operation Any type() : SelfType{} // done ---------------------------/
+
+operation Any owningModel() : Model{} //tbd ========================================================================================================/
+
+operation Any hasProperty(name: String) : Boolean{} //do we need a check for the target to be a modelelement????????====================================================
+
+
+
+
+operation print() : SelfType{} //done ---------------------------
+
+operation print(prefix: String) : SelfType{} //done ---------------------------
+
+operation println() : SelfType{} //done ---------------------------
+
+operation println(prefix: String) : SelfType{} //done ---------------------------
+
+operation err() : SelfType{} //done ---------------------------
+
+operation err(prefix: String) : SelfType{} //done ---------------------------
+
+operation errln() : SelfType{} //done ---------------------------
+
+operation errln(prefix: String) : SelfType{} //done ---------------------------
+
+operation Any format() : String{} //done --------------------------- ==============================================================================
+
+operation Any format(pattern: String) : String{} //done ---------------------------
+
+
+operation _ModelElementType_ appendChild(child: _ModelElementType_) : SelfType{}
+
