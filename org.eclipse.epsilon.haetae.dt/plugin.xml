@@ -16,16 +16,21 @@
             </separator>
          </menu>
          <action
-               class="org.eclipse.epsilon.haetae.plugin.AST2EOLAction"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2EOLAction"
                id="org.eclipse.epsilon.haetae.plugin.action1"
                label="Transform to EOL Model"
                menubarPath="haetae.popupmenu/group1">
          </action>
          <action
-               class="org.eclipse.epsilon.haetae.dt.AST2EVLAction"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2EVLAction"
                id="org.eclipse.epsilon.haetae.dt.action2"
                label="Transform to EVL Model"
                menubarPath="haetae.popupmenu/group1">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2ETLAction"
+               id="org.eclipse.epsilon.haetae.dt.action3"
+               label="Transform to ETL Model">
          </action>
       </objectContribution>
    </extension>

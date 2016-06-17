@@ -1,4 +1,4 @@
-package org.eclipse.epsilon.haetae.dt;
+package org.eclipse.epsilon.haetae.ast2exl;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,9 +10,10 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.eclipse.epsilon.common.parse.AST;
+import org.eclipse.epsilon.eol.EolModule;
+import org.eclipse.epsilon.eol.ast2eol.context.Ast2EolContext;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
-import org.eclipse.epsilon.evl.EvlModule;
-import org.eclipse.epsilon.evl.ast2evl.Ast2EvlContext;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
@@ -23,11 +24,11 @@ import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.PlatformUI;
 
-public class AST2EVLAction implements IObjectActionDelegate{
+public class AST2EOLAction implements IObjectActionDelegate{
 
 	private Shell shell;
 
-	public AST2EVLAction() {
+	public AST2EOLAction() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -43,38 +44,37 @@ public class AST2EVLAction implements IObjectActionDelegate{
 
 		IPath path = file.getLocation();
 		
-		if (!path.getFileExtension().equals("evl")) {
+		if (!path.getFileExtension().equals("eol")) {
 			MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
-				    "AST2EOL converter only works for .evl files", MessageDialog.ERROR, new String[] { "OK" }, 0);
+				    "AST2EOL converter only works for .eol files", MessageDialog.ERROR, new String[] { "OK" }, 0);
 				dialog.open();
 		}
 		else {
-			EvlModule evlModule = new EvlModule();
+			EolModule eolModule = new EolModule();
 			
 			try {
-				evlModule.parse(new File(path.toPortableString()));
+				eolModule.parse(new File(path.toPortableString()));
 			} catch (Exception e) {
 				e.printStackTrace();
 				MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
-					    "Unable to parse file, please ensure the .evl file does not contain syntax errors", MessageDialog.ERROR, new String[] { "OK" }, 0);
+					    "Unable to parse file, please ensure the .eol file does not contain syntax errors", MessageDialog.ERROR, new String[] { "OK" }, 0);
 					dialog.open();
 			}
 
-			Ast2EvlContext context = new Ast2EvlContext(evlModule);
-			EOLElement evlElement = null;
+			Ast2EolContext context = new Ast2EolContext(eolModule);
+			EOLElement eolElement = null;
 			try {
-				evlElement = (EOLElement) context.getEvlElementCreatorFactory().createEOLElement(evlModule.getAst(), null, context);
+				eolElement = (EOLElement) context.getEolElementCreatorFactory().createEOLElement(eolModule.getAst(), null, context);
 			} catch (Exception e) {
-				e.printStackTrace();
 				MessageDialog dialog = new MessageDialog(shell, "Haetae goes woof", null,
-					    "Unable to parse file, please ensure the .evl file does not contain syntax errors", MessageDialog.ERROR, new String[] { "OK" }, 0);
+					    "Unable to parse file, please ensure the .eol file does not contain syntax errors", MessageDialog.ERROR, new String[] { "OK" }, 0);
 					dialog.open();
 			}
 			
 			ResourceSet resourceSet = new ResourceSetImpl();
 			resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
 			Resource resource = resourceSet.createResource(URI.createFileURI(new File(path.toPortableString() + ".model").getAbsolutePath()));
-			resource.getContents().add(evlElement);
+			resource.getContents().add(eolElement);
 			try {
 				resource.save(null);
 			} catch (IOException e) {
@@ -99,8 +99,8 @@ public class AST2EVLAction implements IObjectActionDelegate{
 
 	@Override
 	public void setActivePart(IAction action, IWorkbenchPart targetPart) {
-		// TODO Auto-generated method stub
-		
+		shell = targetPart.getSite().getShell();
 	}
 
+	
 }

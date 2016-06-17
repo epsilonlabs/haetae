@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.epsilon.etl.ast2etl
+Bundle-SymbolicName: org.eclipse.epsilon.etl.ast2etl; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.epsilon.eol.metamodel,
+ org.eclipse.epsilon.eol.engine;bundle-version="1.2.0",
+ org.eclipse.emf.ecore,
+ org.junit,
+ org.eclipse.epsilon.eol.ast2eol;bundle-version="0.1.0",
+ org.eclipse.epsilon.etl.metamodel;bundle-version="0.1.0",
+ org.eclipse.epsilon.etl.engine;bundle-version="1.2.0",
+ org.eclipse.epsilon.common
+Export-Package: org.eclipse.epsilon.etl.ast2etl

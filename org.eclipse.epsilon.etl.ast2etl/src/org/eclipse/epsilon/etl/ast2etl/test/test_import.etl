@@ -1,0 +1,8 @@
+import 'loadModels.eol'; 
+ 
+rule A2D 
+  transform a : Source!A
+  to e : Target!E { 
+  guard: a <> null
+  e.f = a.b.equivalents("B2G", "D2G");    
+} 
