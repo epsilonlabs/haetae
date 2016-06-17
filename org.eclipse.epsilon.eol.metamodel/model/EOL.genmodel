@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/org.eclipse.epsilon.eol.metamodel/src"
+    modelPluginID="org.eclipse.epsilon.eol.metamodel" modelName="Eol" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>EOL.ecore</foreignModel>
+  <genPackages prefix="Eol" basePackage="org.eclipse.epsilon" disposableProviderFactory="true"
+      interfacePackageSuffix="metamodel" metaDataPackageSuffix="metamodel" classPackageSuffix="metamodel.impl"
+      utilityPackageSuffix="metamodel.util" ecorePackage="EOL.ecore#/">
+    <genClasses ecoreClass="EOL.ecore#//EOLElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLElement/container"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//EOLElement/uri"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLElement/region"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//TextRegion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//TextRegion/start"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//TextRegion/end"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//TextPosition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//TextPosition/line"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//TextPosition/column"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//IMetamodel">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/aliases"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/driver"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IMetamodel/iMetamodelDriver"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/iPackages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/nsURIorPath"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//IPackage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IPackage/iPackageDriver"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IPackage/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IPackage/nsURI"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IPackage/nsPrefix"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IPackage/subPackages"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//EOLLibraryModule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//EOLLibraryModule/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/imports"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/iModels"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/modelDeclarations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/operations"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//EOLModule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLModule/block"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//Import">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//Import/importedModule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//Import/imported"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//Block">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//Block/statements"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//AnnotationBlock"/>
+    <genClasses ecoreClass="EOL.ecore#//ExpressionOrStatementBlock">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionOrStatementBlock/block"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionOrStatementBlock/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionOrStatementBlock/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//OperationDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/contextType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/returnType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/annotationBlock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/self"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/_result"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//OperationDefinition/dependingOperationDefinitions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//Expression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//Expression/resolvedType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//Expression/inBrackets"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//OperatorExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//UnaryOperatorExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//UnaryOperatorExpression/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//NotOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//NegativeOperatorExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//BinaryOperatorExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//BinaryOperatorExpression/lhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//BinaryOperatorExpression/rhs"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//LogicalOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//AndOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//XorOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//OrOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//ImpliesOperatorExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//ArithmeticOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//DivideOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//MultiplyOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//MinusOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//PlusOperatorExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//ComparisonOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//GreaterThanOrEqualToOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//GreaterThanOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//LessThanOrEqualToOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//LessThanOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//NotEqualsOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//EqualsOperatorExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//VariableDeclarationExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//VariableDeclarationExpression/create"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//VariableDeclarationExpression/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//VariableDeclarationExpression/references"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//FormalParameterExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//NameExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//NameExpression/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//NameExpression/resolvedContent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//NameExpression/isType"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//FeatureCallExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//FeatureCallExpression/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//FeatureCallExpression/arrow"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//MethodCallExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//MethodCallExpression/arguments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//MethodCallExpression/method"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//MethodCallExpression/resolvedOperationDefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//PropertyCallExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//PropertyCallExpression/extended"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//PropertyCallExpression/property"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//FOLMethodCallExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//FOLMethodCallExpression/iterator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//FOLMethodCallExpression/conditions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//FOLMethodCallExpression/method"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//FOLMethodCallExpression/resolvedFOLDefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//KeyValueExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//KeyValueExpression/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//KeyValueExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ModelDeclarationParameter"/>
+    <genClasses ecoreClass="EOL.ecore#//NewExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//NewExpression/typeName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//NewExpression/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//MapExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//MapExpression/keyValues"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//CollectionExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//CollectionExpression/contents"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//CollectionExpression/parameterList"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//PrimitiveExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//ComparableExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//SummableExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//StringExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//StringExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//BooleanExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//BooleanExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//RealExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//RealExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//IntegerExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IntegerExpression/value"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//BagExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//SetExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//OrderedSetExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//SequenceExpression"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//OrderedCollection"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//UniqueCollection"/>
+    <genClasses ecoreClass="EOL.ecore#//EnumerationLiteralExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/literal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/enumeration"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/iModel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/model"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//CollectionInitialisationExpression"/>
+    <genClasses ecoreClass="EOL.ecore#//ExpressionRange">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionRange/start"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionRange/end"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ExpressionList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionList/expressions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//Statement"/>
+    <genClasses ecoreClass="EOL.ecore#//TransactionStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//TransactionStatement/names"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//TransactionStatement/body"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ExpressionStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExpressionStatement/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//SwitchStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//SwitchStatement/expression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//SwitchStatement/cases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//SwitchStatement/default"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//SwitchCaseStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//SwitchCaseStatement/body"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//SwitchCaseDefaultStatement"/>
+    <genClasses ecoreClass="EOL.ecore#//SwitchCaseExpressionStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//SwitchCaseExpressionStatement/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//IfStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IfStatement/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IfStatement/ifBody"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IfStatement/elseIfBodies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IfStatement/elseBody"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ForStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ForStatement/iterator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ForStatement/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ForStatement/body"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//WhileStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//WhileStatement/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//WhileStatement/body"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ReturnStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ReturnStatement/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ThrowStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ThrowStatement/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//DeleteStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//DeleteStatement/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//AssignmentStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//AssignmentStatement/lhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//AssignmentStatement/rhs"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//SpecialAssignmentStatement"/>
+    <genClasses ecoreClass="EOL.ecore#//ContinueStatement"/>
+    <genClasses ecoreClass="EOL.ecore#//AbortStatement"/>
+    <genClasses ecoreClass="EOL.ecore#//BreakStatement"/>
+    <genClasses ecoreClass="EOL.ecore#//BreakAllStatement"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//AnnotationStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//AnnotationStatement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//SimpleAnnotationStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//SimpleAnnotationStatement/values"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ExecutableAnnotationStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ExecutableAnnotationStatement/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ModelDeclarationStatement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/driver"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/aliases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/iMetamodel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//Type"/>
+    <genClasses ecoreClass="EOL.ecore#//AnyType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//AnyType/dynamicTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//AnyType/declared"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ModelType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelType/resolvedIMetamodel"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//ModelElementType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/modelName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/elementName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelElementType/resolvedIMetamodel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelElementType/resolvedModelDeclaration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/modelType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelElementType/resolvedIPackage"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="EOL.ecore#//PseudoType"/>
+    <genClasses ecoreClass="EOL.ecore#//SelfType"/>
+    <genClasses ecoreClass="EOL.ecore#//MapType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//MapType/keyType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//MapType/valueType"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//NativeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//NativeType/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//VoidType"/>
+    <genClasses ecoreClass="EOL.ecore#//InvalidType"/>
+    <genClasses ecoreClass="EOL.ecore#//CollectionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//CollectionType/contentType"/>
+    </genClasses>
+    <genClasses ecoreClass="EOL.ecore#//BagType"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//OrderedCollectionType"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//UniqueCollectionType"/>
+    <genClasses ecoreClass="EOL.ecore#//SetType"/>
+    <genClasses ecoreClass="EOL.ecore#//OrderedSetType"/>
+    <genClasses ecoreClass="EOL.ecore#//SequenceType"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//PrimitiveType"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//ComparablePrimitiveType"/>
+    <genClasses image="false" ecoreClass="EOL.ecore#//SummablePrimitiveType"/>
+    <genClasses ecoreClass="EOL.ecore#//BooleanType"/>
+    <genClasses ecoreClass="EOL.ecore#//RealType"/>
+    <genClasses ecoreClass="EOL.ecore#//IntegerType"/>
+    <genClasses ecoreClass="EOL.ecore#//StringType"/>
+  </genPackages>
+</genmodel:GenModel>
