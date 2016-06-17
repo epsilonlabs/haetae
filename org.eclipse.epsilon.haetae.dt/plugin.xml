@@ -21,6 +21,12 @@
                label="Transform to EOL Model"
                menubarPath="haetae.popupmenu/group1">
          </action>
+         <action
+               class="org.eclipse.epsilon.haetae.dt.AST2EVLAction"
+               id="org.eclipse.epsilon.haetae.dt.action2"
+               label="Transform to EVL Model"
+               menubarPath="haetae.popupmenu/group1">
+         </action>
       </objectContribution>
    </extension>
 

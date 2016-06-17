@@ -11,6 +11,9 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.epsilon.eol.metamodel,
  org.eclipse.epsilon.eol.ast2eol,
  org.eclipse.epsilon.common,
- org.eclipse.emf.ecore.xmi
+ org.eclipse.emf.ecore.xmi,
+ org.eclipse.epsilon.evl.engine,
+ org.eclipse.epsilon.evl.metamodel,
+ org.eclipse.epsilon.evl.ast2evl
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

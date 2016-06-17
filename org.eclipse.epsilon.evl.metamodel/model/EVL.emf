@@ -1,0 +1,51 @@
+@emf.gen(classPackageSuffix="metamodel.impl", utilityPackageSuffix="metamodel.util", metaDataPackageSuffix="metamodel", interfacePackageSuffix="metamodel", basePackage="org.eclipse.epsilon")
+@emf.gen.usedGenPackage(name="eol", genModel="platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel")
+@emf.gen.annotation(source="emf.gen", key="extends", value="eol")
+@namespace(uri="http://www.eclipse.org/epsilon/evl", prefix="evl")
+package evl;
+
+import "platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.ecore";
+
+class EvlElement extends eol.EOLElement {
+}
+
+class EVLModule extends eol.EOLLibraryModule {
+  val Context[*] contexts;
+  val NamedBlock[*] preBlocks;
+  val NamedBlock[*] postBlocks;
+}
+
+abstract class GuardedElement extends EvlElement {
+  val eol.ExpressionOrStatementBlock[1] guard;
+}
+
+class Context extends GuardedElement {
+  val eol.ModelElementType[1] type;
+  val Invariant[*] invariants;
+  val eol.VariableDeclarationExpression[1] self;
+}
+
+class Fix extends EvlElement {
+  val eol.ExpressionOrStatementBlock[1] title;
+  val eol.Block[1] do;
+}
+
+abstract class Invariant extends GuardedElement {
+  ref Invariant[*] satisfies;
+  val eol.NameExpression[1] name;
+  val Fix[*] fixes;
+  val eol.ExpressionOrStatementBlock[1] check;
+  val eol.ExpressionOrStatementBlock[1] message;
+}
+
+class Constraint extends Invariant {
+}
+
+class Critique extends Invariant {
+}
+
+class NamedBlock extends EvlElement {
+  val eol.NameExpression[1] name;
+  val eol.Block body;
+}
+
