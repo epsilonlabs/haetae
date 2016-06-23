@@ -108,8 +108,6 @@ public class EolVisitorController<T, R> {
 	protected List<AnnotationStatementVisitor<T, R>> annotationStatementVisitors = new ArrayList<AnnotationStatementVisitor<T, R>>();
 	protected List<ModelDeclarationStatementVisitor<T, R>> modelDeclarationStatementVisitors = new ArrayList<ModelDeclarationStatementVisitor<T, R>>();
 	protected List<AnyTypeVisitor<T, R>> anyTypeVisitors = new ArrayList<AnyTypeVisitor<T, R>>();
-	protected List<IMetamodelVisitor<T, R>> iMetamodelVisitors = new ArrayList<IMetamodelVisitor<T, R>>();
-	protected List<IPackageVisitor<T, R>> iPackageVisitors = new ArrayList<IPackageVisitor<T, R>>();
 	protected List<EOLLibraryModuleVisitor<T, R>> eOLLibraryModuleVisitors = new ArrayList<EOLLibraryModuleVisitor<T, R>>();
 	protected List<ImportVisitor<T, R>> importVisitors = new ArrayList<ImportVisitor<T, R>>();
 	protected List<BlockVisitor<T, R>> blockVisitors = new ArrayList<BlockVisitor<T, R>>();
@@ -807,20 +805,6 @@ public class EolVisitorController<T, R> {
 			for (AnyTypeVisitor<T, R> visitor : anyTypeVisitors) {
 				if (visitor.appliesTo((AnyType) o, context)) {
 					return visitor.visit((AnyType) o, context, this);
-				}
-			}
-		}
-		if (o instanceof IMetamodel && !iMetamodelVisitors.isEmpty()) {
-			for (IMetamodelVisitor<T, R> visitor : iMetamodelVisitors) {
-				if (visitor.appliesTo((IMetamodel) o, context)) {
-					return visitor.visit((IMetamodel) o, context, this);
-				}
-			}
-		}
-		if (o instanceof IPackage && !iPackageVisitors.isEmpty()) {
-			for (IPackageVisitor<T, R> visitor : iPackageVisitors) {
-				if (visitor.appliesTo((IPackage) o, context)) {
-					return visitor.visit((IPackage) o, context, this);
 				}
 			}
 		}
@@ -1897,26 +1881,6 @@ public class EolVisitorController<T, R> {
 		}
 		return null;
 	}
-	public R visitAsIMetamodel(IMetamodel iMetamodel, T context) {
-		if (!iMetamodelVisitors.isEmpty()) {
-			for (IMetamodelVisitor<T, R> visitor : iMetamodelVisitors) {
-				if (visitor.appliesTo((IMetamodel) iMetamodel, context)) {
-					return visitor.visit((IMetamodel) iMetamodel, context, this);
-				}
-			}
-		}
-		return null;
-	}
-	public R visitAsIPackage(IPackage iPackage, T context) {
-		if (!iPackageVisitors.isEmpty()) {
-			for (IPackageVisitor<T, R> visitor : iPackageVisitors) {
-				if (visitor.appliesTo((IPackage) iPackage, context)) {
-					return visitor.visit((IPackage) iPackage, context, this);
-				}
-			}
-		}
-		return null;
-	}
 	public R visitAsEOLLibraryModule(EOLLibraryModule eOLLibraryModule, T context) {
 		if (!eOLLibraryModuleVisitors.isEmpty()) {
 			for (EOLLibraryModuleVisitor<T, R> visitor : eOLLibraryModuleVisitors) {
@@ -2420,14 +2384,6 @@ public class EolVisitorController<T, R> {
 		return this.anyTypeVisitors.add(anyTypeVisitor);
 	}
 	
-	public boolean addIMetamodelVisitor(IMetamodelVisitor<T, R> iMetamodelVisitor) {
-		return this.iMetamodelVisitors.add(iMetamodelVisitor);
-	}
-	
-	public boolean addIPackageVisitor(IPackageVisitor<T, R> iPackageVisitor) {
-		return this.iPackageVisitors.add(iPackageVisitor);
-	}
-	
 	public boolean addEOLLibraryModuleVisitor(EOLLibraryModuleVisitor<T, R> eOLLibraryModuleVisitor) {
 		return this.eOLLibraryModuleVisitors.add(eOLLibraryModuleVisitor);
 	}
@@ -2863,14 +2819,6 @@ public class EolVisitorController<T, R> {
 	
 	public boolean removeAnyTypeVisitor(AnyTypeVisitor<T, R> anyTypeVisitor) {
 		return this.anyTypeVisitors.remove(anyTypeVisitor);
-	}
-	
-	public boolean removeIMetamodelVisitor(IMetamodelVisitor<T, R> iMetamodelVisitor) {
-		return this.iMetamodelVisitors.remove(iMetamodelVisitor);
-	}
-	
-	public boolean removeIPackageVisitor(IPackageVisitor<T, R> iPackageVisitor) {
-		return this.iPackageVisitors.remove(iPackageVisitor);
 	}
 	
 	public boolean removeEOLLibraryModuleVisitor(EOLLibraryModuleVisitor<T, R> eOLLibraryModuleVisitor) {
