@@ -8,7 +8,6 @@ import org.eclipse.epsilon.eol.metamodel.EolFactory;
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
 import org.eclipse.epsilon.eol.metamodel.Expression;
 import org.eclipse.epsilon.eol.metamodel.FeatureCallExpression;
-import org.eclipse.epsilon.eol.metamodel.IMetamodel;
 import org.eclipse.epsilon.eol.metamodel.MethodCallExpression;
 import org.eclipse.epsilon.eol.metamodel.ModelElementType;
 import org.eclipse.epsilon.eol.metamodel.ModelType;
@@ -21,6 +20,7 @@ import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinition
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.StandardLibraryOperationDefinitionContainer;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.util.TypeInferenceManager;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.util.TypeUtil;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
 
 public class AnyOwningModelHandler extends AnyOperationDefinitionHandler{
 
@@ -65,7 +65,7 @@ public class AnyOwningModelHandler extends AnyOperationDefinitionHandler{
 			
 			if (targetType instanceof ModelElementType) {
 				ModelElementType _targetType = (ModelElementType) targetType;
-				IMetamodel iMetamodel = _targetType.getResolvedIMetamodel();
+				IMetamodelDriver iMetamodel = (IMetamodelDriver) _targetType.getResolvedIMetamodel();
 				if (iMetamodel != null) {
 					ModelType returnType = EolFactory.eINSTANCE.createModelType();
 					returnType.setResolvedIMetamodel(iMetamodel);
@@ -83,7 +83,7 @@ public class AnyOwningModelHandler extends AnyOperationDefinitionHandler{
 					ArrayList<Type> dyntypes = TypeInferenceManager.getInstance().getDynamicTypes((AnyType) targetType, EolPackage.eINSTANCE.getModelElementType());
 					if (dyntypes.size() == 1) {
 						ModelElementType _targetType = (ModelElementType) dyntypes.get(0);
-						IMetamodel iMetamodel = _targetType.getResolvedIMetamodel();
+						IMetamodelDriver iMetamodel = (IMetamodelDriver) _targetType.getResolvedIMetamodel();
 						if (iMetamodel != null) {
 							ModelType returnType = EolFactory.eINSTANCE.createModelType();
 							returnType.setResolvedIMetamodel(iMetamodel);
@@ -103,7 +103,7 @@ public class AnyOwningModelHandler extends AnyOperationDefinitionHandler{
 						for(Type t: dyntypes)
 						{
 							ModelElementType _targetType = (ModelElementType) t;
-							IMetamodel iMetamodel = _targetType.getResolvedIMetamodel();
+							IMetamodelDriver iMetamodel = (IMetamodelDriver) _targetType.getResolvedIMetamodel();
 							if (iMetamodel != null) {
 								ModelType modelType = EolFactory.eINSTANCE.createModelType();
 								modelType.setResolvedIMetamodel(iMetamodel);

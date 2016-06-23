@@ -27,12 +27,12 @@ import org.eclipse.epsilon.etl.metamodel.TransformationRule;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.ETLModuleImpl#getTransformationRules <em>Transformation Rules</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.ETLModuleImpl#getPreBlocks <em>Pre Blocks</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.ETLModuleImpl#getPostBlocks <em>Post Blocks</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

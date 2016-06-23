@@ -7,11 +7,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.IPackageDriver;
-import org.eclipse.epsilon.analysis.model.driver.emf.EMFIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIpackageDriver;
 import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.BagType;
 import org.eclipse.epsilon.eol.metamodel.BooleanType;
@@ -30,6 +25,11 @@ import org.eclipse.epsilon.eol.metamodel.SetType;
 import org.eclipse.epsilon.eol.metamodel.StringType;
 import org.eclipse.epsilon.eol.metamodel.Type;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.IPackageDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.emf.EMFIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIpackageDriver;
 
 public class TypeUtil {
 
@@ -220,8 +220,8 @@ public class TypeUtil {
 			ModelElementType type1 = (ModelElementType) a;
 			ModelElementType type2 = (ModelElementType) b;
 			
-			EClass eClass1 = (EClass) type1.getModelType();
-			EClass eClass2 = (EClass) type2.getModelType();
+			EClass eClass1 = (EClass) type1.getModelElementType();
+			EClass eClass2 = (EClass) type2.getModelElementType();
 			
 			if (eClass1 == null || eClass2 == null) {
 				return false;
@@ -962,7 +962,7 @@ public class TypeUtil {
 			if (type2.getElementName().equals("_ModelElementType_")) {
 				return true;
 			}
-			else if(shortestDistanceBetweenClass((EClass)type1.getModelType(), (EClass)type2.getModelType()) != 999)
+			else if(shortestDistanceBetweenClass((EClass)type1.getModelElementType(), (EClass)type2.getModelElementType()) != 999)
 			{
 				return true;
 			}
@@ -1037,9 +1037,9 @@ public class TypeUtil {
 
 		 //if these two classes are in the same epackage
 		if (subObj instanceof ModelElementType && superObj instanceof ModelElementType) { //if both of the parameters are model element types
-			subClass = (EClass) ((ModelElementType)subObj).getModelType(); //get the ecoretype
+			subClass = (EClass) ((ModelElementType)subObj).getModelElementType(); //get the ecoretype
 			
-			superClass = (EClass) ((ModelElementType)superObj).getModelType(); //get the ecore type
+			superClass = (EClass) ((ModelElementType)superObj).getModelElementType(); //get the ecore type
 			if (subClass == null || superClass == null) { //if ecore type is null, return null
 				return -1;
 			}

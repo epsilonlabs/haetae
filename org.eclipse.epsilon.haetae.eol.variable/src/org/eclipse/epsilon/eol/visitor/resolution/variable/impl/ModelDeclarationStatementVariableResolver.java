@@ -3,9 +3,6 @@ package org.eclipse.epsilon.eol.visitor.resolution.variable.impl;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.emf.EMFIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIMetamodelDriver;
 import org.eclipse.epsilon.eol.metamodel.ModelDeclarationParameter;
 import org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement;
 import org.eclipse.epsilon.eol.metamodel.NameExpression;
@@ -17,6 +14,9 @@ import org.eclipse.epsilon.eol.problem.LogBook;
 import org.eclipse.epsilon.eol.problem.imessages.IMessage_TypeResolution;
 import org.eclipse.epsilon.eol.problem.imessages.IMessage_VariableResolution;
 import org.eclipse.epsilon.eol.visitor.resolution.variable.context.VariableResolutionContext;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.emf.EMFIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIMetamodelDriver;
 
 public class ModelDeclarationStatementVariableResolver extends ModelDeclarationStatementVisitor<VariableResolutionContext, Object>{
 

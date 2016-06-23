@@ -3,8 +3,6 @@ package org.eclipse.epsilon.eol.visitor.resolution.variable.context;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelManager;
 import org.eclipse.epsilon.eol.EolLibraryModule;
 import org.eclipse.epsilon.eol.metamodel.AssignmentStatement;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
@@ -13,6 +11,8 @@ import org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement;
 import org.eclipse.epsilon.eol.metamodel.VariableDeclarationExpression;
 import org.eclipse.epsilon.eol.problem.LogBook;
 import org.eclipse.epsilon.eol.problem.imessages.IMessage_VariableResolution;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelManager;
 
 
 public class VariableResolutionContext {

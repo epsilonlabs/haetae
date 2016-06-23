@@ -161,15 +161,6 @@ public interface EvlPackage extends EPackage {
 	int EVL_MODULE__IMPORTS = EolPackage.EOL_LIBRARY_MODULE__IMPORTS;
 
 	/**
-	 * The feature id for the '<em><b>IModels</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EVL_MODULE__IMODELS = EolPackage.EOL_LIBRARY_MODULE__IMODELS;
-
-	/**
 	 * The feature id for the '<em><b>Model Declarations</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -40,10 +40,10 @@ public class VariableDeclarationExpressionTypeResolver extends VariableDeclarati
 				ModelElementType modelElementType = (ModelElementType) rawType;
 				
 				//if the model element type is a EClass in the meta model
-				if (modelElementType.getModelType() instanceof EClass) {
+				if (modelElementType.getModelElementType() instanceof EClass) {
 					
 					//get the EClass
-					EClass eClass = (EClass) modelElementType.getModelType();
+					EClass eClass = (EClass) modelElementType.getModelElementType();
 					
 					//check if the class is an interface or abstract
 					if (eClass.isAbstract() || eClass.isInterface()) {

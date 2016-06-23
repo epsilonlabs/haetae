@@ -21,11 +21,11 @@ import org.eclipse.epsilon.etl.metamodel.TransformationRule;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.RuleDependencyImpl#getDependingRule <em>Depending Rule</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.RuleDependencyImpl#getSourceElement <em>Source Element</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

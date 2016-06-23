@@ -3,19 +3,17 @@ package org.eclipse.epsilon.eol.visitor.resolution.type.naive.impl;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.IPackageDriver;
-import org.eclipse.epsilon.analysis.model.driver.emf.EMFIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIpackageDriver;
-import org.eclipse.epsilon.eol.metamodel.IPackage;
 import org.eclipse.epsilon.eol.metamodel.ModelElementType;
 import org.eclipse.epsilon.eol.metamodel.visitor.EolVisitorController;
 import org.eclipse.epsilon.eol.metamodel.visitor.ModelElementTypeVisitor;
-import org.eclipse.epsilon.eol.parse.Eol_EolParserRules.elseStatement_return;
 import org.eclipse.epsilon.eol.problem.LogBook;
 import org.eclipse.epsilon.eol.problem.imessages.IMessage_TypeResolution;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.IPackageDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.emf.EMFIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIpackageDriver;
 
 public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolutionContext, Object>{
 
@@ -156,16 +154,10 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 					IPackageDriver iPackageDriver = iMetamodelDriver.getIPackageDrivers().get(0);
 					
 					if (iPackageDriver.getMetaElement(identifiers[0]) != null) {
-						modelElementType.setModelType(iPackageDriver.getMetaElement(identifiers[0]));
-						modelElementType.setResolvedIMetamodel(iMetamodelDriver.getIMetamodel());
+						modelElementType.setModelElementType(iPackageDriver.getMetaElement(identifiers[0]));
+						modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 						modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
-						for(IPackage iPackage: iMetamodelDriver.getIMetamodel().getIPackages())
-						{
-							if (iPackage.getName().equals(iPackageDriver.getPackageName())) {
-								modelElementType.setResolvedIPackage(iPackage);
-								break;
-							}
-						}
+						modelElementType.setResolvedIPackage(iPackageDriver);
 						return;
 					}
 					else {
@@ -178,16 +170,10 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 					{
 						if (iPackageDriver.containsMetaElement(identifiers[0])) {
 							found = true;
-							modelElementType.setModelType(iPackageDriver.getMetaElement(identifiers[0]));
-							modelElementType.setResolvedIMetamodel(iMetamodelDriver.getIMetamodel());
+							modelElementType.setModelElementType(iPackageDriver.getMetaElement(identifiers[0]));
+							modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 							modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
-							for(IPackage iPackage: iMetamodelDriver.getIMetamodel().getIPackages())
-							{
-								if (iPackage.getName().equals(iPackageDriver.getPackageName())) {
-									modelElementType.setResolvedIPackage(iPackage);
-									break;
-								}
-							}
+							modelElementType.setResolvedIPackage(iPackageDriver);
 							return;
 						}
 					}
@@ -204,16 +190,10 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 					iPackageDriver = iPackageDriver.getSubPackageDriver(identifiers[i]);
 				}	
 				if (iPackageDriver.getMetaElement(identifiers[identifiers.length-2]) != null) {
-					modelElementType.setModelType(iPackageDriver.getMetaElement(identifiers[0]));
-					modelElementType.setResolvedIMetamodel(iMetamodelDriver.getIMetamodel());
+					modelElementType.setModelElementType(iPackageDriver.getMetaElement(identifiers[0]));
+					modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 					modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
-					for(IPackage iPackage: iMetamodelDriver.getIMetamodel().getIPackages())
-					{
-						if (iPackage.getName().equals(iPackageDriver.getPackageName())) {
-							modelElementType.setResolvedIPackage(iPackage);
-							break;
-						}
-					}
+					modelElementType.setResolvedIPackage(iPackageDriver);
 					return;
 				}
 				else {
@@ -234,16 +214,11 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 					PlainXMLIpackageDriver _iPackageDriver = (PlainXMLIpackageDriver) iPackageDriver;
 					_iPackageDriver.setCurrentEolElement(modelElementType);
 					if (iPackageDriver.getMetaElement(identifiers[0]) != null) {
-						modelElementType.setModelType(iPackageDriver.getMetaElement(identifiers[0]));
-						modelElementType.setResolvedIMetamodel(iMetamodelDriver.getIMetamodel());
+						modelElementType.setModelElementType(iPackageDriver.getMetaElement(identifiers[0]));
+						modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 						modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
-						for(IPackage iPackage: iMetamodelDriver.getIMetamodel().getIPackages())
-						{
-							if (iPackage.getName().equals(iPackageDriver.getPackageName())) {
-								modelElementType.setResolvedIPackage(iPackage);
-								break;
-							}
-						}
+						modelElementType.setResolvedIPackage(iPackageDriver);
+						
 						return;
 					}
 					else {
@@ -256,16 +231,10 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 					{
 						if (iPackageDriver.containsMetaElement(identifiers[0])) {
 							found = true;
-							modelElementType.setModelType(iPackageDriver.getMetaElement(identifiers[0]));
-							modelElementType.setResolvedIMetamodel(iMetamodelDriver.getIMetamodel());
+							modelElementType.setModelElementType(iPackageDriver.getMetaElement(identifiers[0]));
+							modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 							modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
-							for(IPackage iPackage: iMetamodelDriver.getIMetamodel().getIPackages())
-							{
-								if (iPackage.getName().equals(iPackageDriver.getPackageName())) {
-									modelElementType.setResolvedIPackage(iPackage);
-									break;
-								}
-							}
+							modelElementType.setResolvedIPackage(iPackageDriver);
 							return;
 						}
 					}

@@ -78,7 +78,7 @@ public class NameExpressionTypeResolver extends NameExpressionVisitor<TypeResolu
 					ModelDeclarationStatement stmt = getContainingModelDeclarationStatement(var);
 					
 					//add model to model type					
-					modelType.setResolvedIMetamodel(stmt.getIMetamodel());
+					modelType.setResolvedIMetamodel(stmt.getResolvedIMetamodel());
 
 				}
 				//context.copyLocation(modelType, nameExpression);
@@ -105,7 +105,7 @@ public class NameExpressionTypeResolver extends NameExpressionVisitor<TypeResolu
 						context.copyLocation(modelType, nameExpression); 
 						
 						//add the model to the model type
-						modelType.setResolvedIMetamodel(stmt.getIMetamodel());
+						modelType.setResolvedIMetamodel(stmt.getResolvedIMetamodel());
 						
 						//set resolved type
 						nameExpression.setResolvedType(modelType); 

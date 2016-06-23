@@ -3,8 +3,6 @@ package org.eclipse.epsilon.eol.visitor.resolution.type.naive.impl.nonImportant;
 import java.util.ArrayList;
 
 import org.eclipse.emf.ecore.EEnum;
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.IPackageDriver;
 import org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression;
 import org.eclipse.epsilon.eol.metamodel.EolFactory;
 import org.eclipse.epsilon.eol.metamodel.IntegerType;
@@ -13,6 +11,8 @@ import org.eclipse.epsilon.eol.metamodel.visitor.EolVisitorController;
 import org.eclipse.epsilon.eol.problem.LogBook;
 import org.eclipse.epsilon.eol.problem.imessages.IMessage_TypeResolution;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.IPackageDriver;
 
 public class EnumerationLiteralExpressionTypeResolver extends EnumerationLiteralExpressionVisitor<TypeResolutionContext, Object>{
 

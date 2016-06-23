@@ -22,7 +22,7 @@ public class StandardLibraryOperationDefinitionContainer extends OperationDefini
 	
 	public void registerOperation(String filename)
 	{
-		Bundle bundle = Platform.getBundle("org.eclipse.epsilon.eol.visitor.resolution.type.naive");
+		Bundle bundle = Platform.getBundle("org.eclipse.epsilon.haetae.eol.type");
 		URL absolutePath = null;
 
 		if (bundle != null) {

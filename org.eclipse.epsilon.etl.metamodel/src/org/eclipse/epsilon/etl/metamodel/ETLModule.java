@@ -13,12 +13,12 @@ import org.eclipse.epsilon.eol.metamodel.EOLLibraryModule;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.ETLModule#getTransformationRules <em>Transformation Rules</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.ETLModule#getPreBlocks <em>Pre Blocks</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.ETLModule#getPostBlocks <em>Post Blocks</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.epsilon.etl.metamodel.EtlPackage#getETLModule()
  * @model

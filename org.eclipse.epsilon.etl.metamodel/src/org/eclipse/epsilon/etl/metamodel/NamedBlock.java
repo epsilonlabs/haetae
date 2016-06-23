@@ -12,11 +12,11 @@ import org.eclipse.epsilon.eol.metamodel.NameExpression;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.NamedBlock#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.NamedBlock#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.epsilon.etl.metamodel.EtlPackage#getNamedBlock()
  * @model

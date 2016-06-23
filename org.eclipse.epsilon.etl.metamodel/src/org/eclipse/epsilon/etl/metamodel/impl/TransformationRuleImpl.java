@@ -34,6 +34,7 @@ import org.eclipse.epsilon.etl.metamodel.TransformationRule;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.TransformationRuleImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.TransformationRuleImpl#getSource <em>Source</em>}</li>
@@ -49,7 +50,6 @@ import org.eclipse.epsilon.etl.metamodel.TransformationRule;
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.TransformationRuleImpl#isPrimary <em>Primary</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.TransformationRuleImpl#isGreedy <em>Greedy</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

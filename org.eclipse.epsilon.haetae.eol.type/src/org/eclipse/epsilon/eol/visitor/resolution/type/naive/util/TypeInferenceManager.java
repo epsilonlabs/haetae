@@ -6,14 +6,11 @@ import java.util.HashSet;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.IPackageDriver;
 import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.BooleanType;
 import org.eclipse.epsilon.eol.metamodel.CollectionType;
 import org.eclipse.epsilon.eol.metamodel.EolFactory;
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
-import org.eclipse.epsilon.eol.metamodel.IPackage;
 import org.eclipse.epsilon.eol.metamodel.IntegerType;
 import org.eclipse.epsilon.eol.metamodel.ModelElementType;
 import org.eclipse.epsilon.eol.metamodel.NameExpression;
@@ -24,6 +21,8 @@ import org.eclipse.epsilon.eol.metamodel.SummablePrimitiveType;
 import org.eclipse.epsilon.eol.metamodel.Type;
 import org.eclipse.epsilon.eol.metamodel.VariableDeclarationExpression;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.IPackageDriver;
 
 public class TypeInferenceManager {
 	
@@ -330,8 +329,8 @@ public class TypeInferenceManager {
 	
 	public ModelElementType getLeastCommonModelElementType(ModelElementType t1, ModelElementType t2)
 	{
-		EClass eClass1 = (EClass) t1.getModelType();
-		EClass eClass2 = (EClass) t2.getModelType();
+		EClass eClass1 = (EClass) t1.getModelElementType();
+		EClass eClass2 = (EClass) t2.getModelElementType();
 
 		if (eClass1.isSuperTypeOf(eClass2)) {
 			return EcoreUtil.copy(t1);
@@ -355,17 +354,11 @@ public class TypeInferenceManager {
 						if (iPackageDriver.getClass(result.getName()) != null) {
 							if (iPackageDriver.getClass(result.getName()).equals(result)) {
 								ModelElementType modelElementType = EolFactory.eINSTANCE.createModelElementType();
-								modelElementType.setModelType(result);
+								modelElementType.setModelElementType(result);
 								modelElementType.setElementName(result.getName());
 								modelElementType.setModelName(iMetamodelDriver.getName());
-								modelElementType.setResolvedIMetamodel(iMetamodelDriver.getIMetamodel());
-								for(IPackage iPackage: iMetamodelDriver.getIMetamodel().getIPackages())
-								{
-									if (iPackage.getName().equals(iPackageDriver.getPackageName())) {
-										modelElementType.setResolvedIPackage(iPackage);
-										break;
-									}
-								}
+								modelElementType.setResolvedIMetamodel(iMetamodelDriver);
+								modelElementType.setResolvedIPackage(iPackageDriver);
 								
 								return modelElementType;
 							}

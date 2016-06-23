@@ -7,7 +7,7 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.eol.metamodel,
  org.eclipse.epsilon.eol.metamodel.visitor,
  org.eclipse.epsilon.eol.problem,
- org.eclipse.epsilon.analysis.model.driver,
+ org.eclipse.epsilon.haetae.model.connectivity,
  org.eclipse.epsilon.eol.engine;bundle-version="1.2.0"
 Export-Package: org.eclipse.epsilon.eol.visitor.resolution.variable.context,
  org.eclipse.epsilon.eol.visitor.resolution.variable.impl

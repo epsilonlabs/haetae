@@ -9,7 +9,7 @@
             objectClass="org.eclipse.core.resources.IFile">
          <menu
                id="haetae.popupmenu"
-               label="Haetae"
+               label="Epsilon Haetae"
                path="additions">
             <separator
                   name="group1">
@@ -17,25 +17,33 @@
          </menu>
          <action
                class="org.eclipse.epsilon.haetae.ast2exl.AST2EOLAction"
-               id="org.eclipse.epsilon.haetae.plugin.action1"
+               id="org.eclipse.epsilon.haetae.plugin.ast2eol"
                label="Transform to EOL Model"
                menubarPath="haetae.popupmenu/group1">
          </action>
          <action
                class="org.eclipse.epsilon.haetae.ast2exl.AST2EVLAction"
-               id="org.eclipse.epsilon.haetae.dt.action2"
+               id="org.eclipse.epsilon.haetae.dt.ast2evl"
                label="Transform to EVL Model"
                menubarPath="haetae.popupmenu/group1">
          </action>
          <action
                class="org.eclipse.epsilon.haetae.ast2exl.AST2ETLAction"
-               id="org.eclipse.epsilon.haetae.dt.action3"
-               label="Transform to ETL Model">
+               id="org.eclipse.epsilon.haetae.dt.ast2etl"
+               label="Transform to ETL Model"
+               menubarPath="haetae.popupmenu/group1">
          </action>
          <action
                class="org.eclipse.epsilon.haetae.ast2exl.AST2VREOLAction"
-               id="org.eclipse.epsilon.haetae.dt.action4"
-               label="Get variable resolved EOL Model">
+               id="org.eclipse.epsilon.haetae.dt.ast2vreol"
+               label="Transform to variable resolved EOL Model"
+               menubarPath="haetae.popupmenu/group1">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2TREOLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2treol"
+               label="Transform to type resolved EOL Model"
+               menubarPath="haetae.popupmenu/group1">
          </action>
       </objectContribution>
    </extension>

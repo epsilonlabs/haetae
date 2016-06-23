@@ -7,9 +7,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIpackageDriver;
 import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.EolFactory;
@@ -27,6 +24,9 @@ import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.AnalysisInt
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.OperationDefinitionManager;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.StandardLibraryOperationDefinitionContainer;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIpackageDriver;
 
 public class AppendChildHandler extends AnyOperationDefinitionHandler{
 
@@ -76,15 +76,15 @@ public class AppendChildHandler extends AnyOperationDefinitionHandler{
 			
 			if (targetType instanceof ModelElementType) {
 				ModelElementType type = (ModelElementType) targetType;
-				PlainXMLIpackageDriver ipackageDriver = (PlainXMLIpackageDriver) type.getResolvedIPackage().getIPackageDriver();
+				PlainXMLIpackageDriver ipackageDriver = (PlainXMLIpackageDriver) type.getResolvedIPackage();
 				
-				EClass eClass = (EClass) type.getModelType();
+				EClass eClass = (EClass) type.getModelElementType();
 				
 				AnyType argType = (AnyType) argTypes.get(0);
 				if (argType instanceof ModelElementType) {
 					ModelElementType _argType = (ModelElementType) argType;
-					if (_argType.getResolvedIPackage().getIPackageDriver().equals(ipackageDriver)) {
-						EClass argTypeEClass = (EClass) _argType.getModelType();
+					if (_argType.getResolvedIPackage().equals(ipackageDriver)) {
+						EClass argTypeEClass = (EClass) _argType.getModelElementType();
 						
 						String argTypeName = argTypeEClass.getName();
 						String escapedArgTypeName = removeTag(argTypeName);

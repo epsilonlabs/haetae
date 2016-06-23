@@ -17,6 +17,7 @@ import org.eclipse.epsilon.eol.metamodel.NameExpression;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.TransformationRule#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.TransformationRule#getSource <em>Source</em>}</li>
@@ -32,7 +33,6 @@ import org.eclipse.epsilon.eol.metamodel.NameExpression;
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.TransformationRule#isPrimary <em>Primary</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.TransformationRule#isGreedy <em>Greedy</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.epsilon.etl.metamodel.EtlPackage#getTransformationRule()
  * @model

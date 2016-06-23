@@ -7,17 +7,12 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.epsilon.analysis.model.driver.IMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.IPackageDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIMetamodelDriver;
-import org.eclipse.epsilon.analysis.model.driver.plainxml.PlainXMLIpackageDriver;
 import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.AssignmentStatement;
 import org.eclipse.epsilon.eol.metamodel.CollectionType;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.EolFactory;
 import org.eclipse.epsilon.eol.metamodel.Expression;
-import org.eclipse.epsilon.eol.metamodel.IMetamodel;
 import org.eclipse.epsilon.eol.metamodel.ModelElementType;
 import org.eclipse.epsilon.eol.metamodel.ModelType;
 import org.eclipse.epsilon.eol.metamodel.OperationDefinition;
@@ -34,6 +29,10 @@ import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolut
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.OperationDefinitionManager;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.util.TypeInferenceManager;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.util.TypeUtil;
+import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.IPackageDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIMetamodelDriver;
+import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIpackageDriver;
 
 public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVisitor<TypeResolutionContext, Object>{
 
@@ -90,7 +89,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 				
 				String elementString = modelElementType.getElementName();
 				
-				IPackageDriver ipd = (IPackageDriver) modelElementType.getResolvedIPackage().getIPackageDriver();
+				IPackageDriver ipd = (IPackageDriver) modelElementType.getResolvedIPackage();
 				
 				if (ipd != null) {
 					if (ipd instanceof PlainXMLIpackageDriver) {
@@ -125,7 +124,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 								}
 								else { //if type is not normalisable
 									contentType = EolFactory.eINSTANCE.createModelElementType(); //create a EType and assign it to contentType
-									((ModelElementType)contentType).setModelType(propertyType);
+									((ModelElementType)contentType).setModelElementType(propertyType);
 									IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 									if (imd!= null) {
 										((ModelElementType)contentType).setModelName(imd.getName());
@@ -136,7 +135,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 							}
 							else { //if type is not EDatatype
 								contentType = EolFactory.eINSTANCE.createModelElementType(); //assign a ModelElementType to contentType 
-								((ModelElementType) contentType).setModelType(propertyType); //setEcoreType
+								((ModelElementType) contentType).setModelElementType(propertyType); //setEcoreType
 								IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 								if (imd!= null) {
 									((ModelElementType)contentType).setModelName(imd.getName());
@@ -183,7 +182,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 								}
 								else { //if the data type is not normalisable
 									ModelElementType eType = EolFactory.eINSTANCE.createModelElementType();
-									eType.setModelType(propertyType);
+									eType.setModelElementType(propertyType);
 									IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 									if (imd!= null) {
 										eType.setModelName(imd.getName());
@@ -200,7 +199,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 							}
 							else { //if the property is not data type, then it should be model element type
 								ModelElementType callType = EolFactory.eINSTANCE.createModelElementType();
-								callType.setModelType(propertyType);
+								callType.setModelElementType(propertyType);
 								IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 								if (imd!= null) {
 									callType.setModelName(imd.getName());
@@ -237,7 +236,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 				{ //if contentType is ModelElementType
 					
 					ModelElementType resultContentType = (ModelElementType) getInnermostType(rawCollectionType); //prepare result content type
-					IPackageDriver ipd = (IPackageDriver) resultContentType.getResolvedIPackage().getIPackageDriver();
+					IPackageDriver ipd = (IPackageDriver) resultContentType.getResolvedIPackage();
 					if(ipd != null) //if meta model exists
 					{
 						String elementString = resultContentType.getElementName(); //get metaclass string
@@ -258,7 +257,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 									}
 									else { //if type is not normalisable
 										contentType = EolFactory.eINSTANCE.createModelElementType();
-										((ModelElementType)contentType).setModelType(propertyType);
+										((ModelElementType)contentType).setModelElementType(propertyType);
 										IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 										if (imd!= null) {
 											((ModelElementType)contentType).setModelName(imd.getName());
@@ -269,7 +268,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 								}
 								else { //if type is not EDatatype
 									contentType = EolFactory.eINSTANCE.createModelElementType(); //assign a ModelElementType to contentType 
-									((ModelElementType) contentType).setModelType(propertyType); //setEcoreType
+									((ModelElementType) contentType).setModelElementType(propertyType); //setEcoreType
 									IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 									if (imd!= null) {
 										((ModelElementType)contentType).setModelName(imd.getName());
@@ -325,7 +324,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 									}
 									else { //if the data type is not normalisable
 										ModelElementType eType = EolFactory.eINSTANCE.createModelElementType();
-										eType.setModelType(propertyType);
+										eType.setModelElementType(propertyType);
 										IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 										if (imd!= null) {
 											eType.setModelName(imd.getName());
@@ -345,7 +344,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 								}
 								else { //if the property is not data type, then it should be model element type
 									ModelElementType callType = EolFactory.eINSTANCE.createModelElementType();
-									callType.setModelType(propertyType);
+									callType.setModelElementType(propertyType);
 									IMetamodelDriver imd = context.locateIMetamodelDriver(propertyType);
 									if (imd!= null) {
 										callType.setModelName(imd.getName());
@@ -379,9 +378,9 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 		}
 		else if (targetType instanceof ModelType) {
 			ModelType modelType = (ModelType) targetType;
-			IMetamodel iMetamodel = modelType.getResolvedIMetamodel();
-			if (iMetamodel.getIMetamodelDriver() instanceof PlainXMLIMetamodelDriver) {
-				PlainXMLIMetamodelDriver iMetamodelDriver = (PlainXMLIMetamodelDriver) iMetamodel.getIMetamodelDriver();
+			IMetamodelDriver iMetamodel = (IMetamodelDriver) modelType.getResolvedIMetamodel();
+			if (iMetamodel instanceof PlainXMLIMetamodelDriver) {
+				PlainXMLIMetamodelDriver iMetamodelDriver = (PlainXMLIMetamodelDriver) iMetamodel;
 				PlainXMLIpackageDriver ipackageDriver = (PlainXMLIpackageDriver) iMetamodelDriver.getIPackageDrivers().get(0);
 				if (property.equals("root")) {
 					if (ipackageDriver.getRoot() != null) {
@@ -389,8 +388,8 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 						ModelElementType modelElementType = EolFactory.eINSTANCE.createModelElementType();
 						modelElementType.setElementName(root.getName());
 						modelElementType.setResolvedIMetamodel(iMetamodel);
-						modelElementType.setResolvedIPackage(iMetamodel.getIPackages().get(0));
-						modelElementType.setModelName(iMetamodel.getName().getName());
+						modelElementType.setResolvedIPackage(iMetamodel.getIPackageDrivers().get(0));
+						modelElementType.setModelName(iMetamodel.getName());
 						controller.visit(modelElementType, context);
 						propertyCallExpression.setResolvedType(modelElementType);
 					}

@@ -80,7 +80,7 @@ public class ModelElementCreateInstanceHandler extends ModelElementOperationDefi
 				//if target type is collection type
 				if (targetType instanceof ModelElementType) {
 					ModelElementType met = (ModelElementType) EcoreUtil.copy(targetType);
-					Object modelType = met.getModelType();
+					Object modelType = met.getModelElementType();
 					if (modelType != null) {
 						if (modelType instanceof EClass) {
 							EClass eClass = (EClass) modelType;

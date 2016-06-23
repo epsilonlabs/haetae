@@ -11,11 +11,11 @@ import org.eclipse.epsilon.eol.metamodel.EOLElement;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.RuleDependency#getDependingRule <em>Depending Rule</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.RuleDependency#getSourceElement <em>Source Element</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.eclipse.epsilon.etl.metamodel.EtlPackage#getRuleDependency()
  * @model

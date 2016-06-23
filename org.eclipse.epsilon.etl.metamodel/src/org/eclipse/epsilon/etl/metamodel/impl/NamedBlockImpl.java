@@ -22,11 +22,11 @@ import org.eclipse.epsilon.etl.metamodel.NamedBlock;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.NamedBlockImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.etl.metamodel.impl.NamedBlockImpl#getBody <em>Body</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
