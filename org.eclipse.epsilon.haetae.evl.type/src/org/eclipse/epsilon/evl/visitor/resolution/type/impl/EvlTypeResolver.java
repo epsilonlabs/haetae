@@ -38,7 +38,7 @@ public class EvlTypeResolver {
 	protected EvlVisitorController<TypeResolutionContext, Object> controller = new EvlVisitorController<TypeResolutionContext, Object>();
 	protected EvlTypeResolutionContext context = new EvlTypeResolutionContext();
 	
-	public EvlTypeResolver(org.eclipse.epsilon.eol.EolLibraryModule module)
+	public EvlTypeResolver()
 	{
 		
 		controller.addImportVisitor(new ImportTypeResolver());

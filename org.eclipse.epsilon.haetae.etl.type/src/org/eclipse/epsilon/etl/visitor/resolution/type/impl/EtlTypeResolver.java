@@ -40,7 +40,7 @@ public class EtlTypeResolver{
 	protected EtlVisitorController<TypeResolutionContext, Object> controller = new EtlVisitorController<TypeResolutionContext, Object>();
 	protected EtlTypeResolutionContext context = new EtlTypeResolutionContext();
 	
-	public EtlTypeResolver(EolLibraryModule module)
+	public EtlTypeResolver()
 	{
 		controller.addImportVisitor(new ImportTypeResolver());
 		controller.addDefaultVisitor(new EolDefaultVisitor<TypeResolutionContext, Object>());

@@ -19,6 +19,10 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.epsilon.haetae.etl.metamodel,
  org.eclipse.epsilon.haetae.etl.ast2etl,
  org.eclipse.epsilon.haetae.eol.variable,
- org.eclipse.epsilon.haetae.eol.type
+ org.eclipse.epsilon.haetae.eol.type,
+ org.eclipse.epsilon.haetae.evl.type,
+ org.eclipse.epsilon.haetae.evl.variable,
+ org.eclipse.epsilon.haetae.etl.variable,
+ org.eclipse.epsilon.haetae.etl.type
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

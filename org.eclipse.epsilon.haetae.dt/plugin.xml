@@ -14,23 +14,17 @@
             <separator
                   name="group1">
             </separator>
+            <separator
+                  name="group2">
+            </separator>
+            <separator
+                  name="group3">
+            </separator>
          </menu>
          <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2EOLAction"
-               id="org.eclipse.epsilon.haetae.plugin.ast2eol"
-               label="Transform to EOL Model"
-               menubarPath="haetae.popupmenu/group1">
-         </action>
-         <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2EVLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2evl"
-               label="Transform to EVL Model"
-               menubarPath="haetae.popupmenu/group1">
-         </action>
-         <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2ETLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2etl"
-               label="Transform to ETL Model"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2TREOLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2treol"
+               label="Transform to type resolved EOL Model"
                menubarPath="haetae.popupmenu/group1">
          </action>
          <action
@@ -40,10 +34,46 @@
                menubarPath="haetae.popupmenu/group1">
          </action>
          <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2TREOLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2treol"
-               label="Transform to type resolved EOL Model"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2EOLAction"
+               id="org.eclipse.epsilon.haetae.plugin.ast2eol"
+               label="Transform to EOL Model"
                menubarPath="haetae.popupmenu/group1">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2TREVLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2trevl"
+               label="Transform to type resolved EVL Model"
+               menubarPath="haetae.popupmenu/group2">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2VREVLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2vrevl"
+               label="Transform to variable resolved EVL Model"
+               menubarPath="haetae.popupmenu/group2">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2EVLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2evl"
+               label="Transform to EVL Model"
+               menubarPath="haetae.popupmenu/group2">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2VRETLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2vretl"
+               label="Transform to variable resolved ETL Model"
+               menubarPath="haetae.popupmenu/group3">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2TRETLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2tretl"
+               label="Transform to type resolved ETL Model"
+               menubarPath="haetae.popupmenu/group3">
+         </action>
+         <action
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2ETLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2etl"
+               label="Transform to ETL Model"
+               menubarPath="haetae.popupmenu/group3">
          </action>
       </objectContribution>
    </extension>
