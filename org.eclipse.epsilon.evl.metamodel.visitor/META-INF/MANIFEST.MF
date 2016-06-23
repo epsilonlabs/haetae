@@ -7,6 +7,6 @@ Require-Bundle: org.eclipse.emf.common;visibility:=reexport,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.epsilon.haetae.eol.metamodel.visitor;visibility:=reexport,
  org.eclipse.epsilon.haetae.eol.metamodel;visibility:=reexport,
- org.eclipse.epsilon.evl.metamodel;visibility:=reexport
+ org.eclipse.epsilon.haetae.evl.metamodel;visibility:=reexport
 Export-Package: org.eclipse.epsilon.evl.metamodel.visitor
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
