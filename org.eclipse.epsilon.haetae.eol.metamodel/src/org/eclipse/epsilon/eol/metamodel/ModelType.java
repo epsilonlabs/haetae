@@ -31,7 +31,7 @@ public interface ModelType extends AnyType {
 	 * @return the value of the '<em>Resolved IMetamodel</em>' attribute.
 	 * @see #setResolvedIMetamodel(Object)
 	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelType_ResolvedIMetamodel()
-	 * @model derived="true"
+	 * @model transient="true" derived="true"
 	 * @generated
 	 */
 	Object getResolvedIMetamodel();

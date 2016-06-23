@@ -335,7 +335,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
         eType="#//ModelDeclarationParameter" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedIMetamodel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        derived="true"/>
+        transient="true" derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Type" eSuperTypes="#//EOLElement"/>
   <eClassifiers xsi:type="ecore:EClass" name="AnyType" eSuperTypes="#//Type">
@@ -346,7 +346,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ModelType" eSuperTypes="#//AnyType">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedIMetamodel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        derived="true"/>
+        transient="true" derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ModelElementType" eSuperTypes="#//AnyType">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -355,11 +355,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="resolvedModelDeclaration"
         lowerBound="1" eType="#//ModelDeclarationStatement"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedIMetamodel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        derived="true"/>
+        transient="true" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedIPackage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        derived="true"/>
+        transient="true" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelElementType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        derived="true"/>
+        transient="true" derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PseudoType" abstract="true" eSuperTypes="#//AnyType"/>
   <eClassifiers xsi:type="ecore:EClass" name="SelfType" eSuperTypes="#//PseudoType"/>

@@ -350,7 +350,7 @@ class ModelDeclarationStatement extends Statement {
   val NameExpression[1] driver;
   val VariableDeclarationExpression[*] aliases;
   val ModelDeclarationParameter[*] parameters;
-  derived attr EJavaObject resolvedIMetamodel;
+  transient derived attr EJavaObject resolvedIMetamodel;
 }
 
 class Type extends EOLElement {
@@ -362,16 +362,16 @@ class AnyType extends Type {
 }
 
 class ModelType extends AnyType {
-  derived attr EJavaObject resolvedIMetamodel;
+  transient derived attr EJavaObject resolvedIMetamodel;
 }
 
 class ModelElementType extends AnyType {
   attr String modelName;
   attr String[1] elementName;
   ref ModelDeclarationStatement[1] resolvedModelDeclaration;
-  derived attr EJavaObject resolvedIMetamodel;
-  derived attr EJavaObject resolvedIPackage;
-  derived attr EJavaObject modelElementType;
+  transient derived attr EJavaObject resolvedIMetamodel;
+  transient derived attr EJavaObject resolvedIPackage;
+  transient derived attr EJavaObject modelElementType;
 }
 
 abstract class PseudoType extends AnyType {
