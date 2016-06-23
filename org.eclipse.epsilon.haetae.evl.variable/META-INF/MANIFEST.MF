@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.epsilon.evl.visitor.resolution.variable
+Bundle-SymbolicName: org.eclipse.epsilon.haetae.evl.variable;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.epsilon.haetae.eol.variable,
+ org.eclipse.epsilon.haetae.evl.metamodel,
+ org.eclipse.epsilon.haetae.evl.metamodel.visitor
+Export-Package: org.eclipse.epsilon.evl.visitor.resolution.impl
