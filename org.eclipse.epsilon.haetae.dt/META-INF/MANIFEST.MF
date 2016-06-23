@@ -16,7 +16,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.epsilon.haetae.evl.metamodel,
  org.eclipse.epsilon.evl.ast2evl,
  org.eclipse.epsilon.etl.engine,
- org.eclipse.epsilon.etl.metamodel,
+ org.eclipse.epsilon.haetae.etl.metamodel,
  org.eclipse.epsilon.etl.ast2etl,
  org.eclipse.epsilon.haetae.eol.variable,
  org.eclipse.epsilon.haetae.eol.type

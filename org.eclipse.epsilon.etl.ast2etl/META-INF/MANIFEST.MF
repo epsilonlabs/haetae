@@ -8,7 +8,7 @@ Require-Bundle: org.eclipse.epsilon.haetae.eol.metamodel,
  org.eclipse.emf.ecore,
  org.junit,
  org.eclipse.epsilon.eol.ast2eol;bundle-version="0.1.0",
- org.eclipse.epsilon.etl.metamodel;bundle-version="0.1.0",
+ org.eclipse.epsilon.haetae.etl.metamodel;bundle-version="0.1.0",
  org.eclipse.epsilon.etl.engine;bundle-version="1.2.0",
  org.eclipse.epsilon.common
 Export-Package: org.eclipse.epsilon.etl.ast2etl
