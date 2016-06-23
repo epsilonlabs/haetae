@@ -103,26 +103,6 @@ public interface EolPackage extends EPackage {
 	int EOL_ELEMENT_FEATURE_COUNT = 3;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.IMetamodelImpl <em>IMetamodel</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.epsilon.eol.metamodel.impl.IMetamodelImpl
-	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIMetamodel()
-	 * @generated
-	 */
-	int IMETAMODEL = 3;
-
-	/**
-	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.IPackageImpl <em>IPackage</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.epsilon.eol.metamodel.impl.IPackageImpl
-	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIPackage()
-	 * @generated
-	 */
-	int IPACKAGE = 4;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.TextRegionImpl <em>Text Region</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -197,177 +177,6 @@ public interface EolPackage extends EPackage {
 	int TEXT_POSITION_FEATURE_COUNT = 2;
 
 	/**
-	 * The feature id for the '<em><b>Container</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__CONTAINER = EOL_ELEMENT__CONTAINER;
-
-	/**
-	 * The feature id for the '<em><b>Uri</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__URI = EOL_ELEMENT__URI;
-
-	/**
-	 * The feature id for the '<em><b>Region</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__REGION = EOL_ELEMENT__REGION;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__NAME = EOL_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Aliases</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__ALIASES = EOL_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Driver</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__DRIVER = EOL_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>IMetamodel Driver</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__IMETAMODEL_DRIVER = EOL_ELEMENT_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>IPackages</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__IPACKAGES = EOL_ELEMENT_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Ns UR Ior Path</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL__NS_UR_IOR_PATH = EOL_ELEMENT_FEATURE_COUNT + 5;
-
-	/**
-	 * The number of structural features of the '<em>IMetamodel</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IMETAMODEL_FEATURE_COUNT = EOL_ELEMENT_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Container</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__CONTAINER = EOL_ELEMENT__CONTAINER;
-
-	/**
-	 * The feature id for the '<em><b>Uri</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__URI = EOL_ELEMENT__URI;
-
-	/**
-	 * The feature id for the '<em><b>Region</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__REGION = EOL_ELEMENT__REGION;
-
-	/**
-	 * The feature id for the '<em><b>IPackage Driver</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__IPACKAGE_DRIVER = EOL_ELEMENT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__NAME = EOL_ELEMENT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Ns URI</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__NS_URI = EOL_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Ns Prefix</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__NS_PREFIX = EOL_ELEMENT_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Sub Packages</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE__SUB_PACKAGES = EOL_ELEMENT_FEATURE_COUNT + 4;
-
-	/**
-	 * The number of structural features of the '<em>IPackage</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int IPACKAGE_FEATURE_COUNT = EOL_ELEMENT_FEATURE_COUNT + 5;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.EOLLibraryModuleImpl <em>EOL Library Module</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -375,7 +184,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getEOLLibraryModule()
 	 * @generated
 	 */
-	int EOL_LIBRARY_MODULE = 5;
+	int EOL_LIBRARY_MODULE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -423,22 +232,13 @@ public interface EolPackage extends EPackage {
 	int EOL_LIBRARY_MODULE__IMPORTS = EOL_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>IModels</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EOL_LIBRARY_MODULE__IMODELS = EOL_ELEMENT_FEATURE_COUNT + 2;
-
-	/**
 	 * The feature id for the '<em><b>Model Declarations</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EOL_LIBRARY_MODULE__MODEL_DECLARATIONS = EOL_ELEMENT_FEATURE_COUNT + 3;
+	int EOL_LIBRARY_MODULE__MODEL_DECLARATIONS = EOL_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Operations</b></em>' containment reference list.
@@ -447,7 +247,7 @@ public interface EolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EOL_LIBRARY_MODULE__OPERATIONS = EOL_ELEMENT_FEATURE_COUNT + 4;
+	int EOL_LIBRARY_MODULE__OPERATIONS = EOL_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>EOL Library Module</em>' class.
@@ -456,7 +256,7 @@ public interface EolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EOL_LIBRARY_MODULE_FEATURE_COUNT = EOL_ELEMENT_FEATURE_COUNT + 5;
+	int EOL_LIBRARY_MODULE_FEATURE_COUNT = EOL_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.EOLModuleImpl <em>EOL Module</em>}' class.
@@ -466,7 +266,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getEOLModule()
 	 * @generated
 	 */
-	int EOL_MODULE = 6;
+	int EOL_MODULE = 4;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -514,15 +314,6 @@ public interface EolPackage extends EPackage {
 	int EOL_MODULE__IMPORTS = EOL_LIBRARY_MODULE__IMPORTS;
 
 	/**
-	 * The feature id for the '<em><b>IModels</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int EOL_MODULE__IMODELS = EOL_LIBRARY_MODULE__IMODELS;
-
-	/**
 	 * The feature id for the '<em><b>Model Declarations</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -566,7 +357,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getImport()
 	 * @generated
 	 */
-	int IMPORT = 7;
+	int IMPORT = 5;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -630,7 +421,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBlock()
 	 * @generated
 	 */
-	int BLOCK = 8;
+	int BLOCK = 6;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -685,7 +476,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getAnnotationBlock()
 	 * @generated
 	 */
-	int ANNOTATION_BLOCK = 9;
+	int ANNOTATION_BLOCK = 7;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -740,7 +531,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getExpressionOrStatementBlock()
 	 * @generated
 	 */
-	int EXPRESSION_OR_STATEMENT_BLOCK = 10;
+	int EXPRESSION_OR_STATEMENT_BLOCK = 8;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -813,7 +604,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOperationDefinition()
 	 * @generated
 	 */
-	int OPERATION_DEFINITION = 11;
+	int OPERATION_DEFINITION = 9;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -940,7 +731,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getExpression()
 	 * @generated
 	 */
-	int EXPRESSION = 12;
+	int EXPRESSION = 10;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1004,7 +795,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOperatorExpression()
 	 * @generated
 	 */
-	int OPERATOR_EXPRESSION = 13;
+	int OPERATOR_EXPRESSION = 11;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1068,7 +859,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getUnaryOperatorExpression()
 	 * @generated
 	 */
-	int UNARY_OPERATOR_EXPRESSION = 14;
+	int UNARY_OPERATOR_EXPRESSION = 12;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1141,7 +932,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getNotOperatorExpression()
 	 * @generated
 	 */
-	int NOT_OPERATOR_EXPRESSION = 15;
+	int NOT_OPERATOR_EXPRESSION = 13;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1214,7 +1005,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getNegativeOperatorExpression()
 	 * @generated
 	 */
-	int NEGATIVE_OPERATOR_EXPRESSION = 16;
+	int NEGATIVE_OPERATOR_EXPRESSION = 14;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1287,7 +1078,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBinaryOperatorExpression()
 	 * @generated
 	 */
-	int BINARY_OPERATOR_EXPRESSION = 17;
+	int BINARY_OPERATOR_EXPRESSION = 15;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1369,7 +1160,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getLogicalOperatorExpression()
 	 * @generated
 	 */
-	int LOGICAL_OPERATOR_EXPRESSION = 18;
+	int LOGICAL_OPERATOR_EXPRESSION = 16;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1451,7 +1242,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getAndOperatorExpression()
 	 * @generated
 	 */
-	int AND_OPERATOR_EXPRESSION = 19;
+	int AND_OPERATOR_EXPRESSION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1533,7 +1324,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getXorOperatorExpression()
 	 * @generated
 	 */
-	int XOR_OPERATOR_EXPRESSION = 20;
+	int XOR_OPERATOR_EXPRESSION = 18;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1615,7 +1406,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOrOperatorExpression()
 	 * @generated
 	 */
-	int OR_OPERATOR_EXPRESSION = 21;
+	int OR_OPERATOR_EXPRESSION = 19;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1697,7 +1488,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getImpliesOperatorExpression()
 	 * @generated
 	 */
-	int IMPLIES_OPERATOR_EXPRESSION = 22;
+	int IMPLIES_OPERATOR_EXPRESSION = 20;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1779,7 +1570,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getArithmeticOperatorExpression()
 	 * @generated
 	 */
-	int ARITHMETIC_OPERATOR_EXPRESSION = 23;
+	int ARITHMETIC_OPERATOR_EXPRESSION = 21;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1861,7 +1652,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getDivideOperatorExpression()
 	 * @generated
 	 */
-	int DIVIDE_OPERATOR_EXPRESSION = 24;
+	int DIVIDE_OPERATOR_EXPRESSION = 22;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -1943,7 +1734,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getMultiplyOperatorExpression()
 	 * @generated
 	 */
-	int MULTIPLY_OPERATOR_EXPRESSION = 25;
+	int MULTIPLY_OPERATOR_EXPRESSION = 23;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2025,7 +1816,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getMinusOperatorExpression()
 	 * @generated
 	 */
-	int MINUS_OPERATOR_EXPRESSION = 26;
+	int MINUS_OPERATOR_EXPRESSION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2107,7 +1898,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getPlusOperatorExpression()
 	 * @generated
 	 */
-	int PLUS_OPERATOR_EXPRESSION = 27;
+	int PLUS_OPERATOR_EXPRESSION = 25;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2189,7 +1980,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getComparisonOperatorExpression()
 	 * @generated
 	 */
-	int COMPARISON_OPERATOR_EXPRESSION = 28;
+	int COMPARISON_OPERATOR_EXPRESSION = 26;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2271,7 +2062,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getGreaterThanOrEqualToOperatorExpression()
 	 * @generated
 	 */
-	int GREATER_THAN_OR_EQUAL_TO_OPERATOR_EXPRESSION = 29;
+	int GREATER_THAN_OR_EQUAL_TO_OPERATOR_EXPRESSION = 27;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2353,7 +2144,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getGreaterThanOperatorExpression()
 	 * @generated
 	 */
-	int GREATER_THAN_OPERATOR_EXPRESSION = 30;
+	int GREATER_THAN_OPERATOR_EXPRESSION = 28;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2435,7 +2226,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getLessThanOrEqualToOperatorExpression()
 	 * @generated
 	 */
-	int LESS_THAN_OR_EQUAL_TO_OPERATOR_EXPRESSION = 31;
+	int LESS_THAN_OR_EQUAL_TO_OPERATOR_EXPRESSION = 29;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2517,7 +2308,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getLessThanOperatorExpression()
 	 * @generated
 	 */
-	int LESS_THAN_OPERATOR_EXPRESSION = 32;
+	int LESS_THAN_OPERATOR_EXPRESSION = 30;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2599,7 +2390,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getNotEqualsOperatorExpression()
 	 * @generated
 	 */
-	int NOT_EQUALS_OPERATOR_EXPRESSION = 33;
+	int NOT_EQUALS_OPERATOR_EXPRESSION = 31;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2681,7 +2472,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getEqualsOperatorExpression()
 	 * @generated
 	 */
-	int EQUALS_OPERATOR_EXPRESSION = 34;
+	int EQUALS_OPERATOR_EXPRESSION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2763,7 +2554,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getVariableDeclarationExpression()
 	 * @generated
 	 */
-	int VARIABLE_DECLARATION_EXPRESSION = 35;
+	int VARIABLE_DECLARATION_EXPRESSION = 33;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2854,7 +2645,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getFormalParameterExpression()
 	 * @generated
 	 */
-	int FORMAL_PARAMETER_EXPRESSION = 36;
+	int FORMAL_PARAMETER_EXPRESSION = 34;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -2945,7 +2736,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getNameExpression()
 	 * @generated
 	 */
-	int NAME_EXPRESSION = 37;
+	int NAME_EXPRESSION = 35;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3036,7 +2827,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getFeatureCallExpression()
 	 * @generated
 	 */
-	int FEATURE_CALL_EXPRESSION = 38;
+	int FEATURE_CALL_EXPRESSION = 36;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3118,7 +2909,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getMethodCallExpression()
 	 * @generated
 	 */
-	int METHOD_CALL_EXPRESSION = 39;
+	int METHOD_CALL_EXPRESSION = 37;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3227,7 +3018,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getPropertyCallExpression()
 	 * @generated
 	 */
-	int PROPERTY_CALL_EXPRESSION = 40;
+	int PROPERTY_CALL_EXPRESSION = 38;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3327,7 +3118,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getFOLMethodCallExpression()
 	 * @generated
 	 */
-	int FOL_METHOD_CALL_EXPRESSION = 41;
+	int FOL_METHOD_CALL_EXPRESSION = 39;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3445,7 +3236,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getKeyValueExpression()
 	 * @generated
 	 */
-	int KEY_VALUE_EXPRESSION = 42;
+	int KEY_VALUE_EXPRESSION = 40;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3527,7 +3318,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getModelDeclarationParameter()
 	 * @generated
 	 */
-	int MODEL_DECLARATION_PARAMETER = 43;
+	int MODEL_DECLARATION_PARAMETER = 41;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3609,7 +3400,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getNewExpression()
 	 * @generated
 	 */
-	int NEW_EXPRESSION = 44;
+	int NEW_EXPRESSION = 42;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3691,7 +3482,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getMapExpression()
 	 * @generated
 	 */
-	int MAP_EXPRESSION = 45;
+	int MAP_EXPRESSION = 43;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3764,7 +3555,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getCollectionExpression()
 	 * @generated
 	 */
-	int COLLECTION_EXPRESSION = 46;
+	int COLLECTION_EXPRESSION = 44;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3846,7 +3637,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getPrimitiveExpression()
 	 * @generated
 	 */
-	int PRIMITIVE_EXPRESSION = 47;
+	int PRIMITIVE_EXPRESSION = 45;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3910,7 +3701,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getComparableExpression()
 	 * @generated
 	 */
-	int COMPARABLE_EXPRESSION = 48;
+	int COMPARABLE_EXPRESSION = 46;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -3974,7 +3765,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSummableExpression()
 	 * @generated
 	 */
-	int SUMMABLE_EXPRESSION = 49;
+	int SUMMABLE_EXPRESSION = 47;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4038,7 +3829,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getStringExpression()
 	 * @generated
 	 */
-	int STRING_EXPRESSION = 50;
+	int STRING_EXPRESSION = 48;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4111,7 +3902,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBooleanExpression()
 	 * @generated
 	 */
-	int BOOLEAN_EXPRESSION = 51;
+	int BOOLEAN_EXPRESSION = 49;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4184,7 +3975,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getRealExpression()
 	 * @generated
 	 */
-	int REAL_EXPRESSION = 52;
+	int REAL_EXPRESSION = 50;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4257,7 +4048,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIntegerExpression()
 	 * @generated
 	 */
-	int INTEGER_EXPRESSION = 53;
+	int INTEGER_EXPRESSION = 51;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4330,7 +4121,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBagExpression()
 	 * @generated
 	 */
-	int BAG_EXPRESSION = 54;
+	int BAG_EXPRESSION = 52;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4412,7 +4203,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getUniqueCollection()
 	 * @generated
 	 */
-	int UNIQUE_COLLECTION = 59;
+	int UNIQUE_COLLECTION = 57;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4494,7 +4285,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSetExpression()
 	 * @generated
 	 */
-	int SET_EXPRESSION = 55;
+	int SET_EXPRESSION = 53;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4576,7 +4367,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOrderedCollection()
 	 * @generated
 	 */
-	int ORDERED_COLLECTION = 58;
+	int ORDERED_COLLECTION = 56;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4658,7 +4449,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOrderedSetExpression()
 	 * @generated
 	 */
-	int ORDERED_SET_EXPRESSION = 56;
+	int ORDERED_SET_EXPRESSION = 54;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4740,7 +4531,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSequenceExpression()
 	 * @generated
 	 */
-	int SEQUENCE_EXPRESSION = 57;
+	int SEQUENCE_EXPRESSION = 55;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4822,7 +4613,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getEnumerationLiteralExpression()
 	 * @generated
 	 */
-	int ENUMERATION_LITERAL_EXPRESSION = 60;
+	int ENUMERATION_LITERAL_EXPRESSION = 58;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4888,22 +4679,13 @@ public interface EolPackage extends EPackage {
 	int ENUMERATION_LITERAL_EXPRESSION__ENUMERATION = EXPRESSION_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>IModel</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ENUMERATION_LITERAL_EXPRESSION__IMODEL = EXPRESSION_FEATURE_COUNT + 2;
-
-	/**
 	 * The feature id for the '<em><b>Model</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_LITERAL_EXPRESSION__MODEL = EXPRESSION_FEATURE_COUNT + 3;
+	int ENUMERATION_LITERAL_EXPRESSION__MODEL = EXPRESSION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Enumeration Literal Expression</em>' class.
@@ -4912,7 +4694,7 @@ public interface EolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_LITERAL_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 4;
+	int ENUMERATION_LITERAL_EXPRESSION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.CollectionInitialisationExpressionImpl <em>Collection Initialisation Expression</em>}' class.
@@ -4922,7 +4704,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getCollectionInitialisationExpression()
 	 * @generated
 	 */
-	int COLLECTION_INITIALISATION_EXPRESSION = 61;
+	int COLLECTION_INITIALISATION_EXPRESSION = 59;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -4986,7 +4768,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getExpressionRange()
 	 * @generated
 	 */
-	int EXPRESSION_RANGE = 62;
+	int EXPRESSION_RANGE = 60;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5068,7 +4850,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getExpressionList()
 	 * @generated
 	 */
-	int EXPRESSION_LIST = 63;
+	int EXPRESSION_LIST = 61;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5141,7 +4923,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getStatement()
 	 * @generated
 	 */
-	int STATEMENT = 64;
+	int STATEMENT = 62;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5187,7 +4969,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getTransactionStatement()
 	 * @generated
 	 */
-	int TRANSACTION_STATEMENT = 65;
+	int TRANSACTION_STATEMENT = 63;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5251,7 +5033,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getExpressionStatement()
 	 * @generated
 	 */
-	int EXPRESSION_STATEMENT = 66;
+	int EXPRESSION_STATEMENT = 64;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5306,7 +5088,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSwitchStatement()
 	 * @generated
 	 */
-	int SWITCH_STATEMENT = 67;
+	int SWITCH_STATEMENT = 65;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5379,7 +5161,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSwitchCaseStatement()
 	 * @generated
 	 */
-	int SWITCH_CASE_STATEMENT = 68;
+	int SWITCH_CASE_STATEMENT = 66;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5434,7 +5216,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSwitchCaseDefaultStatement()
 	 * @generated
 	 */
-	int SWITCH_CASE_DEFAULT_STATEMENT = 69;
+	int SWITCH_CASE_DEFAULT_STATEMENT = 67;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5489,7 +5271,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSwitchCaseExpressionStatement()
 	 * @generated
 	 */
-	int SWITCH_CASE_EXPRESSION_STATEMENT = 70;
+	int SWITCH_CASE_EXPRESSION_STATEMENT = 68;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5553,7 +5335,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIfStatement()
 	 * @generated
 	 */
-	int IF_STATEMENT = 71;
+	int IF_STATEMENT = 69;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5635,7 +5417,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getForStatement()
 	 * @generated
 	 */
-	int FOR_STATEMENT = 72;
+	int FOR_STATEMENT = 70;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5708,7 +5490,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getWhileStatement()
 	 * @generated
 	 */
-	int WHILE_STATEMENT = 73;
+	int WHILE_STATEMENT = 71;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5772,7 +5554,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getReturnStatement()
 	 * @generated
 	 */
-	int RETURN_STATEMENT = 74;
+	int RETURN_STATEMENT = 72;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5827,7 +5609,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getThrowStatement()
 	 * @generated
 	 */
-	int THROW_STATEMENT = 75;
+	int THROW_STATEMENT = 73;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5882,7 +5664,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getDeleteStatement()
 	 * @generated
 	 */
-	int DELETE_STATEMENT = 76;
+	int DELETE_STATEMENT = 74;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -5937,7 +5719,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getAssignmentStatement()
 	 * @generated
 	 */
-	int ASSIGNMENT_STATEMENT = 77;
+	int ASSIGNMENT_STATEMENT = 75;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6001,7 +5783,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSpecialAssignmentStatement()
 	 * @generated
 	 */
-	int SPECIAL_ASSIGNMENT_STATEMENT = 78;
+	int SPECIAL_ASSIGNMENT_STATEMENT = 76;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6065,7 +5847,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getContinueStatement()
 	 * @generated
 	 */
-	int CONTINUE_STATEMENT = 79;
+	int CONTINUE_STATEMENT = 77;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6111,7 +5893,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getAbortStatement()
 	 * @generated
 	 */
-	int ABORT_STATEMENT = 80;
+	int ABORT_STATEMENT = 78;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6157,7 +5939,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBreakStatement()
 	 * @generated
 	 */
-	int BREAK_STATEMENT = 81;
+	int BREAK_STATEMENT = 79;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6203,7 +5985,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBreakAllStatement()
 	 * @generated
 	 */
-	int BREAK_ALL_STATEMENT = 82;
+	int BREAK_ALL_STATEMENT = 80;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6249,7 +6031,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getAnnotationStatement()
 	 * @generated
 	 */
-	int ANNOTATION_STATEMENT = 83;
+	int ANNOTATION_STATEMENT = 81;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6304,7 +6086,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSimpleAnnotationStatement()
 	 * @generated
 	 */
-	int SIMPLE_ANNOTATION_STATEMENT = 84;
+	int SIMPLE_ANNOTATION_STATEMENT = 82;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6368,7 +6150,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getExecutableAnnotationStatement()
 	 * @generated
 	 */
-	int EXECUTABLE_ANNOTATION_STATEMENT = 85;
+	int EXECUTABLE_ANNOTATION_STATEMENT = 83;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6432,7 +6214,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getModelDeclarationStatement()
 	 * @generated
 	 */
-	int MODEL_DECLARATION_STATEMENT = 86;
+	int MODEL_DECLARATION_STATEMENT = 84;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6489,22 +6271,22 @@ public interface EolPackage extends EPackage {
 	int MODEL_DECLARATION_STATEMENT__ALIASES = STATEMENT_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>IMetamodel</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MODEL_DECLARATION_STATEMENT__IMETAMODEL = STATEMENT_FEATURE_COUNT + 3;
-
-	/**
 	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_DECLARATION_STATEMENT__PARAMETERS = STATEMENT_FEATURE_COUNT + 4;
+	int MODEL_DECLARATION_STATEMENT__PARAMETERS = STATEMENT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Resolved IMetamodel</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL = STATEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Model Declaration Statement</em>' class.
@@ -6523,7 +6305,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getType()
 	 * @generated
 	 */
-	int TYPE = 87;
+	int TYPE = 85;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6569,7 +6351,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getAnyType()
 	 * @generated
 	 */
-	int ANY_TYPE = 88;
+	int ANY_TYPE = 86;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6633,7 +6415,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getModelType()
 	 * @generated
 	 */
-	int MODEL_TYPE = 89;
+	int MODEL_TYPE = 87;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6681,7 +6463,7 @@ public interface EolPackage extends EPackage {
 	int MODEL_TYPE__DECLARED = ANY_TYPE__DECLARED;
 
 	/**
-	 * The feature id for the '<em><b>Resolved IMetamodel</b></em>' reference.
+	 * The feature id for the '<em><b>Resolved IMetamodel</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -6706,7 +6488,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getModelElementType()
 	 * @generated
 	 */
-	int MODEL_ELEMENT_TYPE = 90;
+	int MODEL_ELEMENT_TYPE = 88;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6772,40 +6554,40 @@ public interface EolPackage extends EPackage {
 	int MODEL_ELEMENT_TYPE__ELEMENT_NAME = ANY_TYPE_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Resolved IMetamodel</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MODEL_ELEMENT_TYPE__RESOLVED_IMETAMODEL = ANY_TYPE_FEATURE_COUNT + 2;
-
-	/**
 	 * The feature id for the '<em><b>Resolved Model Declaration</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_ELEMENT_TYPE__RESOLVED_MODEL_DECLARATION = ANY_TYPE_FEATURE_COUNT + 3;
+	int MODEL_ELEMENT_TYPE__RESOLVED_MODEL_DECLARATION = ANY_TYPE_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Model Type</b></em>' attribute.
+	 * The feature id for the '<em><b>Resolved IMetamodel</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_ELEMENT_TYPE__MODEL_TYPE = ANY_TYPE_FEATURE_COUNT + 4;
+	int MODEL_ELEMENT_TYPE__RESOLVED_IMETAMODEL = ANY_TYPE_FEATURE_COUNT + 3;
 
 	/**
-	 * The feature id for the '<em><b>Resolved IPackage</b></em>' reference.
+	 * The feature id for the '<em><b>Resolved IPackage</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_ELEMENT_TYPE__RESOLVED_IPACKAGE = ANY_TYPE_FEATURE_COUNT + 5;
+	int MODEL_ELEMENT_TYPE__RESOLVED_IPACKAGE = ANY_TYPE_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Model Element Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT_TYPE__MODEL_ELEMENT_TYPE = ANY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Model Element Type</em>' class.
@@ -6824,7 +6606,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getPseudoType()
 	 * @generated
 	 */
-	int PSEUDO_TYPE = 91;
+	int PSEUDO_TYPE = 89;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6888,7 +6670,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSelfType()
 	 * @generated
 	 */
-	int SELF_TYPE = 92;
+	int SELF_TYPE = 90;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -6952,7 +6734,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSelfContentType()
 	 * @generated
 	 */
-	int SELF_CONTENT_TYPE = 93;
+	int SELF_CONTENT_TYPE = 91;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7016,7 +6798,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getMapType()
 	 * @generated
 	 */
-	int MAP_TYPE = 94;
+	int MAP_TYPE = 92;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7098,7 +6880,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getNativeType()
 	 * @generated
 	 */
-	int NATIVE_TYPE = 95;
+	int NATIVE_TYPE = 93;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7171,7 +6953,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getVoidType()
 	 * @generated
 	 */
-	int VOID_TYPE = 96;
+	int VOID_TYPE = 94;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7235,7 +7017,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getInvalidType()
 	 * @generated
 	 */
-	int INVALID_TYPE = 97;
+	int INVALID_TYPE = 95;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7299,7 +7081,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getCollectionType()
 	 * @generated
 	 */
-	int COLLECTION_TYPE = 98;
+	int COLLECTION_TYPE = 96;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7372,7 +7154,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBagType()
 	 * @generated
 	 */
-	int BAG_TYPE = 99;
+	int BAG_TYPE = 97;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7445,7 +7227,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOrderedCollectionType()
 	 * @generated
 	 */
-	int ORDERED_COLLECTION_TYPE = 100;
+	int ORDERED_COLLECTION_TYPE = 98;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7518,7 +7300,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getUniqueCollectionType()
 	 * @generated
 	 */
-	int UNIQUE_COLLECTION_TYPE = 101;
+	int UNIQUE_COLLECTION_TYPE = 99;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7591,7 +7373,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSetType()
 	 * @generated
 	 */
-	int SET_TYPE = 102;
+	int SET_TYPE = 100;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7664,7 +7446,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getOrderedSetType()
 	 * @generated
 	 */
-	int ORDERED_SET_TYPE = 103;
+	int ORDERED_SET_TYPE = 101;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7737,7 +7519,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSequenceType()
 	 * @generated
 	 */
-	int SEQUENCE_TYPE = 104;
+	int SEQUENCE_TYPE = 102;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7810,7 +7592,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getPrimitiveType()
 	 * @generated
 	 */
-	int PRIMITIVE_TYPE = 105;
+	int PRIMITIVE_TYPE = 103;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7874,7 +7656,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getComparablePrimitiveType()
 	 * @generated
 	 */
-	int COMPARABLE_PRIMITIVE_TYPE = 106;
+	int COMPARABLE_PRIMITIVE_TYPE = 104;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -7938,7 +7720,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getSummablePrimitiveType()
 	 * @generated
 	 */
-	int SUMMABLE_PRIMITIVE_TYPE = 107;
+	int SUMMABLE_PRIMITIVE_TYPE = 105;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -8002,7 +7784,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getBooleanType()
 	 * @generated
 	 */
-	int BOOLEAN_TYPE = 108;
+	int BOOLEAN_TYPE = 106;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -8066,7 +7848,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getRealType()
 	 * @generated
 	 */
-	int REAL_TYPE = 109;
+	int REAL_TYPE = 107;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -8130,7 +7912,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIntegerType()
 	 * @generated
 	 */
-	int INTEGER_TYPE = 110;
+	int INTEGER_TYPE = 108;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -8194,7 +7976,7 @@ public interface EolPackage extends EPackage {
 	 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getStringType()
 	 * @generated
 	 */
-	int STRING_TYPE = 111;
+	int STRING_TYPE = 109;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' reference.
@@ -8295,147 +8077,6 @@ public interface EolPackage extends EPackage {
 	EReference getEOLElement_Region();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel <em>IMetamodel</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>IMetamodel</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel
-	 * @generated
-	 */
-	EClass getIMetamodel();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Name</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel#getName()
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	EReference getIMetamodel_Name();
-
-	/**
-	 * Returns the meta object for the reference list '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel#getAliases <em>Aliases</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Aliases</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel#getAliases()
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	EReference getIMetamodel_Aliases();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel#getDriver <em>Driver</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Driver</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel#getDriver()
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	EReference getIMetamodel_Driver();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel#getIMetamodelDriver <em>IMetamodel Driver</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>IMetamodel Driver</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel#getIMetamodelDriver()
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	EAttribute getIMetamodel_IMetamodelDriver();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel#getIPackages <em>IPackages</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>IPackages</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel#getIPackages()
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	EReference getIMetamodel_IPackages();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel#getNsURIorPath <em>Ns UR Ior Path</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Ns UR Ior Path</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel#getNsURIorPath()
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	EReference getIMetamodel_NsURIorPath();
-
-	/**
-	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.IPackage <em>IPackage</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>IPackage</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage
-	 * @generated
-	 */
-	EClass getIPackage();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.IPackage#getIPackageDriver <em>IPackage Driver</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>IPackage Driver</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage#getIPackageDriver()
-	 * @see #getIPackage()
-	 * @generated
-	 */
-	EAttribute getIPackage_IPackageDriver();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.IPackage#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage#getName()
-	 * @see #getIPackage()
-	 * @generated
-	 */
-	EAttribute getIPackage_Name();
-
-	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.IPackage#getNsURI <em>Ns URI</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Ns URI</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage#getNsURI()
-	 * @see #getIPackage()
-	 * @generated
-	 */
-	EReference getIPackage_NsURI();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.IPackage#getNsPrefix <em>Ns Prefix</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Ns Prefix</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage#getNsPrefix()
-	 * @see #getIPackage()
-	 * @generated
-	 */
-	EAttribute getIPackage_NsPrefix();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.eclipse.epsilon.eol.metamodel.IPackage#getSubPackages <em>Sub Packages</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Sub Packages</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage#getSubPackages()
-	 * @see #getIPackage()
-	 * @generated
-	 */
-	EReference getIPackage_SubPackages();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.TextRegion <em>Text Region</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8530,17 +8171,6 @@ public interface EolPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getEOLLibraryModule_Imports();
-
-	/**
-	 * Returns the meta object for the reference list '{@link org.eclipse.epsilon.eol.metamodel.EOLLibraryModule#getIModels <em>IModels</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>IModels</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.EOLLibraryModule#getIModels()
-	 * @see #getEOLLibraryModule()
-	 * @generated
-	 */
-	EReference getEOLLibraryModule_IModels();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link org.eclipse.epsilon.eol.metamodel.EOLLibraryModule#getModelDeclarations <em>Model Declarations</em>}'.
@@ -9676,17 +9306,6 @@ public interface EolPackage extends EPackage {
 	EReference getEnumerationLiteralExpression_Enumeration();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getIModel <em>IModel</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>IModel</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getIModel()
-	 * @see #getEnumerationLiteralExpression()
-	 * @generated
-	 */
-	EReference getEnumerationLiteralExpression_IModel();
-
-	/**
 	 * Returns the meta object for the containment reference '{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getModel <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10299,17 +9918,6 @@ public interface EolPackage extends EPackage {
 	EReference getModelDeclarationStatement_Aliases();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getIMetamodel <em>IMetamodel</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>IMetamodel</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getIMetamodel()
-	 * @see #getModelDeclarationStatement()
-	 * @generated
-	 */
-	EReference getModelDeclarationStatement_IMetamodel();
-
-	/**
 	 * Returns the meta object for the containment reference list '{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getParameters <em>Parameters</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10319,6 +9927,17 @@ public interface EolPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getModelDeclarationStatement_Parameters();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getResolvedIMetamodel <em>Resolved IMetamodel</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Resolved IMetamodel</em>'.
+	 * @see org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getResolvedIMetamodel()
+	 * @see #getModelDeclarationStatement()
+	 * @generated
+	 */
+	EAttribute getModelDeclarationStatement_ResolvedIMetamodel();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.Type <em>Type</em>}'.
@@ -10373,15 +9992,15 @@ public interface EolPackage extends EPackage {
 	EClass getModelType();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.ModelType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Resolved IMetamodel</em>'.
+	 * @return the meta object for the attribute '<em>Resolved IMetamodel</em>'.
 	 * @see org.eclipse.epsilon.eol.metamodel.ModelType#getResolvedIMetamodel()
 	 * @see #getModelType()
 	 * @generated
 	 */
-	EReference getModelType_ResolvedIMetamodel();
+	EAttribute getModelType_ResolvedIMetamodel();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType <em>Model Element Type</em>}'.
@@ -10416,17 +10035,6 @@ public interface EolPackage extends EPackage {
 	EAttribute getModelElementType_ElementName();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Resolved IMetamodel</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel()
-	 * @see #getModelElementType()
-	 * @generated
-	 */
-	EReference getModelElementType_ResolvedIMetamodel();
-
-	/**
 	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedModelDeclaration <em>Resolved Model Declaration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10438,26 +10046,37 @@ public interface EolPackage extends EPackage {
 	EReference getModelElementType_ResolvedModelDeclaration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelType <em>Model Type</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Model Type</em>'.
-	 * @see org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelType()
+	 * @return the meta object for the attribute '<em>Resolved IMetamodel</em>'.
+	 * @see org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel()
 	 * @see #getModelElementType()
 	 * @generated
 	 */
-	EAttribute getModelElementType_ModelType();
+	EAttribute getModelElementType_ResolvedIMetamodel();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIPackage <em>Resolved IPackage</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIPackage <em>Resolved IPackage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Resolved IPackage</em>'.
+	 * @return the meta object for the attribute '<em>Resolved IPackage</em>'.
 	 * @see org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIPackage()
 	 * @see #getModelElementType()
 	 * @generated
 	 */
-	EReference getModelElementType_ResolvedIPackage();
+	EAttribute getModelElementType_ResolvedIPackage();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelElementType <em>Model Element Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Model Element Type</em>'.
+	 * @see org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelElementType()
+	 * @see #getModelElementType()
+	 * @generated
+	 */
+	EAttribute getModelElementType_ModelElementType();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.PseudoType <em>Pseudo Type</em>}'.
@@ -10770,114 +10389,6 @@ public interface EolPackage extends EPackage {
 		EReference EOL_ELEMENT__REGION = eINSTANCE.getEOLElement_Region();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.IMetamodelImpl <em>IMetamodel</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.epsilon.eol.metamodel.impl.IMetamodelImpl
-		 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIMetamodel()
-		 * @generated
-		 */
-		EClass IMETAMODEL = eINSTANCE.getIMetamodel();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IMETAMODEL__NAME = eINSTANCE.getIMetamodel_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Aliases</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IMETAMODEL__ALIASES = eINSTANCE.getIMetamodel_Aliases();
-
-		/**
-		 * The meta object literal for the '<em><b>Driver</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IMETAMODEL__DRIVER = eINSTANCE.getIMetamodel_Driver();
-
-		/**
-		 * The meta object literal for the '<em><b>IMetamodel Driver</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute IMETAMODEL__IMETAMODEL_DRIVER = eINSTANCE.getIMetamodel_IMetamodelDriver();
-
-		/**
-		 * The meta object literal for the '<em><b>IPackages</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IMETAMODEL__IPACKAGES = eINSTANCE.getIMetamodel_IPackages();
-
-		/**
-		 * The meta object literal for the '<em><b>Ns UR Ior Path</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IMETAMODEL__NS_UR_IOR_PATH = eINSTANCE.getIMetamodel_NsURIorPath();
-
-		/**
-		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.IPackageImpl <em>IPackage</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.epsilon.eol.metamodel.impl.IPackageImpl
-		 * @see org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl#getIPackage()
-		 * @generated
-		 */
-		EClass IPACKAGE = eINSTANCE.getIPackage();
-
-		/**
-		 * The meta object literal for the '<em><b>IPackage Driver</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute IPACKAGE__IPACKAGE_DRIVER = eINSTANCE.getIPackage_IPackageDriver();
-
-		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute IPACKAGE__NAME = eINSTANCE.getIPackage_Name();
-
-		/**
-		 * The meta object literal for the '<em><b>Ns URI</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IPACKAGE__NS_URI = eINSTANCE.getIPackage_NsURI();
-
-		/**
-		 * The meta object literal for the '<em><b>Ns Prefix</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute IPACKAGE__NS_PREFIX = eINSTANCE.getIPackage_NsPrefix();
-
-		/**
-		 * The meta object literal for the '<em><b>Sub Packages</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference IPACKAGE__SUB_PACKAGES = eINSTANCE.getIPackage_SubPackages();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.TextRegionImpl <em>Text Region</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -10954,14 +10465,6 @@ public interface EolPackage extends EPackage {
 		 * @generated
 		 */
 		EReference EOL_LIBRARY_MODULE__IMPORTS = eINSTANCE.getEOLLibraryModule_Imports();
-
-		/**
-		 * The meta object literal for the '<em><b>IModels</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference EOL_LIBRARY_MODULE__IMODELS = eINSTANCE.getEOLLibraryModule_IModels();
 
 		/**
 		 * The meta object literal for the '<em><b>Model Declarations</b></em>' containment reference list feature.
@@ -11938,14 +11441,6 @@ public interface EolPackage extends EPackage {
 		EReference ENUMERATION_LITERAL_EXPRESSION__ENUMERATION = eINSTANCE.getEnumerationLiteralExpression_Enumeration();
 
 		/**
-		 * The meta object literal for the '<em><b>IModel</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ENUMERATION_LITERAL_EXPRESSION__IMODEL = eINSTANCE.getEnumerationLiteralExpression_IModel();
-
-		/**
 		 * The meta object literal for the '<em><b>Model</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12462,20 +11957,20 @@ public interface EolPackage extends EPackage {
 		EReference MODEL_DECLARATION_STATEMENT__ALIASES = eINSTANCE.getModelDeclarationStatement_Aliases();
 
 		/**
-		 * The meta object literal for the '<em><b>IMetamodel</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MODEL_DECLARATION_STATEMENT__IMETAMODEL = eINSTANCE.getModelDeclarationStatement_IMetamodel();
-
-		/**
 		 * The meta object literal for the '<em><b>Parameters</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference MODEL_DECLARATION_STATEMENT__PARAMETERS = eINSTANCE.getModelDeclarationStatement_Parameters();
+
+		/**
+		 * The meta object literal for the '<em><b>Resolved IMetamodel</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL = eINSTANCE.getModelDeclarationStatement_ResolvedIMetamodel();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.TypeImpl <em>Type</em>}' class.
@@ -12524,12 +12019,12 @@ public interface EolPackage extends EPackage {
 		EClass MODEL_TYPE = eINSTANCE.getModelType();
 
 		/**
-		 * The meta object literal for the '<em><b>Resolved IMetamodel</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Resolved IMetamodel</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MODEL_TYPE__RESOLVED_IMETAMODEL = eINSTANCE.getModelType_ResolvedIMetamodel();
+		EAttribute MODEL_TYPE__RESOLVED_IMETAMODEL = eINSTANCE.getModelType_ResolvedIMetamodel();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.ModelElementTypeImpl <em>Model Element Type</em>}' class.
@@ -12558,14 +12053,6 @@ public interface EolPackage extends EPackage {
 		EAttribute MODEL_ELEMENT_TYPE__ELEMENT_NAME = eINSTANCE.getModelElementType_ElementName();
 
 		/**
-		 * The meta object literal for the '<em><b>Resolved IMetamodel</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference MODEL_ELEMENT_TYPE__RESOLVED_IMETAMODEL = eINSTANCE.getModelElementType_ResolvedIMetamodel();
-
-		/**
 		 * The meta object literal for the '<em><b>Resolved Model Declaration</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12574,20 +12061,28 @@ public interface EolPackage extends EPackage {
 		EReference MODEL_ELEMENT_TYPE__RESOLVED_MODEL_DECLARATION = eINSTANCE.getModelElementType_ResolvedModelDeclaration();
 
 		/**
-		 * The meta object literal for the '<em><b>Model Type</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Resolved IMetamodel</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute MODEL_ELEMENT_TYPE__MODEL_TYPE = eINSTANCE.getModelElementType_ModelType();
+		EAttribute MODEL_ELEMENT_TYPE__RESOLVED_IMETAMODEL = eINSTANCE.getModelElementType_ResolvedIMetamodel();
 
 		/**
-		 * The meta object literal for the '<em><b>Resolved IPackage</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Resolved IPackage</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MODEL_ELEMENT_TYPE__RESOLVED_IPACKAGE = eINSTANCE.getModelElementType_ResolvedIPackage();
+		EAttribute MODEL_ELEMENT_TYPE__RESOLVED_IPACKAGE = eINSTANCE.getModelElementType_ResolvedIPackage();
+
+		/**
+		 * The meta object literal for the '<em><b>Model Element Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT_TYPE__MODEL_ELEMENT_TYPE = eINSTANCE.getModelElementType_ModelElementType();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.PseudoTypeImpl <em>Pseudo Type</em>}' class.

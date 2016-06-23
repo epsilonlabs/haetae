@@ -20,25 +20,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//TextPosition/line"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//TextPosition/column"/>
     </genClasses>
-    <genClasses ecoreClass="EOL.ecore#//IMetamodel">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/aliases"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/driver"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IMetamodel/iMetamodelDriver"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/iPackages"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IMetamodel/nsURIorPath"/>
-    </genClasses>
-    <genClasses ecoreClass="EOL.ecore#//IPackage">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IPackage/iPackageDriver"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IPackage/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//IPackage/nsURI"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//IPackage/nsPrefix"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//IPackage/subPackages"/>
-    </genClasses>
     <genClasses ecoreClass="EOL.ecore#//EOLLibraryModule">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//EOLLibraryModule/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/imports"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/iModels"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/modelDeclarations"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EOLLibraryModule/operations"/>
     </genClasses>
@@ -170,7 +154,6 @@
     <genClasses ecoreClass="EOL.ecore#//EnumerationLiteralExpression">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/literal"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/enumeration"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/iModel"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//EnumerationLiteralExpression/model"/>
     </genClasses>
     <genClasses image="false" ecoreClass="EOL.ecore#//CollectionInitialisationExpression"/>
@@ -247,8 +230,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/driver"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/aliases"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/iMetamodel"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelDeclarationStatement/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelDeclarationStatement/resolvedIMetamodel"/>
     </genClasses>
     <genClasses ecoreClass="EOL.ecore#//Type"/>
     <genClasses ecoreClass="EOL.ecore#//AnyType">
@@ -256,15 +239,15 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//AnyType/declared"/>
     </genClasses>
     <genClasses ecoreClass="EOL.ecore#//ModelType">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelType/resolvedIMetamodel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelType/resolvedIMetamodel"/>
     </genClasses>
     <genClasses ecoreClass="EOL.ecore#//ModelElementType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/modelName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/elementName"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelElementType/resolvedIMetamodel"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelElementType/resolvedModelDeclaration"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/modelType"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference EOL.ecore#//ModelElementType/resolvedIPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/resolvedIMetamodel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/resolvedIPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/modelElementType"/>
     </genClasses>
     <genClasses image="false" ecoreClass="EOL.ecore#//PseudoType"/>
     <genClasses ecoreClass="EOL.ecore#//SelfType"/>

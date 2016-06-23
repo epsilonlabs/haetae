@@ -80,14 +80,6 @@ public class EolAdapterFactory extends AdapterFactoryImpl {
 				return createTextPositionAdapter();
 			}
 			@Override
-			public Adapter caseIMetamodel(IMetamodel object) {
-				return createIMetamodelAdapter();
-			}
-			@Override
-			public Adapter caseIPackage(IPackage object) {
-				return createIPackageAdapter();
-			}
-			@Override
 			public Adapter caseEOLLibraryModule(EOLLibraryModule object) {
 				return createEOLLibraryModuleAdapter();
 			}
@@ -546,34 +538,6 @@ public class EolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEOLElementAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.epsilon.eol.metamodel.IMetamodel <em>IMetamodel</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.epsilon.eol.metamodel.IMetamodel
-	 * @generated
-	 */
-	public Adapter createIMetamodelAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.epsilon.eol.metamodel.IPackage <em>IPackage</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.epsilon.eol.metamodel.IPackage
-	 * @generated
-	 */
-	public Adapter createIPackageAdapter() {
 		return null;
 	}
 

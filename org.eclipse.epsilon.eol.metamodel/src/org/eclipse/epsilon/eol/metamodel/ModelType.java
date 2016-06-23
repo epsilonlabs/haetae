@@ -21,29 +21,29 @@ package org.eclipse.epsilon.eol.metamodel;
  */
 public interface ModelType extends AnyType {
 	/**
-	 * Returns the value of the '<em><b>Resolved IMetamodel</b></em>' reference.
+	 * Returns the value of the '<em><b>Resolved IMetamodel</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Resolved IMetamodel</em>' reference isn't clear,
+	 * If the meaning of the '<em>Resolved IMetamodel</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Resolved IMetamodel</em>' reference.
-	 * @see #setResolvedIMetamodel(IMetamodel)
+	 * @return the value of the '<em>Resolved IMetamodel</em>' attribute.
+	 * @see #setResolvedIMetamodel(Object)
 	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelType_ResolvedIMetamodel()
-	 * @model required="true"
+	 * @model derived="true"
 	 * @generated
 	 */
-	IMetamodel getResolvedIMetamodel();
+	Object getResolvedIMetamodel();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}' reference.
+	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Resolved IMetamodel</em>' reference.
+	 * @param value the new value of the '<em>Resolved IMetamodel</em>' attribute.
 	 * @see #getResolvedIMetamodel()
 	 * @generated
 	 */
-	void setResolvedIMetamodel(IMetamodel value);
+	void setResolvedIMetamodel(Object value);
 
 } // ModelType

@@ -48,6 +48,7 @@ public abstract class ExpressionImpl extends EOLElementImpl implements Expressio
 	 * @ordered
 	 */
 	protected static final boolean IN_BRACKETS_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isInBrackets() <em>In Brackets</em>}' attribute.
 	 * <!-- begin-user-doc -->

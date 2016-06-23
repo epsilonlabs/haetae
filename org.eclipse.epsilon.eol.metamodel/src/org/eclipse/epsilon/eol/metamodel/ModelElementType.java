@@ -14,10 +14,10 @@ package org.eclipse.epsilon.eol.metamodel;
  * <ul>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelName <em>Model Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getElementName <em>Element Name</em>}</li>
- *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedModelDeclaration <em>Resolved Model Declaration</em>}</li>
- *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelType <em>Model Type</em>}</li>
+ *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIPackage <em>Resolved IPackage</em>}</li>
+ *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelElementType <em>Model Element Type</em>}</li>
  * </ul>
  *
  * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType()
@@ -78,32 +78,6 @@ public interface ModelElementType extends AnyType {
 	void setElementName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Resolved IMetamodel</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Resolved IMetamodel</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Resolved IMetamodel</em>' reference.
-	 * @see #setResolvedIMetamodel(IMetamodel)
-	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ResolvedIMetamodel()
-	 * @model required="true"
-	 * @generated
-	 */
-	IMetamodel getResolvedIMetamodel();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Resolved IMetamodel</em>' reference.
-	 * @see #getResolvedIMetamodel()
-	 * @generated
-	 */
-	void setResolvedIMetamodel(IMetamodel value);
-
-	/**
 	 * Returns the value of the '<em><b>Resolved Model Declaration</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -130,55 +104,81 @@ public interface ModelElementType extends AnyType {
 	void setResolvedModelDeclaration(ModelDeclarationStatement value);
 
 	/**
-	 * Returns the value of the '<em><b>Model Type</b></em>' attribute.
+	 * Returns the value of the '<em><b>Resolved IMetamodel</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Model Type</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Resolved IMetamodel</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Model Type</em>' attribute.
-	 * @see #setModelType(Object)
-	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ModelType()
-	 * @model required="true"
+	 * @return the value of the '<em>Resolved IMetamodel</em>' attribute.
+	 * @see #setResolvedIMetamodel(Object)
+	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ResolvedIMetamodel()
+	 * @model derived="true"
 	 * @generated
 	 */
-	Object getModelType();
+	Object getResolvedIMetamodel();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelType <em>Model Type</em>}' attribute.
+	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIMetamodel <em>Resolved IMetamodel</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Model Type</em>' attribute.
-	 * @see #getModelType()
+	 * @param value the new value of the '<em>Resolved IMetamodel</em>' attribute.
+	 * @see #getResolvedIMetamodel()
 	 * @generated
 	 */
-	void setModelType(Object value);
+	void setResolvedIMetamodel(Object value);
 
 	/**
-	 * Returns the value of the '<em><b>Resolved IPackage</b></em>' reference.
+	 * Returns the value of the '<em><b>Resolved IPackage</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Resolved IPackage</em>' reference isn't clear,
+	 * If the meaning of the '<em>Resolved IPackage</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Resolved IPackage</em>' reference.
-	 * @see #setResolvedIPackage(IPackage)
+	 * @return the value of the '<em>Resolved IPackage</em>' attribute.
+	 * @see #setResolvedIPackage(Object)
 	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ResolvedIPackage()
-	 * @model
+	 * @model derived="true"
 	 * @generated
 	 */
-	IPackage getResolvedIPackage();
+	Object getResolvedIPackage();
 
 	/**
-	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIPackage <em>Resolved IPackage</em>}' reference.
+	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getResolvedIPackage <em>Resolved IPackage</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Resolved IPackage</em>' reference.
+	 * @param value the new value of the '<em>Resolved IPackage</em>' attribute.
 	 * @see #getResolvedIPackage()
 	 * @generated
 	 */
-	void setResolvedIPackage(IPackage value);
+	void setResolvedIPackage(Object value);
+
+	/**
+	 * Returns the value of the '<em><b>Model Element Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Model Element Type</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Model Element Type</em>' attribute.
+	 * @see #setModelElementType(Object)
+	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ModelElementType()
+	 * @model derived="true"
+	 * @generated
+	 */
+	Object getModelElementType();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType#getModelElementType <em>Model Element Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Model Element Type</em>' attribute.
+	 * @see #getModelElementType()
+	 * @generated
+	 */
+	void setModelElementType(Object value);
 
 } // ModelElementType

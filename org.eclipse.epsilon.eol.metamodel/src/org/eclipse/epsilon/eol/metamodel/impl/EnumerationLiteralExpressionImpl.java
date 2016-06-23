@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression;
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
-import org.eclipse.epsilon.eol.metamodel.IMetamodel;
 import org.eclipse.epsilon.eol.metamodel.NameExpression;
 
 /**
@@ -25,7 +24,6 @@ import org.eclipse.epsilon.eol.metamodel.NameExpression;
  * <ul>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.EnumerationLiteralExpressionImpl#getLiteral <em>Literal</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.EnumerationLiteralExpressionImpl#getEnumeration <em>Enumeration</em>}</li>
- *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.EnumerationLiteralExpressionImpl#getIModel <em>IModel</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.EnumerationLiteralExpressionImpl#getModel <em>Model</em>}</li>
  * </ul>
  *
@@ -51,16 +49,6 @@ public class EnumerationLiteralExpressionImpl extends ExpressionImpl implements 
 	 * @ordered
 	 */
 	protected NameExpression enumeration;
-
-	/**
-	 * The cached value of the '{@link #getIModel() <em>IModel</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIModel()
-	 * @generated
-	 * @ordered
-	 */
-	protected IMetamodel iModel;
 
 	/**
 	 * The cached value of the '{@link #getModel() <em>Model</em>}' containment reference.
@@ -182,44 +170,6 @@ public class EnumerationLiteralExpressionImpl extends ExpressionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IMetamodel getIModel() {
-		if (iModel != null && iModel.eIsProxy()) {
-			InternalEObject oldIModel = (InternalEObject)iModel;
-			iModel = (IMetamodel)eResolveProxy(oldIModel);
-			if (iModel != oldIModel) {
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, EolPackage.ENUMERATION_LITERAL_EXPRESSION__IMODEL, oldIModel, iModel));
-			}
-		}
-		return iModel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IMetamodel basicGetIModel() {
-		return iModel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setIModel(IMetamodel newIModel) {
-		IMetamodel oldIModel = iModel;
-		iModel = newIModel;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, EolPackage.ENUMERATION_LITERAL_EXPRESSION__IMODEL, oldIModel, iModel));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public NameExpression getModel() {
 		return model;
 	}
@@ -288,9 +238,6 @@ public class EnumerationLiteralExpressionImpl extends ExpressionImpl implements 
 				return getLiteral();
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__ENUMERATION:
 				return getEnumeration();
-			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__IMODEL:
-				if (resolve) return getIModel();
-				return basicGetIModel();
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__MODEL:
 				return getModel();
 		}
@@ -310,9 +257,6 @@ public class EnumerationLiteralExpressionImpl extends ExpressionImpl implements 
 				return;
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__ENUMERATION:
 				setEnumeration((NameExpression)newValue);
-				return;
-			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__IMODEL:
-				setIModel((IMetamodel)newValue);
 				return;
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__MODEL:
 				setModel((NameExpression)newValue);
@@ -335,9 +279,6 @@ public class EnumerationLiteralExpressionImpl extends ExpressionImpl implements 
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__ENUMERATION:
 				setEnumeration((NameExpression)null);
 				return;
-			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__IMODEL:
-				setIModel((IMetamodel)null);
-				return;
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__MODEL:
 				setModel((NameExpression)null);
 				return;
@@ -357,8 +298,6 @@ public class EnumerationLiteralExpressionImpl extends ExpressionImpl implements 
 				return literal != null;
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__ENUMERATION:
 				return enumeration != null;
-			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__IMODEL:
-				return iModel != null;
 			case EolPackage.ENUMERATION_LITERAL_EXPRESSION__MODEL:
 				return model != null;
 		}

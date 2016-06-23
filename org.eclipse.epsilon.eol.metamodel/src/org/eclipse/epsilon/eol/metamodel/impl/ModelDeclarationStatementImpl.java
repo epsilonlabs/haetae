@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
-import org.eclipse.epsilon.eol.metamodel.IMetamodel;
 import org.eclipse.epsilon.eol.metamodel.ModelDeclarationParameter;
 import org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement;
 import org.eclipse.epsilon.eol.metamodel.NameExpression;
@@ -35,8 +34,8 @@ import org.eclipse.epsilon.eol.metamodel.VariableDeclarationExpression;
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.ModelDeclarationStatementImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.ModelDeclarationStatementImpl#getDriver <em>Driver</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.ModelDeclarationStatementImpl#getAliases <em>Aliases</em>}</li>
- *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.ModelDeclarationStatementImpl#getIMetamodel <em>IMetamodel</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.ModelDeclarationStatementImpl#getParameters <em>Parameters</em>}</li>
+ *   <li>{@link org.eclipse.epsilon.eol.metamodel.impl.ModelDeclarationStatementImpl#getResolvedIMetamodel <em>Resolved IMetamodel</em>}</li>
  * </ul>
  *
  * @generated
@@ -73,16 +72,6 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 	protected EList<VariableDeclarationExpression> aliases;
 
 	/**
-	 * The cached value of the '{@link #getIMetamodel() <em>IMetamodel</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getIMetamodel()
-	 * @generated
-	 * @ordered
-	 */
-	protected IMetamodel iMetamodel;
-
-	/**
 	 * The cached value of the '{@link #getParameters() <em>Parameters</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -91,6 +80,26 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 	 * @ordered
 	 */
 	protected EList<ModelDeclarationParameter> parameters;
+
+	/**
+	 * The default value of the '{@link #getResolvedIMetamodel() <em>Resolved IMetamodel</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResolvedIMetamodel()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Object RESOLVED_IMETAMODEL_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getResolvedIMetamodel() <em>Resolved IMetamodel</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResolvedIMetamodel()
+	 * @generated
+	 * @ordered
+	 */
+	protected Object resolvedIMetamodel = RESOLVED_IMETAMODEL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,54 +223,32 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public IMetamodel getIMetamodel() {
-		return iMetamodel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetIMetamodel(IMetamodel newIMetamodel, NotificationChain msgs) {
-		IMetamodel oldIMetamodel = iMetamodel;
-		iMetamodel = newIMetamodel;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL, oldIMetamodel, newIMetamodel);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setIMetamodel(IMetamodel newIMetamodel) {
-		if (newIMetamodel != iMetamodel) {
-			NotificationChain msgs = null;
-			if (iMetamodel != null)
-				msgs = ((InternalEObject)iMetamodel).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL, null, msgs);
-			if (newIMetamodel != null)
-				msgs = ((InternalEObject)newIMetamodel).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL, null, msgs);
-			msgs = basicSetIMetamodel(newIMetamodel, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL, newIMetamodel, newIMetamodel));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<ModelDeclarationParameter> getParameters() {
 		if (parameters == null) {
 			parameters = new EObjectContainmentEList<ModelDeclarationParameter>(ModelDeclarationParameter.class, this, EolPackage.MODEL_DECLARATION_STATEMENT__PARAMETERS);
 		}
 		return parameters;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Object getResolvedIMetamodel() {
+		return resolvedIMetamodel;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setResolvedIMetamodel(Object newResolvedIMetamodel) {
+		Object oldResolvedIMetamodel = resolvedIMetamodel;
+		resolvedIMetamodel = newResolvedIMetamodel;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EolPackage.MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL, oldResolvedIMetamodel, resolvedIMetamodel));
 	}
 
 	/**
@@ -278,8 +265,6 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 				return basicSetDriver(null, msgs);
 			case EolPackage.MODEL_DECLARATION_STATEMENT__ALIASES:
 				return ((InternalEList<?>)getAliases()).basicRemove(otherEnd, msgs);
-			case EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL:
-				return basicSetIMetamodel(null, msgs);
 			case EolPackage.MODEL_DECLARATION_STATEMENT__PARAMETERS:
 				return ((InternalEList<?>)getParameters()).basicRemove(otherEnd, msgs);
 		}
@@ -300,10 +285,10 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 				return getDriver();
 			case EolPackage.MODEL_DECLARATION_STATEMENT__ALIASES:
 				return getAliases();
-			case EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL:
-				return getIMetamodel();
 			case EolPackage.MODEL_DECLARATION_STATEMENT__PARAMETERS:
 				return getParameters();
+			case EolPackage.MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL:
+				return getResolvedIMetamodel();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -327,12 +312,12 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 				getAliases().clear();
 				getAliases().addAll((Collection<? extends VariableDeclarationExpression>)newValue);
 				return;
-			case EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL:
-				setIMetamodel((IMetamodel)newValue);
-				return;
 			case EolPackage.MODEL_DECLARATION_STATEMENT__PARAMETERS:
 				getParameters().clear();
 				getParameters().addAll((Collection<? extends ModelDeclarationParameter>)newValue);
+				return;
+			case EolPackage.MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL:
+				setResolvedIMetamodel(newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -355,11 +340,11 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 			case EolPackage.MODEL_DECLARATION_STATEMENT__ALIASES:
 				getAliases().clear();
 				return;
-			case EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL:
-				setIMetamodel((IMetamodel)null);
-				return;
 			case EolPackage.MODEL_DECLARATION_STATEMENT__PARAMETERS:
 				getParameters().clear();
+				return;
+			case EolPackage.MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL:
+				setResolvedIMetamodel(RESOLVED_IMETAMODEL_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -379,12 +364,28 @@ public class ModelDeclarationStatementImpl extends StatementImpl implements Mode
 				return driver != null;
 			case EolPackage.MODEL_DECLARATION_STATEMENT__ALIASES:
 				return aliases != null && !aliases.isEmpty();
-			case EolPackage.MODEL_DECLARATION_STATEMENT__IMETAMODEL:
-				return iMetamodel != null;
 			case EolPackage.MODEL_DECLARATION_STATEMENT__PARAMETERS:
 				return parameters != null && !parameters.isEmpty();
+			case EolPackage.MODEL_DECLARATION_STATEMENT__RESOLVED_IMETAMODEL:
+				return RESOLVED_IMETAMODEL_EDEFAULT == null ? resolvedIMetamodel != null : !RESOLVED_IMETAMODEL_EDEFAULT.equals(resolvedIMetamodel);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (resolvedIMetamodel: ");
+		result.append(resolvedIMetamodel);
+		result.append(')');
+		return result.toString();
 	}
 
 } //ModelDeclarationStatementImpl

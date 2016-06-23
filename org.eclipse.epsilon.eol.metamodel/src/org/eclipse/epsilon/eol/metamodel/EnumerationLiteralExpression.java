@@ -14,7 +14,6 @@ package org.eclipse.epsilon.eol.metamodel;
  * <ul>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getLiteral <em>Literal</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getEnumeration <em>Enumeration</em>}</li>
- *   <li>{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getIModel <em>IModel</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getModel <em>Model</em>}</li>
  * </ul>
  *
@@ -74,32 +73,6 @@ public interface EnumerationLiteralExpression extends Expression {
 	 * @generated
 	 */
 	void setEnumeration(NameExpression value);
-
-	/**
-	 * Returns the value of the '<em><b>IModel</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>IModel</em>' reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>IModel</em>' reference.
-	 * @see #setIModel(IMetamodel)
-	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getEnumerationLiteralExpression_IModel()
-	 * @model
-	 * @generated
-	 */
-	IMetamodel getIModel();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.EnumerationLiteralExpression#getIModel <em>IModel</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>IModel</em>' reference.
-	 * @see #getIModel()
-	 * @generated
-	 */
-	void setIModel(IMetamodel value);
 
 	/**
 	 * Returns the value of the '<em><b>Model</b></em>' containment reference.

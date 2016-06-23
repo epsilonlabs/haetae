@@ -59,8 +59,6 @@ public class EolFactoryImpl extends EFactoryImpl implements EolFactory {
 			case EolPackage.EOL_ELEMENT: return createEOLElement();
 			case EolPackage.TEXT_REGION: return createTextRegion();
 			case EolPackage.TEXT_POSITION: return createTextPosition();
-			case EolPackage.IMETAMODEL: return createIMetamodel();
-			case EolPackage.IPACKAGE: return createIPackage();
 			case EolPackage.EOL_LIBRARY_MODULE: return createEOLLibraryModule();
 			case EolPackage.EOL_MODULE: return createEOLModule();
 			case EolPackage.IMPORT: return createImport();
@@ -157,26 +155,6 @@ public class EolFactoryImpl extends EFactoryImpl implements EolFactory {
 	public EOLElement createEOLElement() {
 		EOLElementImpl eolElement = new EOLElementImpl();
 		return eolElement;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IMetamodel createIMetamodel() {
-		IMetamodelImpl iMetamodel = new IMetamodelImpl();
-		return iMetamodel;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IPackage createIPackage() {
-		IPackageImpl iPackage = new IPackageImpl();
-		return iPackage;
 	}
 
 	/**

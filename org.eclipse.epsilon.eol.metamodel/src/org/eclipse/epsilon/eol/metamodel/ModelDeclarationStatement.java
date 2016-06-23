@@ -16,8 +16,8 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getName <em>Name</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getDriver <em>Driver</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getAliases <em>Aliases</em>}</li>
- *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getIMetamodel <em>IMetamodel</em>}</li>
  *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getParameters <em>Parameters</em>}</li>
+ *   <li>{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getResolvedIMetamodel <em>Resolved IMetamodel</em>}</li>
  * </ul>
  *
  * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelDeclarationStatement()
@@ -94,32 +94,6 @@ public interface ModelDeclarationStatement extends Statement {
 	EList<VariableDeclarationExpression> getAliases();
 
 	/**
-	 * Returns the value of the '<em><b>IMetamodel</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>IMetamodel</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>IMetamodel</em>' containment reference.
-	 * @see #setIMetamodel(IMetamodel)
-	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelDeclarationStatement_IMetamodel()
-	 * @model containment="true" required="true"
-	 * @generated
-	 */
-	IMetamodel getIMetamodel();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getIMetamodel <em>IMetamodel</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>IMetamodel</em>' containment reference.
-	 * @see #getIMetamodel()
-	 * @generated
-	 */
-	void setIMetamodel(IMetamodel value);
-
-	/**
 	 * Returns the value of the '<em><b>Parameters</b></em>' containment reference list.
 	 * The list contents are of type {@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationParameter}.
 	 * <!-- begin-user-doc -->
@@ -134,5 +108,31 @@ public interface ModelDeclarationStatement extends Statement {
 	 * @generated
 	 */
 	EList<ModelDeclarationParameter> getParameters();
+
+	/**
+	 * Returns the value of the '<em><b>Resolved IMetamodel</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Resolved IMetamodel</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Resolved IMetamodel</em>' attribute.
+	 * @see #setResolvedIMetamodel(Object)
+	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelDeclarationStatement_ResolvedIMetamodel()
+	 * @model derived="true"
+	 * @generated
+	 */
+	Object getResolvedIMetamodel();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.epsilon.eol.metamodel.ModelDeclarationStatement#getResolvedIMetamodel <em>Resolved IMetamodel</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Resolved IMetamodel</em>' attribute.
+	 * @see #getResolvedIMetamodel()
+	 * @generated
+	 */
+	void setResolvedIMetamodel(Object value);
 
 } // ModelDeclarationStatement

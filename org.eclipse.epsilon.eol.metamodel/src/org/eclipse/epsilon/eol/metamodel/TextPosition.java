@@ -4,7 +4,6 @@ package org.eclipse.epsilon.eol.metamodel;
 
 import org.eclipse.emf.ecore.EObject;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Text Position</b></em>'.
