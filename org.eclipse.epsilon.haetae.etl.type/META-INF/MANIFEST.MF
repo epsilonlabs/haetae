@@ -8,6 +8,6 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.etl.metamodel.visitor;bundle-version="1.0.0",
  org.eclipse.epsilon.haetae.eol.type;bundle-version="0.1.0",
  org.eclipse.epsilon.eol.engine;bundle-version="1.2.0",
- org.eclipse.epsilon.eol.problem;bundle-version="0.1.0"
+ org.eclipse.epsilon.haetae.problem;bundle-version="0.1.0"
 Export-Package: org.eclipse.epsilon.etl.visitor.resolution.type.context,
  org.eclipse.epsilon.etl.visitor.resolution.type.impl

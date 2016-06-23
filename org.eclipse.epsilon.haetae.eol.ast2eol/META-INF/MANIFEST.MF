@@ -7,7 +7,7 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.eol.metamodel,
  org.eclipse.epsilon.eol.engine,
  org.junit,
- org.eclipse.epsilon.eol.problem
+ org.eclipse.epsilon.haetae.problem
 Export-Package: org.eclipse.epsilon.eol.ast2eol,
  org.eclipse.epsilon.eol.ast2eol.context,
  org.eclipse.epsilon.eol.ast2eol.util

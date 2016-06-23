@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.eclipse.epsilon.haetae.eol.type;singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.eol.engine;bundle-version="1.2.0",
- org.eclipse.epsilon.eol.problem;bundle-version="0.1.0",
+ org.eclipse.epsilon.haetae.problem;bundle-version="0.1.0",
  org.eclipse.epsilon.haetae.eol.metamodel;bundle-version="0.1.0",
  org.eclipse.epsilon.haetae.eol.metamodel.visitor;bundle-version="1.0.0",
  org.eclipse.epsilon.haetae.model.connectivity;bundle-version="0.1.0",
