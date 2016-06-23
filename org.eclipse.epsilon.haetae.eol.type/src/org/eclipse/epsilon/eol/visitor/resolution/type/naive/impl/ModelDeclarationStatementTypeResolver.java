@@ -71,6 +71,7 @@ public class ModelDeclarationStatementTypeResolver extends ModelDeclarationState
 				
 				if (loaded) {
 					context.getiMetamodelManager().addIMetamodelDriver(iMetamodelDriver);
+					modelDeclarationStatement.setResolvedIMetamodel(iMetamodelDriver);
 				}
 			
 			}
@@ -133,7 +134,7 @@ public class ModelDeclarationStatementTypeResolver extends ModelDeclarationState
 				
 				if (loaded) {
 					context.getiMetamodelManager().addIMetamodelDriver(iMetamodelDriver);
-					
+					modelDeclarationStatement.setResolvedIMetamodel(iMetamodelDriver);
 				}
 			}
 		}

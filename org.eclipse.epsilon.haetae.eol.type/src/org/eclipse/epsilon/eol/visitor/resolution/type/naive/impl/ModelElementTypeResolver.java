@@ -158,6 +158,7 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 						modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 						modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
 						modelElementType.setResolvedIPackage(iPackageDriver);
+						modelElementType.setModelName(iMetamodelDriver.getName());
 						return;
 					}
 					else {
@@ -174,6 +175,7 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 							modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 							modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
 							modelElementType.setResolvedIPackage(iPackageDriver);
+							modelElementType.setModelName(iMetamodelDriver.getName());
 							return;
 						}
 					}
@@ -194,6 +196,7 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 					modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 					modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
 					modelElementType.setResolvedIPackage(iPackageDriver);
+					modelElementType.setModelName(iMetamodelDriver.getName());
 					return;
 				}
 				else {
@@ -218,7 +221,7 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 						modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 						modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
 						modelElementType.setResolvedIPackage(iPackageDriver);
-						
+						modelElementType.setModelName(iMetamodelDriver.getName());
 						return;
 					}
 					else {
@@ -235,6 +238,7 @@ public class ModelElementTypeResolver extends ModelElementTypeVisitor<TypeResolu
 							modelElementType.setResolvedIMetamodel(iMetamodelDriver);
 							modelElementType.setResolvedModelDeclaration(iMetamodelDriver.getModelDeclarationStatement());
 							modelElementType.setResolvedIPackage(iPackageDriver);
+							modelElementType.setModelName(iMetamodelDriver.getName());
 							return;
 						}
 					}
