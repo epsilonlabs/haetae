@@ -7,5 +7,5 @@ Require-Bundle: org.junit,
  org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.evl.metamodel,
  org.eclipse.epsilon.evl.engine,
- org.eclipse.epsilon.eol.ast2eol
+ org.eclipse.epsilon.haetae.eol.ast2eol
 Export-Package: org.eclipse.epsilon.evl.ast2evl
