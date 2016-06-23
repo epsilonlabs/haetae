@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.epsilon.etl.ast2etl
 Bundle-SymbolicName: org.eclipse.epsilon.etl.ast2etl; singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.epsilon.eol.metamodel,
+Require-Bundle: org.eclipse.epsilon.haetae.eol.metamodel,
  org.eclipse.epsilon.eol.engine;bundle-version="1.2.0",
  org.eclipse.emf.ecore,
  org.junit,

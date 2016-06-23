@@ -3,8 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.epsilon.eol.metamodel.visitor
 Bundle-SymbolicName: org.eclipse.epsilon.eol.metamodel.visitor; singleton:=true
 Bundle-Version: 1.0.0
-Require-Bundle:  org.eclipse.emf.common;visibility:=reexport,
+Require-Bundle: org.eclipse.emf.common;visibility:=reexport,
  org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.epsilon.eol.metamodel;visibility:=reexport
+ org.eclipse.epsilon.haetae.eol.metamodel;visibility:=reexport
 Export-Package: org.eclipse.epsilon.eol.metamodel.visitor
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

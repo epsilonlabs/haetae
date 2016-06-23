@@ -4,7 +4,7 @@ Bundle-Name: org.eclipse.epsilon.eol.visitor.resolution.variable
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.eol.variable;singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
- org.eclipse.epsilon.eol.metamodel,
+ org.eclipse.epsilon.haetae.eol.metamodel,
  org.eclipse.epsilon.eol.metamodel.visitor,
  org.eclipse.epsilon.eol.problem,
  org.eclipse.epsilon.haetae.model.connectivity,
