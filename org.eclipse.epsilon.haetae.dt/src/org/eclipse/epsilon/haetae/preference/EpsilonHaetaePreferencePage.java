@@ -1,18 +1,24 @@
 package org.eclipse.epsilon.haetae.preference;
 
-import java.awt.Checkbox;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.eclipse.epsilon.haetae.plugin.Activator;
 import org.eclipse.jface.preference.BooleanFieldEditor;
+import org.eclipse.jface.preference.FieldEditor;
 import org.eclipse.jface.preference.PreferencePage;
 import org.eclipse.jface.resource.ImageDescriptor;
+import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Label;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
 public class EpsilonHaetaePreferencePage extends PreferencePage implements
 		IWorkbenchPreferencePage {
+
+	public static final String ENABLE_HAETAE = "EnableHaetae";
+	protected List<FieldEditor> fieldEditors = new ArrayList<FieldEditor>();
 
 	public EpsilonHaetaePreferencePage() {
 		// TODO Auto-generated constructor stub
@@ -36,9 +42,24 @@ public class EpsilonHaetaePreferencePage extends PreferencePage implements
 
 	@Override
 	protected Control createContents(Composite parent) {
-		BooleanFieldEditor bfe = new BooleanFieldEditor("Haetae", "Enable Epsilon Haetae", parent);
-		
-		return new Composite(parent, NONE);
+		Composite composite = new Composite(parent, SWT.FILL);
+
+		fieldEditors.add(new BooleanFieldEditor(ENABLE_HAETAE, "Enable Epsilon Haetae (experimental)", composite));
+
+		for (FieldEditor fieldEditor : fieldEditors) {
+			fieldEditor.setPreferenceStore(Activator.getDefault().getPreferenceStore());
+			fieldEditor.load();
+		}
+
+		return composite;
+	}
+	
+	@Override
+	public boolean performOk() {
+		for (FieldEditor fieldEditor : fieldEditors) {
+			fieldEditor.store();
+		}
+		return true;
 	}
 
 }

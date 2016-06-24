@@ -92,10 +92,13 @@
             class="org.eclipse.epsilon.haetae.preference.EpsilonHaetaePreferencePage"
             id="org.eclipse.epsilon.haetae.dt.preference"
             name="Epsilon Haetae">
-         <keywordReference
-               id="org.eclipse.epsilon.haetae.dt.keywordReference1">
-         </keywordReference>
       </page>
+   </extension>
+   <extension
+         point="org.eclipse.epsilon.common.dt.moduleValidator">
+      <moduleValidator
+            class="org.eclipse.epsilon.haetae.validator.Haetae_EOL">
+      </moduleValidator>
    </extension>
 
 </plugin>

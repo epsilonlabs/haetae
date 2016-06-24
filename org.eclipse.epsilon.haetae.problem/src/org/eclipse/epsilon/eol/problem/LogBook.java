@@ -135,4 +135,10 @@ public class LogBook {
 		return null;
 	}
 	
+	public void clear()
+	{
+		warnings.clear();
+		errors.clear();
+	}
+	
 }
