@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.epsilon.haetae.effective.metamodel.extraction
+Bundle-SymbolicName: org.eclipse.epsilon.haetae.effective.metamodel.extraction; singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.epsilon.haetae.eol.metamodel,
+ org.eclipse.epsilon.haetae.eol.metamodel.visitor,
+ org.eclipse.epsilon.haetae.effective.metamodel,
+ org.eclipse.epsilon.haetae.eol.type,
+ org.eclipse.epsilon.haetae.problem,
+ org.eclipse.epsilon.haetae.model.connectivity
