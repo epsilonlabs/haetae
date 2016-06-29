@@ -14,10 +14,16 @@ import org.eclipse.epsilon.eol.EolLibraryModule;
 import org.eclipse.epsilon.eol.EolModule;
 import org.eclipse.epsilon.eol.ast2eol.context.Ast2EolContext;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
+import org.eclipse.epsilon.eol.visitor.resolution.type.naive.impl.nonImportant.EOLTypeResolver;
+import org.eclipse.epsilon.eol.visitor.resolution.variable.impl.EOLVariableResolver;
 import org.eclipse.epsilon.etl.EtlModule;
 import org.eclipse.epsilon.etl.ast2etl.Ast2EtlContext;
+import org.eclipse.epsilon.etl.visitor.resolution.type.impl.EtlTypeResolver;
+import org.eclipse.epsilon.etl.visitor.resolution.variable.impl.EtlVariableResolver;
 import org.eclipse.epsilon.evl.EvlModule;
 import org.eclipse.epsilon.evl.ast2evl.Ast2EvlContext;
+import org.eclipse.epsilon.evl.visitor.resolution.impl.EvlVariableResolver;
+import org.eclipse.epsilon.evl.visitor.resolution.type.impl.EvlTypeResolver;
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
@@ -109,6 +115,39 @@ public abstract class AbstractAST2ExLAction implements IObjectActionDelegate {
 			}
 			
 			if (success) {
+				if (getOperationType().equals("AST2vrEOL")) {
+					EOLVariableResolver eolVR = new EOLVariableResolver();
+					eolVR.run(eolElement);
+				}
+				else if (getOperationType().equals("AST2trEOL")) {
+					EOLVariableResolver eolVR = new EOLVariableResolver();
+					eolVR.run(eolElement);
+					EOLTypeResolver eolTR = new EOLTypeResolver();
+					eolTR.run(eolElement);
+				}
+				
+				else if (getOperationType().equals("AST2vrEVL")) {
+					EvlVariableResolver evlVR = new EvlVariableResolver();
+					evlVR.run(eolElement);
+				}
+				else if (getOperationType().equals("AST2trEVL")) {
+					EvlVariableResolver evlVR = new EvlVariableResolver();
+					evlVR.run(eolElement);
+					EvlTypeResolver evlTR = new EvlTypeResolver();
+					evlTR.run(eolElement);
+				}
+				
+				else if (getOperationType().equals("AST2vrETL")) {
+					EtlVariableResolver etlVR = new EtlVariableResolver();
+					etlVR.run(eolElement);
+				}
+				else if (getOperationType().equals("AST2trETL")) {
+					EtlVariableResolver etlVR = new EtlVariableResolver();
+					etlVR.run(eolElement);
+					EtlTypeResolver etlTR = new EtlTypeResolver();
+					etlTR.run(eolElement);
+				}
+				
 				ResourceSet resourceSet = new ResourceSetImpl();
 				resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
 				Resource resource = resourceSet.createResource(URI.createFileURI(new File(path.toPortableString() + getExtensionPrefix() + ".model").getAbsolutePath()));
