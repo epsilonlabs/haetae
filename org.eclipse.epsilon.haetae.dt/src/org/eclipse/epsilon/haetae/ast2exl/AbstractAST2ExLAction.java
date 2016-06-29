@@ -111,7 +111,7 @@ public abstract class AbstractAST2ExLAction implements IObjectActionDelegate {
 			if (success) {
 				ResourceSet resourceSet = new ResourceSetImpl();
 				resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
-				Resource resource = resourceSet.createResource(URI.createFileURI(new File(path.toPortableString() + ".model").getAbsolutePath()));
+				Resource resource = resourceSet.createResource(URI.createFileURI(new File(path.toPortableString() + getExtensionPrefix() + ".model").getAbsolutePath()));
 				resource.getContents().add(eolElement);
 				boolean success2 = true;
 				try {

@@ -52,9 +52,9 @@
             </separator>
          </menu>
          <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2EVLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2evl"
-               label="Transform to EVL Model"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2TREVLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2trevl"
+               label="Transform to type resolved EVL Model"
                menubarPath="haetae.popupmenu2/group1">
          </action>
          <action
@@ -64,9 +64,9 @@
                menubarPath="haetae.popupmenu2/group1">
          </action>
          <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2TREVLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2trevl"
-               label="Transform to type resolved EVL Model"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2EVLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2evl"
+               label="Transform to EVL Model"
                menubarPath="haetae.popupmenu2/group1">
          </action>
       </objectContribution>
@@ -84,9 +84,9 @@
             </separator>
          </menu>
          <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2ETLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2etl"
-               label="Transform to ETL Model"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2TRETLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2tretl"
+               label="Transform to type resolved ETL Model"
                menubarPath="haetae.popupmenu3/group1">
          </action>
          <action
@@ -96,9 +96,9 @@
                menubarPath="haetae.popupmenu3/group1">
          </action>
          <action
-               class="org.eclipse.epsilon.haetae.ast2exl.AST2TRETLAction"
-               id="org.eclipse.epsilon.haetae.dt.ast2tretl"
-               label="Transform to type resolved ETL Model"
+               class="org.eclipse.epsilon.haetae.ast2exl.AST2ETLAction"
+               id="org.eclipse.epsilon.haetae.dt.ast2etl"
+               label="Transform to ETL Model"
                menubarPath="haetae.popupmenu3/group1">
          </action>
       </objectContribution>
