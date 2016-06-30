@@ -1,0 +1,2 @@
+model Source alias source driver EMF {nsuri = "http://source/1.0"};
+model Target alias target driver EMF {nsuri = "http://target/1.0"};

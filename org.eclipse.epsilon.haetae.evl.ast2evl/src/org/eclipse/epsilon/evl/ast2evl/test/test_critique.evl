@@ -1,0 +1,9 @@
+context OO!Feature {
+	critique NameMustStartWithLowerCase {
+    
+    	guard : self.satisfies("HasName")
+    
+    	check : self.name.substring(0,1) = 
+     		self.name.substring(0,1).toLowerCase()
+  }
+}
