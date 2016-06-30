@@ -21,9 +21,12 @@ Haetae development tool (org.eclipse.epsilon.haetae.dt) contributes to the Eclip
 Haetae also contributes to Eclipse preference pages. In ''Preference'' -> ''Epsilon Haetae" -> tick ''Enable Epsilon Haetae (experimental)'' will trigger Epsilon Haetae to take effect, so that warnings and errors are reported directly in Epsilon editors. Please be noted that in order for Haetae to work, you'll need to declare the metamodels used in the program in the following form:
 
     model .. driver .. {nsuri=".."}
-for EMF models, example:
+For example, if we want to declare Ecore using EMF driver:
 
     model Ecore driver EMF {nsuri="http://www.eclipse.org/emf/2002/Ecore"};
 
 #Update Site
 https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilon.haetae.updatesite/site.xml
+
+#Bug report
+There are currently a number of bugs introduced due to the refacotring of EOL metamodel, please report if you encounter any.
