@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Plugin
+Bundle-Name: org.eclipse.epsilon.haetae.dt
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.dt;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.eclipse.epsilon.haetae.plugin.Activator

@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: org.eclipse.epsilon.evl.metamodel.visitor
+Bundle-Name: org.eclipse.epsilon.haetae.evl.metamodel.visitor
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.evl.metamodel.visitor;singleton:=true
 Bundle-Version: 1.0.0
 Require-Bundle: org.eclipse.emf.common;visibility:=reexport,

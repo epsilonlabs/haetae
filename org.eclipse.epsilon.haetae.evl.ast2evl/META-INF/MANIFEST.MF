@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: org.eclipse.epsilon.evl.ast2evl
+Bundle-Name: org.eclipse.epsilon.haetae.evl.ast2evl
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.evl.ast2evl;singleton:=true
-Bundle-Version: 0.1.0.qualifier
+Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.junit,
  org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.evl.metamodel,

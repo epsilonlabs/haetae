@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: org.eclipse.epsilon.evl.visitor.resolution.type
+Bundle-Name: org.eclipse.epsilon.haetae.evl.type
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.evl.type;singleton:=true
-Bundle-Version: 0.1.0.qualifier
+Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.evl.metamodel.visitor,
  org.eclipse.epsilon.eol.engine;bundle-version="1.1.0",
