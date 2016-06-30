@@ -7,6 +7,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.BagType;
 import org.eclipse.epsilon.eol.metamodel.BooleanType;
@@ -148,7 +149,7 @@ public class TypeUtil {
 		else {
 			
 		}
-		return result;
+		return EcoreUtil.copy(result);
 	}
 	
 	public boolean isTypeEqual(Type t1, Type t2) //need to include native and map types
@@ -956,8 +957,8 @@ public class TypeUtil {
 		}
 		else if(a instanceof ModelElementType && b instanceof ModelElementType) //when both of the types are ModelElementTypes
 		{
-			ModelElementType type1 = (ModelElementType) a;
-			ModelElementType type2 = (ModelElementType) b;
+			ModelElementType type1 = (ModelElementType) EcoreUtil.copy(a);
+			ModelElementType type2 = (ModelElementType) EcoreUtil.copy(b);
 			
 			if (type2.getElementName().equals("_ModelElementType_")) {
 				return true;
