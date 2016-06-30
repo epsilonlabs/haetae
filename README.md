@@ -30,3 +30,6 @@ https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilo
 
 #Bug report
 There are currently a number of bugs introduced due to the refacotring of EOL metamodel, please report if you encounter any.
+
+#Lesson learnt
+Do NOT trust egit
