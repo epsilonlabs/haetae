@@ -26,3 +26,4 @@ for EMF models, example:
     model Ecore driver EMF {nsuri="http://www.eclipse.org/emf/2002/Ecore"};
 
 #Update Site
+https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilon.haetae.updatesite/site.xml
