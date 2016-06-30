@@ -1,7 +1,0 @@
-operation Integer iota(end: Integer, step: Integer) : Sequence(Integer) {} //done ---------------------------
-
-operation Integer to(other: Integer) : Sequence(Integer) {} //done ---------------------------
-
-operation Integer toBinary(): String {} //done
-
-operation Integer toHex(): String {} //done
