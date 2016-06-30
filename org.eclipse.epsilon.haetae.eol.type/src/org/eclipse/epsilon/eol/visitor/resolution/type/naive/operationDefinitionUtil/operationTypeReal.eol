@@ -1,0 +1,20 @@
+operation Real abs() : Real {} //done ---------------------------
+
+operation Real ceiling() : Integer {} //done ---------------------------
+
+operation Real floor() : Integer {} //done ---------------------------
+
+operation Real log() : Real {} //done ---------------------------
+
+operation Real log10() : Real {} //done ---------------------------
+
+operation Real max(other: Real) : Real {} //done ---------------------------
+ 
+operation Real min(other: Real) : Real {} //done ---------------------------
+
+operation Real pow(exponent: Real) : Real {} //done ---------------------------
+
+operation Real round() : Integer {} //done ---------------------------
+
+
+

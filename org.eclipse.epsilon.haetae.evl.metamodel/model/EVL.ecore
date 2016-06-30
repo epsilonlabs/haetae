@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="evl" nsURI="http://www.eclipse.org/epsilon/evl" nsPrefix="evl">
+  <eAnnotations source="emf.gen">
+    <details key="classPackageSuffix" value="metamodel.impl"/>
+    <details key="utilityPackageSuffix" value="metamodel.util"/>
+    <details key="metaDataPackageSuffix" value="metamodel"/>
+    <details key="interfacePackageSuffix" value="metamodel"/>
+    <details key="basePackage" value="org.eclipse.epsilon"/>
+  </eAnnotations>
+  <eAnnotations source="emf.gen.usedGenPackage">
+    <details key="name" value="eol"/>
+    <details key="genModel" value="platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel"/>
+  </eAnnotations>
+  <eAnnotations source="emf.gen.annotation">
+    <details key="source" value="emf.gen"/>
+    <details key="key" value="extends"/>
+    <details key="value" value="eol"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="EvlElement" eSuperTypes="../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//EOLElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EVLModule" eSuperTypes="../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//EOLLibraryModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contexts" upperBound="-1"
+        eType="#//Context" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="preBlocks" upperBound="-1"
+        eType="#//NamedBlock" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="postBlocks" upperBound="-1"
+        eType="#//NamedBlock" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GuardedElement" abstract="true" eSuperTypes="#//EvlElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="guard" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//ExpressionOrStatementBlock"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Context" eSuperTypes="#//GuardedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//ModelElementType"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="invariants" upperBound="-1"
+        eType="#//Invariant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="self" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//VariableDeclarationExpression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fix" eSuperTypes="#//EvlElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="title" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//ExpressionOrStatementBlock"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="do" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//Block"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Invariant" abstract="true" eSuperTypes="#//GuardedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="satisfies" upperBound="-1"
+        eType="#//Invariant"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//NameExpression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fixes" upperBound="-1"
+        eType="#//Fix" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="check" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//ExpressionOrStatementBlock"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="message" lowerBound="1"
+        eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//ExpressionOrStatementBlock"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraint" eSuperTypes="#//Invariant"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Critique" eSuperTypes="#//Invariant"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedBlock" eSuperTypes="#//EvlElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" lowerBound="1" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//NameExpression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" eType="ecore:EClass ../../org.eclipse.epsilon.eol.metamodel/model/EOL.ecore#//Block"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

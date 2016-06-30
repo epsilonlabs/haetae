@@ -1,0 +1,142 @@
+@Need Handler
+@invasive
+operation Collection add(item: Any) : Boolean {} //done ---------------------------/
+
+@Need Handler
+@invasive
+operation Collection addAll(col: Collection) : Boolean {} //done ---------------------------/
+
+operation Collection clear() : SelfType{} //DONE
+
+operation Collection clone() : SelfType {} //DONE
+
+operation Collection concat() : String {} //DONE
+
+operation Collection concat(separator: String) : String {} //DONE
+
+operation Collection count(item: Any) : Integer {} //DONE
+
+operation Collection excludes(item: Any) : Boolean{} //DONE
+
+operation Collection excludesAll(col: Collection) : Boolean{} //DONE
+
+operation Collection excluding(item: Any) : SelfType{} //DONE
+
+operation Collection excludingAll(col: Collection) : SelfType{} //DONE
+
+operation Collection flatten() : Sequence {} //DONE
+
+operation Collection includes(item: Any) : Boolean{} //DONE
+
+operation Collection includesAll(col: Collection) : Boolean{} //DONE
+
+operation Collection including(item: Any) : SelfType{} //DONE
+
+operation Collection includingAll(col: Collection) : SelfType{} //DONE
+
+operation Collection isEmpty() : Boolean {} //DONE
+
+operation Collection random() : SelfContentType {} //DONE
+
+operation Collection remove(item: Any) : Boolean {} //DONE
+
+operation Collection removeAll(col: Collection) : Boolean{} //DONE
+
+operation Collection product() : Real {} //DONE
+
+operation Collection size() : Integer {} //DONE
+
+operation Collection sum() : Real {} //DONE
+
+-- operations for Sequence and OrderedSet types
+
+operation Sequence at(index: Integer) : SelfContentType {} //DONE
+
+operation OrderedSet at(index: Integer) : SelfContentType {} //DONE
+
+operation Sequence get(index: Integer) : SelfContentType {} //DONE
+
+operation OrderedSet get(index: Integer) : SelfContentType {} //DONE
+
+operation Sequence first() : SelfContentType {} //DONE
+
+operation OrderedSet first() : SelfContentType {} //DONE
+
+operation Sequence second() : SelfContentType {} //DONE
+
+operation OrderedSet second() : SelfContentType {} //DONE
+
+operation Sequence third() : SelfContentType {} //DONE
+
+operation OrderedSet third() : SelfContentType {} //DONE
+
+operation Sequence fourth() : SelfContentType {} //DONE
+
+operation OrderedSet fourth() : SelfContentType {} //DONE
+
+operation Sequence last() : SelfContentType {} //DONE
+
+operation OrderedSet last() : SelfContentType {} //DONE
+
+
+operation Sequence removeAt(index: Integer) : SelfContentType {} //DONE
+
+operation OrderedSet removeAt(index : Integer) : SelfContentType {} //DONE
+
+operation Sequence indexOf(item: Any) : Integer {} //done Does this return -1? ==========================================
+
+operation OrderedSet indexOf(item: Any) : Integer {} //done ==========================================
+
+operation Sequence invert() : SelfType {} //done ---------------------------
+
+operation OrderedSet invert() : SelfType {} //done ---------------------------
+
+-- First-order logic operations - cannot be described using EOL 
+@need handle
+operation Collection select(iterator: Any) : SelfType {} //context
+@need handle
+operation Collection selectOne(iterator: Any) : SelfContentType {}
+@need handle
+operation Collection reject(iterator: Any) : SelfType {}
+@need handle
+operation Collection collect(expression: Any) : SelfType {}
+@need handle
+operation Collection closure(iterator: Any) : SelfType {}
+@need handle
+operation Collection aggregate(iterator: Any) : Map {}
+@need handle
+operation Collection one(iterator: Any) : Boolean {}
+@need handle
+operation Collection exists(iterator: Any) : Boolean {}
+@need handle
+operation Collection forAll(iterator: Any) : Boolean {}
+@need handle
+operation Collection sortBy(iterator: Any) : SelfType {}
+
+-- operations of type Map
+
+operation Map clear() : SelfType {}
+
+operation Map containsKey(key: Any) : Boolean {}
+
+operation Map containsValue(value: Any) : Boolean {}
+
+operation Map get(key: Any) : Any {}
+
+operation Map isEmpty() : Boolean {}
+
+operation Map keySet(): Set {}
+
+@need handle
+operation Map put(key: Any, value: Any): SelfType {}
+
+operation Map putAll(map: Map) : SelfType{}
+
+operation Map remove(key: Any) : Any {}
+
+operation Map size(): Integer {}
+
+operation Map values() : Bag{}
+
+
+

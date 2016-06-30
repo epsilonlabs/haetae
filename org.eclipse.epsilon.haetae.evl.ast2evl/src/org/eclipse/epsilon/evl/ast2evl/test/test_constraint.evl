@@ -1,0 +1,8 @@
+context OO!NamedElement {
+	constraint HasName {
+    
+    check : self.name <> ""
+
+    message : "Element " + self + " must define a name"
+  }
+}
