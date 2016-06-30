@@ -10,3 +10,4 @@ Require-Bundle: org.eclipse.emf.ecore,
 Export-Package: org.eclipse.epsilon.haetae.model.connectivity,
  org.eclipse.epsilon.haetae.model.connectivity.emf,
  org.eclipse.epsilon.haetae.model.connectivity.xml
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

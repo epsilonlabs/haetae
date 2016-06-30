@@ -9,3 +9,4 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.problem;bundle-version="0.1.0"
 Export-Package: org.eclipse.epsilon.etl.visitor.resolution.variable.context,
  org.eclipse.epsilon.etl.visitor.resolution.variable.impl
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

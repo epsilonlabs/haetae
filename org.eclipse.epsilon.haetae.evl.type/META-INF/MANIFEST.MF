@@ -11,3 +11,4 @@ Require-Bundle: org.eclipse.emf.ecore,
 Export-Package: org.eclipse.epsilon.evl.visitor.resolution.type.context,
  org.eclipse.epsilon.evl.visitor.resolution.type.hanlder,
  org.eclipse.epsilon.evl.visitor.resolution.type.impl
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

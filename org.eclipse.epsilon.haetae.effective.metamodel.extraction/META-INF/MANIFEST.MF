@@ -10,3 +10,4 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.eol.type,
  org.eclipse.epsilon.haetae.problem,
  org.eclipse.epsilon.haetae.model.connectivity
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

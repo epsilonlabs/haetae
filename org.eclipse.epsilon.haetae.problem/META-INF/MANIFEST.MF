@@ -7,3 +7,4 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.epsilon.haetae.eol.metamodel
 Export-Package: org.eclipse.epsilon.eol.problem,
  org.eclipse.epsilon.eol.problem.imessages
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
