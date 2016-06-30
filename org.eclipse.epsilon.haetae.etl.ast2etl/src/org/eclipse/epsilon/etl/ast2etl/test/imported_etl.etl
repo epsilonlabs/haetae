@@ -1,4 +1,0 @@
- 
-rule B2F
-  transform b : Source!B
-  to f : Target!F { }  

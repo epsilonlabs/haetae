@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <feature url="features/org.eclipse.epsilon.haetae.feature_1.0.0.qualifier.jar" id="org.eclipse.epsilon.haetae.feature" version="1.0.0.qualifier">
-      <category name="haetae"/>
-   </feature>
-   <category-def name="haetae" label="New Category 1"/>
-</site>
