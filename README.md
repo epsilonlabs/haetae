@@ -28,6 +28,10 @@ For example, if we want to declare Ecore using EMF driver:
 #Update Site
 https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilon.haetae.updatesite/site.xml
 
+#Applications of Static Analysis
+
+1. Haetae is used in many occasions to help solve many problems, one example would be the use to address the scalability problem in loading XMI models ([SmartSAX](https://github.com/wrwei/SmartSAX)). In this instance, an effective metamodel extraction facility is built by extending Haetae so that metamodel footprint of queries/transformations can be automatically extracted by Haetae. 
+
 #Bug report
 There are currently a number of bugs introduced due to the refacotring of EOL metamodel, please report if you encounter any.
 
