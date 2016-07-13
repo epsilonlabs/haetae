@@ -9,7 +9,7 @@ public abstract class BinaryOperatorExpressionCreator extends OperatorExpression
 
 	@Override
 	public boolean appliesTo(AST ast) {
-		return (ast.getNumberOfChildren() == 2 && (ast.getType() == EolParser.OPERATOR || ast.getType() == EolParser.EXPRESSIONINBRACKETS) && ast.getText().equalsIgnoreCase(getOperator()));
+		return (ast.getNumberOfChildren() == 2 && (ast.getType() == EolParser.OPERATOR) && ast.getText().equalsIgnoreCase(getOperator()));
 	}
 	
 	@Override
@@ -27,12 +27,12 @@ public abstract class BinaryOperatorExpressionCreator extends OperatorExpression
 		AST lhsAst = ast.getChild(0); //fetch LHS AST
 		AST rhsAst = ast.getChild(1); //fetch RHS AST
 		
-		if (lhsAst.getType() == EolParser.EXPRESSIONINBRACKETS) {
-			lhsAst = lhsAst.getFirstChild();
-		}
-		if (rhsAst.getType() == EolParser.EXPRESSIONINBRACKETS) {
-			rhsAst = rhsAst.getFirstChild();
-		}
+//		if (lhsAst.getType() == EolParser.EXPRESSIONINBRACKETS) {
+//			lhsAst = lhsAst.getFirstChild();
+//		}
+//		if (rhsAst.getType() == EolParser.EXPRESSIONINBRACKETS) {
+//			rhsAst = rhsAst.getFirstChild();
+//		}
 		
 		expression.setLhs((Expression) context.getEolElementCreatorFactory().createEOLElement(lhsAst, expression, context)); //set LHS
 		expression.setRhs((Expression) context.getEolElementCreatorFactory().createEOLElement(rhsAst, expression, context)); //set RHS

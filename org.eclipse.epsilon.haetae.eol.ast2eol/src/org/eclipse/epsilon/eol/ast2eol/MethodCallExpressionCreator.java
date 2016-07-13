@@ -44,10 +44,10 @@ public class MethodCallExpressionCreator extends FeatureCallExpressionCreator{
 			AST featureAst = targetAst.getNextSibling(); //get the featureAst
 			AST parametersAst = featureAst.getFirstChild(); //get the parameterAs
 			
-			if(targetAst.getType() == EolParser.EXPRESSIONINBRACKETS)
-			{
-				targetAst = targetAst.getFirstChild();
-			}
+//			if(targetAst.getType() == EolParser.EXPRESSIONINBRACKETS)
+//			{
+//				targetAst = targetAst.getFirstChild();
+//			}
 			
 			expression.setTarget((Expression) context.getEolElementCreatorFactory().createEOLElement(targetAst, expression, context)); //set target
 			
