@@ -29,6 +29,7 @@ import org.eclipse.epsilon.eol.ast2eol.EqualsOperatorExpressionCreator;
 import org.eclipse.epsilon.eol.ast2eol.ExecutableAnnotationStatementCreator;
 import org.eclipse.epsilon.eol.ast2eol.ExprListCreator;
 import org.eclipse.epsilon.eol.ast2eol.ExpressionCreator;
+import org.eclipse.epsilon.eol.ast2eol.ExpressionInBracketsCreator;
 import org.eclipse.epsilon.eol.ast2eol.ExpressionOrStatementBlockCreator;
 import org.eclipse.epsilon.eol.ast2eol.ExpressionRangeCreator;
 import org.eclipse.epsilon.eol.ast2eol.ExpressionStatementCreator;
@@ -223,6 +224,7 @@ public class EolElementCreatorFactory {
 		result.addAll(this.initiateStatementPool());
 		result.addAll(this.initiateTypePool());
 		result.add(new ExpressionOrStatementBlockCreator());
+		result.add(new ExpressionInBracketsCreator());
 		
 		return result;
 	}
