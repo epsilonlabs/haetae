@@ -1,12 +1,12 @@
 pattern PatternOne
 	folcall : FOLMethodCallExpression
 	guard: (folcall.method.name = 'select' or folcall.method.name = 'selectOne') 
-	and folcall.condition.isDefined()
+	and folcall.conditions.first.isDefined()
 	and folcall.target.isTypeOf(PropertyCallExpression) 
 	and	folcall.target.property.name = 'all',
 	
 	condition : EqualsOperatorExpression
-		from: folcall.condition
+		from: folcall.conditions.first
 		guard: condition.lhs.isTypeOf(PropertyCallExpression)
 		and condition.lhs.target.resolvedContent = folcall.iterator,
 	
@@ -22,14 +22,14 @@ pattern PatternOne
 		from: lhs.resolvedType,
 	rhsType : ModelElementType
 		from: rhs.resolvedType
-		guard: lhsType.ecoreType = rhsType.ecoreType
+		guard: lhsType.ecoreType = rhsType.modelElementType
 	
 	{
 		match {
-			var r = getReference(lhs.target.resolvedType.ecoreType, lhs.property.name);
+			var r = getReference(lhs.target.resolvedType.modelElementType, lhs.property.name);
 			if(r.upperBound = 1 and r.eOpposite <> null and r <> null)
 			{
-				if(r.eOpposite.eType = lhs.target.resolvedType.ecoreType)
+				if(r.eOpposite.eType = lhs.target.resolvedType.modelElementType)
 				{
 					return true;
 				}
