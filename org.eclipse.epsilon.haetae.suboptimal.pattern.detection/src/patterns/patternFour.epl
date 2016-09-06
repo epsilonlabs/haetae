@@ -1,0 +1,19 @@
+pattern PatternFour
+	
+	binaryOperatorExpression : BinaryOperatorExpression
+	guard: (binaryOperatorExpression.isTypeOf(GreaterThanOrEqualToOperatorExpression)
+		or binaryOperatorExpression.isTypeOf(GreaterThanOperatorExpression)
+		or binaryOperatorExpression.isTypeOf(EqualsOperatorExpression))
+		and binaryOperatorExpression.rhs.isTypeOf(IntegerExpression)
+		and binaryOperatorExpression.rhs.getVal() = 0,
+		
+	methodCall : MethodCallExpression
+	from: binaryOperatorExpression.lhs
+	guard: methodCall.method.name = 'size',
+	
+	folMethodCall : FOLMethodCallExpression
+	from: methodCall.target
+	guard: folMethodCall.method.name = 'select'
+	
+	{
+	} 

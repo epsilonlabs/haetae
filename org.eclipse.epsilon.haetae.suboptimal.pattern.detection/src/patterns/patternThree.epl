@@ -1,0 +1,44 @@
+pattern PatternThree
+	folcall : FOLMethodCallExpression
+	guard: folcall.method.name = 'select' 
+	and (folcall.target.resolvedType.isTypeOf(SetType) or folcall.target.resolvedType.isTypeOf(OrderedSetType))
+	and folcall.condition.isDefined()
+	{
+		match{
+		var condition = folcall.condition;
+		if(condition.isTypeOf(EqualsOperatorExpression))
+		{
+			if(condition.lhs.isTypeOf(NameExpression) and condition.lhs.resolvedContent = folcall.iterator)
+			{
+				if(condition.rhs.isTypeOf(NameExpression))
+				{
+					return true;
+				}
+				else if(condition.rhs.isTypeOf(LiteralExpression))
+				{
+					return true;
+				}
+				else if(isPropertyCallChain(condition.rhs))
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+		}
+	}
+	
+operation isPropertyCallChain(call: PropertyCallExpression)
+{
+	var temp = call;
+	while(temp.isTypeOf(PropertyCallExpression))
+	{
+		temp = temp.target;
+	}
+	if(temp.isTypeOf(NameExpression))
+	{
+		return true;
+	}
+	return false;
+	
+}

@@ -1,0 +1,11 @@
+pattern PatternFive
+
+	methodCall: MethodCallExpression
+	guard: methodCall.method.name = 'first'
+		and methodCall.target.isTypeOf(FOLMethodCallExpression),
+	
+	folcall : FOLMethodCallExpression
+	from: methodCall.target
+	guard: folcall.method.name = 'select'	
+	{
+	} 

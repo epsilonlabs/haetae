@@ -1,0 +1,11 @@
+pattern PatternTwo
+	folcall : FOLMethodCallExpression
+	guard: folcall.method.name = 'select' 
+	and folcall.target.isTypeOf(FOLMethodCallExpression),
+
+	
+	targetFOLCall : FOLMethodCallExpression
+		from: folcall.target
+		guard: targetFOLCall.method.name = 'select'	
+	{
+	} 

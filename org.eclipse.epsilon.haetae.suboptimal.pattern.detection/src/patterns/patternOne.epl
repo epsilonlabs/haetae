@@ -1,0 +1,51 @@
+pattern PatternOne
+	folcall : FOLMethodCallExpression
+	guard: (folcall.method.name = 'select' or folcall.method.name = 'selectOne') 
+	and folcall.condition.isDefined()
+	and folcall.target.isTypeOf(PropertyCallExpression) 
+	and	folcall.target.property.name = 'all',
+	
+	condition : EqualsOperatorExpression
+		from: folcall.condition
+		guard: condition.lhs.isTypeOf(PropertyCallExpression)
+		and condition.lhs.target.resolvedContent = folcall.iterator,
+	
+	lhs : PropertyCallExpression
+		from: condition.lhs
+		guard: lhs.resolvedType.isTypeOf(ModelElementType),
+		
+	rhs : NameExpression
+		from: condition.rhs
+		guard: rhs.resolvedType.isTypeOf(ModelElementType),
+		
+	lhsType : ModelElementType
+		from: lhs.resolvedType,
+	rhsType : ModelElementType
+		from: rhs.resolvedType
+		guard: lhsType.ecoreType = rhsType.ecoreType
+	
+	{
+		match {
+			var r = getReference(lhs.target.resolvedType.ecoreType, lhs.property.name);
+			if(r.upperBound = 1 and r.eOpposite <> null and r <> null)
+			{
+				if(r.eOpposite.eType = lhs.target.resolvedType.ecoreType)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+	} 
+	
+operation getReference(class: Any, name:String)
+{
+	for(r in class.eReferences)
+	{
+		if(r.name = name)
+		{
+			return r;
+		}
+	}
+	return null;
+}
