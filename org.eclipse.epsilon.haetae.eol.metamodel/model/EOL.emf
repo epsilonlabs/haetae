@@ -362,7 +362,8 @@ class AnyType extends Type {
 }
 
 class ModelType extends AnyType {
-  transient derived attr EJavaObject resolvedIMetamodel;
+  transient attr EJavaObject resolvedIMetamodel;
+  attr String modelName;
 }
 
 class ModelElementType extends AnyType {

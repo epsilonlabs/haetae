@@ -240,6 +240,7 @@
     </genClasses>
     <genClasses ecoreClass="EOL.ecore#//ModelType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelType/resolvedIMetamodel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelType/modelName"/>
     </genClasses>
     <genClasses ecoreClass="EOL.ecore#//ModelElementType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute EOL.ecore#//ModelElementType/modelName"/>

@@ -69,6 +69,7 @@ public class AnyOwningModelHandler extends AnyOperationDefinitionHandler{
 				if (iMetamodel != null) {
 					ModelType returnType = EolFactory.eINSTANCE.createModelType();
 					returnType.setResolvedIMetamodel(iMetamodel);
+					returnType.setModelName(iMetamodel.getName());
 					TypeResolutionContext.getInstance().copyLocation(returnType, featureCallExpression);
 					featureCallExpression.setResolvedType(EcoreUtil.copy(returnType));
 					result.setReturnType(EcoreUtil.copy(returnType));
@@ -87,6 +88,7 @@ public class AnyOwningModelHandler extends AnyOperationDefinitionHandler{
 						if (iMetamodel != null) {
 							ModelType returnType = EolFactory.eINSTANCE.createModelType();
 							returnType.setResolvedIMetamodel(iMetamodel);
+							returnType.setModelName(iMetamodel.getName());
 							TypeResolutionContext.getInstance().copyLocation(returnType, featureCallExpression);
 							featureCallExpression.setResolvedType(EcoreUtil.copy(returnType));
 							result.setReturnType(EcoreUtil.copy(returnType));

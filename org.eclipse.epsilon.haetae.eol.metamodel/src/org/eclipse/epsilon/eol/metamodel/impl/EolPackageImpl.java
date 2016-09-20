@@ -2648,6 +2648,15 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getModelType_ModelName() {
+		return (EAttribute)modelTypeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getModelElementType() {
 		return modelElementTypeEClass;
 	}
@@ -3233,6 +3242,7 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 
 		modelTypeEClass = createEClass(MODEL_TYPE);
 		createEAttribute(modelTypeEClass, MODEL_TYPE__RESOLVED_IMETAMODEL);
+		createEAttribute(modelTypeEClass, MODEL_TYPE__MODEL_NAME);
 
 		modelElementTypeEClass = createEClass(MODEL_ELEMENT_TYPE);
 		createEAttribute(modelElementTypeEClass, MODEL_ELEMENT_TYPE__MODEL_NAME);
@@ -3706,7 +3716,8 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 		initEAttribute(getAnyType_Declared(), ecorePackage.getEBoolean(), "declared", null, 1, 1, AnyType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(modelTypeEClass, ModelType.class, "ModelType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getModelType_ResolvedIMetamodel(), ecorePackage.getEJavaObject(), "resolvedIMetamodel", null, 0, 1, ModelType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelType_ResolvedIMetamodel(), ecorePackage.getEJavaObject(), "resolvedIMetamodel", null, 0, 1, ModelType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelType_ModelName(), ecorePackage.getEString(), "modelName", null, 0, 1, ModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(modelElementTypeEClass, ModelElementType.class, "ModelElementType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getModelElementType_ModelName(), ecorePackage.getEString(), "modelName", null, 0, 1, ModelElementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

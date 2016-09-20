@@ -6472,13 +6472,22 @@ public interface EolPackage extends EPackage {
 	int MODEL_TYPE__RESOLVED_IMETAMODEL = ANY_TYPE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Model Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_TYPE__MODEL_NAME = ANY_TYPE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Model Type</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_TYPE_FEATURE_COUNT = ANY_TYPE_FEATURE_COUNT + 1;
+	int MODEL_TYPE_FEATURE_COUNT = ANY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.epsilon.eol.metamodel.impl.ModelElementTypeImpl <em>Model Element Type</em>}' class.
@@ -10003,6 +10012,17 @@ public interface EolPackage extends EPackage {
 	EAttribute getModelType_ResolvedIMetamodel();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.epsilon.eol.metamodel.ModelType#getModelName <em>Model Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Model Name</em>'.
+	 * @see org.eclipse.epsilon.eol.metamodel.ModelType#getModelName()
+	 * @see #getModelType()
+	 * @generated
+	 */
+	EAttribute getModelType_ModelName();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.epsilon.eol.metamodel.ModelElementType <em>Model Element Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -12025,6 +12045,14 @@ public interface EolPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MODEL_TYPE__RESOLVED_IMETAMODEL = eINSTANCE.getModelType_ResolvedIMetamodel();
+
+		/**
+		 * The meta object literal for the '<em><b>Model Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_TYPE__MODEL_NAME = eINSTANCE.getModelType_ModelName();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.epsilon.eol.metamodel.impl.ModelElementTypeImpl <em>Model Element Type</em>}' class.
