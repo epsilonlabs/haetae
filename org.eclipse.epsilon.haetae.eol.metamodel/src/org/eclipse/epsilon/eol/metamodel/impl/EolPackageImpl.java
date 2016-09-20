@@ -3712,9 +3712,9 @@ public class EolPackageImpl extends EPackageImpl implements EolPackage {
 		initEAttribute(getModelElementType_ModelName(), ecorePackage.getEString(), "modelName", null, 0, 1, ModelElementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getModelElementType_ElementName(), ecorePackage.getEString(), "elementName", null, 1, 1, ModelElementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getModelElementType_ResolvedModelDeclaration(), this.getModelDeclarationStatement(), null, "resolvedModelDeclaration", null, 1, 1, ModelElementType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElementType_ResolvedIMetamodel(), ecorePackage.getEJavaObject(), "resolvedIMetamodel", null, 0, 1, ModelElementType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElementType_ResolvedIPackage(), ecorePackage.getEJavaObject(), "resolvedIPackage", null, 0, 1, ModelElementType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElementType_ModelElementType(), ecorePackage.getEJavaObject(), "modelElementType", null, 0, 1, ModelElementType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElementType_ResolvedIMetamodel(), ecorePackage.getEJavaObject(), "resolvedIMetamodel", null, 0, 1, ModelElementType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElementType_ResolvedIPackage(), ecorePackage.getEJavaObject(), "resolvedIPackage", null, 0, 1, ModelElementType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElementType_ModelElementType(), ecorePackage.getEJavaObject(), "modelElementType", null, 0, 1, ModelElementType.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(pseudoTypeEClass, PseudoType.class, "PseudoType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

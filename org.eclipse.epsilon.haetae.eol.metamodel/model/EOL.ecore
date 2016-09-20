@@ -355,11 +355,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="resolvedModelDeclaration"
         lowerBound="1" eType="#//ModelDeclarationStatement"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedIMetamodel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        transient="true" derived="true"/>
+        transient="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resolvedIPackage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        transient="true" derived="true"/>
+        transient="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelElementType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"
-        transient="true" derived="true"/>
+        transient="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PseudoType" abstract="true" eSuperTypes="#//AnyType"/>
   <eClassifiers xsi:type="ecore:EClass" name="SelfType" eSuperTypes="#//PseudoType"/>

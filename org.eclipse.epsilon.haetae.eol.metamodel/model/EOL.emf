@@ -369,9 +369,9 @@ class ModelElementType extends AnyType {
   attr String modelName;
   attr String[1] elementName;
   ref ModelDeclarationStatement[1] resolvedModelDeclaration;
-  transient derived attr EJavaObject resolvedIMetamodel;
-  transient derived attr EJavaObject resolvedIPackage;
-  transient derived attr EJavaObject modelElementType;
+  transient attr EJavaObject resolvedIMetamodel;
+  transient attr EJavaObject resolvedIPackage;
+  transient attr EJavaObject modelElementType;
 }
 
 abstract class PseudoType extends AnyType {

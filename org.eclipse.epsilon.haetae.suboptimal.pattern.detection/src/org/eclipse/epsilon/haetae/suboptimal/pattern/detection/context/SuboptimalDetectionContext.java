@@ -7,7 +7,6 @@ public class SuboptimalDetectionContext {
 
 	protected LogBook logBook = LogBook.getInstance();
 	
-	
 	public LogBook getLogBook() {
 		return logBook;
 	}

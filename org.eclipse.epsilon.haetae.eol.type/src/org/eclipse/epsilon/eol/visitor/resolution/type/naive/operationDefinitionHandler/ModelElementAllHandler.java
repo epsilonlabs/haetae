@@ -83,7 +83,8 @@ public class ModelElementAllHandler extends ModelElementOperationDefinitionHandl
 			}
 			else {
 				//get the target type copy
-				Type targetType = EcoreUtil.copy(target.getResolvedType());
+				//Type targetType = EcoreUtil.copy(target.getResolvedType());
+				Type targetType = target.getResolvedType();
 				
 				//if target type is null, report and return (this will not happend)
 				if (targetType == null) {

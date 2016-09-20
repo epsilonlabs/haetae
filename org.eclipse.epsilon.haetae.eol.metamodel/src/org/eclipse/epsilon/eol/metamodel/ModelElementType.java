@@ -114,7 +114,7 @@ public interface ModelElementType extends AnyType {
 	 * @return the value of the '<em>Resolved IMetamodel</em>' attribute.
 	 * @see #setResolvedIMetamodel(Object)
 	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ResolvedIMetamodel()
-	 * @model transient="true" derived="true"
+	 * @model transient="true"
 	 * @generated
 	 */
 	Object getResolvedIMetamodel();
@@ -140,7 +140,7 @@ public interface ModelElementType extends AnyType {
 	 * @return the value of the '<em>Resolved IPackage</em>' attribute.
 	 * @see #setResolvedIPackage(Object)
 	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ResolvedIPackage()
-	 * @model transient="true" derived="true"
+	 * @model transient="true"
 	 * @generated
 	 */
 	Object getResolvedIPackage();
@@ -166,7 +166,7 @@ public interface ModelElementType extends AnyType {
 	 * @return the value of the '<em>Model Element Type</em>' attribute.
 	 * @see #setModelElementType(Object)
 	 * @see org.eclipse.epsilon.eol.metamodel.EolPackage#getModelElementType_ModelElementType()
-	 * @model transient="true" derived="true"
+	 * @model transient="true"
 	 * @generated
 	 */
 	Object getModelElementType();
