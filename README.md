@@ -46,7 +46,7 @@ However, if the type of the expression change throughout the program, Haetae wou
 
 In this example, the value of b changes from "hello world" to 3.14 when the program execution enters into the if statement. Although from manual inspection it is clear that the expression b.println() is Real, Haetae still resolves its type to Any. 
 
-The implication is that the users of Epsilon should be cautious when using Any - at least, if the user does not declare a type for an expression (denoted by e), and gives it a value of type t. Then throughout the entire program, the user should assign values to e of type either t or a subtype of t. 
+The implication is that the users of Epsilon should be cautious when using Any - at least, if the user does not declare a type for an expression (denoted by e), and gives it a value of type t. Then throughout the entire program, the user should assign values to e of type either t or a subtype of t. By doing so, the source code is cleaner which makes debugging easier.
 
 #Update Site
 https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilon.haetae.updatesite/site.xml
