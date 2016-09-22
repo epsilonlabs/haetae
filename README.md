@@ -25,6 +25,29 @@ For example, if we want to declare Ecore using EMF driver:
 
     model Ecore driver EMF {nsuri="http://www.eclipse.org/emf/2002/Ecore"};
 
+Haetae currently adopts a conservative approach in error detection - Haetae is able to determine the type of an expression (of which its type is implicit - via the use of Any type) if the type of the value of the expression throughout the entire program do not change. 
+
+For example:
+
+    var a = 1;
+    a.println();
+
+at line 2 Haetae would determine that expressions a and a.println() both have the type Integer.
+
+However, if the type of the expression change throughout the program, Haetae would adopt a conservative approach:
+
+    var a = 1;
+    var b = "hello world";
+    if(a > 0)
+    {
+        b = 3.14;
+    }
+    b.println();
+
+In this example, the value of b changes from "hello world" to 3.14 when the program execution enters into the if statement. Although from manual inspection it is clear that the expression b.println() is Real, Haetae still resolves its type to Any. 
+
+The implication is that the users of Epsilon should be cautious when using Any - at least, if the user does not declare a type for an expression (denoted by e), and gives it a value of type t. Then throughout the entire program, the user should assign values to e of type either t or a subtype of t. 
+
 #Update Site
 https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilon.haetae.updatesite/site.xml
 
