@@ -37,7 +37,9 @@ I do my best to provide a printing facility in Haetae so that Models that confor
 
 Currently, this facility only supports EOL models but further support will be available soon.
 
-Unfortunately, at this stage there is no tool support for this facility. Users are welcomed to use this tool with the source code.
+Unfortunately, at this stage there is no tool support for this facility. Users are welcomed to use this tool with the source code, which can be found at:
+
+https://github.com/epsilonlabs/haetae/tree/master/org.eclipse.epsilon.haetae.eol.metamodel.visitor.printer
 
 #Caution on using Haetae
 Haetae currently adopts a conservative approach in error detection - Haetae is able to determine the type of an expression (of which its type is implicit - via the use of Any type) if the type of the value of the expression throughout the entire program do not change. 
