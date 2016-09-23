@@ -25,6 +25,21 @@ For example, if we want to declare Ecore using EMF driver:
 
     model Ecore driver EMF {nsuri="http://www.eclipse.org/emf/2002/Ecore"};
 
+#Obtaining models from Epsilon programs
+
+Tool support is provided in Haetae to transform EOL/EVL/ETL programs into models that conform to their respective EOL/EVL/ETL metamodels. 
+For example, to transform an EOL program into a model (suppose your program is named program.eol), right click on program.eol, under ''Epsilon Haetae'' the user is able to transform program.eol into a model, a variable-resolved model or a type-resolved model. These models conform to the EOL metamodel.
+
+EOL/EVL/ETL metamodels are in their experimental stages but are pretty much stable. The users are welcome to report any design flaws or bugs in these metamodels.
+
+#Obtaining Epsilon programs from Epsilon models
+I do my best to provide a printing facility in Haetae so that Models that conform to EOL/EVL/ETL metamodels can be transformed into texts which are EOL/EVL/ETL programs. 
+
+Currently, this facility only supports EOL models but further support will be available soon.
+
+Unfortunately, at this stage there is no tool support for this facility. Users are welcomed to use this tool with the source code.
+
+#Caution on using Haetae
 Haetae currently adopts a conservative approach in error detection - Haetae is able to determine the type of an expression (of which its type is implicit - via the use of Any type) if the type of the value of the expression throughout the entire program do not change. 
 
 For example:
