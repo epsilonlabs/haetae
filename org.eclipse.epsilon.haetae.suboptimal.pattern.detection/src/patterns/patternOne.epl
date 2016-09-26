@@ -22,7 +22,7 @@ pattern PatternOne
 		from: lhs.resolvedType,
 	rhsType : ModelElementType
 		from: rhs.resolvedType
-		guard: lhsType.ecoreType = rhsType.modelElementType
+		guard: lhsType.modelElementType = rhsType.modelElementType
 	
 	{
 		match {
