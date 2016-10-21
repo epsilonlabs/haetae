@@ -37,6 +37,9 @@ public class EtlProgramTypeResolver extends ETLModuleVisitor<TypeResolutionConte
 			controller.visit(mds, context);
 		}
 		
+		context.generateKeyWordsFromModelDeclarations();
+
+		
 		for(OperationDefinition od: etlProgram.getOperations()) //process each operation
 		{
 			
