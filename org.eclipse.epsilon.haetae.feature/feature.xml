@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.epsilon.haetae.feature"
       label="Epsilon Haetae"
-      version="1.0.0.qualifier">
+      version="1.0.0.211020161426">
 
    <description url="https://github.com/epsilonlabs/haetae">
       Haetae - Static analysis tools for Epsilon

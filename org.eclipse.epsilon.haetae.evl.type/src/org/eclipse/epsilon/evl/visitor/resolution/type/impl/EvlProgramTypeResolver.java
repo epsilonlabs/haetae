@@ -35,6 +35,8 @@ public class EvlProgramTypeResolver extends EVLModuleVisitor<TypeResolutionConte
 			controller.visit(mds, context);
 		}
 		
+		context.generateKeyWordsFromModelDeclarations();
+		
 		for(OperationDefinition od: evlModule.getOperations())
 		{
 			if (od.getContextType() != null) {
