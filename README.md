@@ -66,7 +66,7 @@ In this example, the value of b changes from "hello world" to 3.14 when the prog
 The implication is that the users of Epsilon should be cautious when using Any - at least, if the user does not declare a type for an expression (denoted by e), and gives it a value of type t. Then throughout the entire program, the user should assign values to e of type either t or a subtype of t. By doing so, the source code is cleaner which makes debugging easier.
 
 #Update Site
-https://raw.githubusercontent.com/epsilonlabs/haetae/gh-pages/org.eclipse.epsilon.haetae.updatesite/site.xml
+https://raw.githubusercontent.com/epsilonlabs/haetae/master/org.eclipse.epsilon.haetae.updatesite/site.xml
 
 #Applications of Static Analysis
 
