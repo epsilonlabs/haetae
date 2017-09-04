@@ -2,8 +2,8 @@
  */
 package org.eclipse.epsilon.etl.metamodel;
 
-import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.epsilon.eol.metamodel.EOLLibraryModule;
 
 /**

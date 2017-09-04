@@ -1,0 +1,55 @@
+
+context FOLMethodCallExpression {
+
+	guard 
+	{
+		(self.method.name = 'select' or self.method.name = 'selectOne') and self.conditions.first.isDefined()
+		and self.target.isTypeOf(PropertyCallExpression) 
+		and	self.target.property.name = 'all';
+	
+	}
+	
+	constraint InverseNav{
+		guard {
+			var condition = self.conditions.first;
+			condition.isTypeOf(EqualsOperatorExpression);
+			condition.lhs.isTypeOf(PropertyCallExpression) and condition.lhs.target.resolvedContent = self.iterator;
+			
+			var lhs = condition.lhs;
+			lhs.isTypeOf(PropertyCallExpression);
+			lhs.resolvedType.isTypeOf(ModelElementType);
+			
+			var rhs = condition.rhs;
+			rhs.isTypeOf(NameExpression);
+			rhs.resolvedType.isTypeOf(ModelElementType);
+			
+			var lhsType = lhs.resolvedType;
+			lhsType.isTypeOf(ModelElementType);
+			
+			var rhsType = rhs.resolvedType;
+			rhsType.isTypeOf(ModelElementType);
+			
+			lhsType.modelElementType = rhs.modelElementType;
+		}
+		
+		check {
+			var r = getReference(lhs.target.resolvedType.modelElementType, lhs.property.name);
+			r.upperBound = 1 and r.eOpposite <> null and r <> null;
+			r.eOpposite.eType = lhs.target.resolvedType.modelElementType;
+		}
+	}
+		
+}
+
+
+operation getReference(class: Any, name:String)
+{
+	for(r in class.eReferences)
+	{
+		if(r.name = name)
+		{
+			return r;
+		}
+	}
+	return null;
+}

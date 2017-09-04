@@ -1,10 +1,10 @@
 @emf.gen(classPackageSuffix="metamodel.impl", utilityPackageSuffix="metamodel.util", metaDataPackageSuffix="metamodel", interfacePackageSuffix="metamodel", basePackage="org.eclipse.epsilon")
-@emf.gen.usedGenPackage(name="eol", genModel="platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel")
+@emf.gen.usedGenPackage(name="eol", genModel="platform:/resource/org.eclipse.epsilon.haetae.eol.metamodel/model/EOL.genmodel")
 @emf.gen.annotation(source="emf.gen", key="extends", value="eol")
 @namespace(uri="http://www.eclipse.org/epsilon/etl", prefix="etl")
 package etl;
 
-import "platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.ecore";
+import "platform:/resource/org.eclipse.epsilon.haetae.eol.metamodel/model/EOL.ecore";
 
 class ETLElement extends eol.EOLElement {
 }

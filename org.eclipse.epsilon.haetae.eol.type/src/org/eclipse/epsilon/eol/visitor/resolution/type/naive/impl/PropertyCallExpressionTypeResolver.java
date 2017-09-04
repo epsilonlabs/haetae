@@ -632,6 +632,7 @@ public class PropertyCallExpressionTypeResolver extends PropertyCallExpressionVi
 			else {
 				//handle type incompatible
 				String expectedType = "";
+				@SuppressWarnings("unused")
 				String actualType = "";
 				if (opContextType instanceof ModelElementType) {
 					expectedType = ((ModelElementType)opContextType).getModelName() + "!" + ((ModelElementType)opContextType).getElementName();

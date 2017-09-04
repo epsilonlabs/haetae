@@ -3,7 +3,6 @@
 package org.eclipse.epsilon.etl.metamodel;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.epsilon.eol.metamodel.AnnotationBlock;
 import org.eclipse.epsilon.eol.metamodel.Block;
 import org.eclipse.epsilon.eol.metamodel.ExpressionOrStatementBlock;

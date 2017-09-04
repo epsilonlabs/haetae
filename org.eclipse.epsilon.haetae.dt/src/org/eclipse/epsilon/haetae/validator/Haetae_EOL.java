@@ -54,6 +54,7 @@ public class Haetae_EOL implements IModuleValidator {
 				
 				EOLTypeResolver eolTypeResolver = new EOLTypeResolver();
 				eolTypeResolver.run(eolElement);
+				
 			}
 			
 			else if (module instanceof EtlModule) {

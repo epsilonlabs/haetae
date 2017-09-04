@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.ecore.EcoreFactory;
-import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
@@ -24,8 +22,6 @@ import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.AnalysisInt
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.OperationDefinitionManager;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.StandardLibraryOperationDefinitionContainer;
-import org.eclipse.epsilon.haetae.model.connectivity.IMetamodelDriver;
-import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIMetamodelDriver;
 import org.eclipse.epsilon.haetae.model.connectivity.xml.PlainXMLIpackageDriver;
 
 public class AppendChildHandler extends AnyOperationDefinitionHandler{
@@ -119,7 +115,6 @@ public class AppendChildHandler extends AnyOperationDefinitionHandler{
 	
 	public boolean inLoop(FeatureCallExpression featureCallExpression)
 	{
-		boolean result = false;
 		EOLElement container = featureCallExpression;
 		while(container != null)
 		{

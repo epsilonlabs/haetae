@@ -3,9 +3,7 @@
 package org.eclipse.epsilon.etl.metamodel.impl;
 
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.epsilon.eol.metamodel.impl.EOLElementImpl;
-
 import org.eclipse.epsilon.etl.metamodel.ETLElement;
 import org.eclipse.epsilon.etl.metamodel.EtlPackage;
 

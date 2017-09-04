@@ -20,6 +20,7 @@ import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolut
 
 public class NameExpressionTypeResolver extends NameExpressionVisitor<TypeResolutionContext, Object>{
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Object visit(NameExpression nameExpression,
 			TypeResolutionContext context,

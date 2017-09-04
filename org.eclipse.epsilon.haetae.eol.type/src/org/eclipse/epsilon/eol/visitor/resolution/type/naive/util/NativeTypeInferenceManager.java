@@ -7,6 +7,7 @@ public class NativeTypeInferenceManager {
 	
 	public static void main(String[] args) {
 		NativeTypeInferenceManager manager = new NativeTypeInferenceManager();
+		@SuppressWarnings("rawtypes")
 		Class clazz = null;
 		try {
 			clazz = manager.getClassByName("javax.swing.JFrame");

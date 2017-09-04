@@ -104,7 +104,7 @@ public class MethodCallExpressionTypeResolver extends MethodCallExpressionVisito
 				//if there is no handler
 				else {
 					
-					AnyType returnType = (AnyType) operationDefinition.getReturnType();
+//					AnyType returnType = (AnyType) operationDefinition.getReturnType();
 //					if (returnType.isDeclared()) {
 //						
 //					}

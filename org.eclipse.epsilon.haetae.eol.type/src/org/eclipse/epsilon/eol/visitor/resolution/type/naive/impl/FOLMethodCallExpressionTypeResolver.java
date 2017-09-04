@@ -3,7 +3,6 @@ package org.eclipse.epsilon.eol.visitor.resolution.type.naive.impl;
 import java.util.ArrayList;
 
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.epsilon.eol.metamodel.AnyType;
 import org.eclipse.epsilon.eol.metamodel.CollectionType;
 import org.eclipse.epsilon.eol.metamodel.EolFactory;
 import org.eclipse.epsilon.eol.metamodel.Expression;
@@ -46,7 +45,7 @@ public class FOLMethodCallExpressionTypeResolver extends FOLMethodCallExpression
 		ArrayList<Type> argTypes = new ArrayList<Type>(); 
 		//get method name
 		
-		String methodName = fOLMethodCallExpression.getMethod().getName();  
+//		String methodName = fOLMethodCallExpression.getMethod().getName();  
 
 		//visit target first
 		controller.visit(fOLMethodCallExpression.getTarget(), context);

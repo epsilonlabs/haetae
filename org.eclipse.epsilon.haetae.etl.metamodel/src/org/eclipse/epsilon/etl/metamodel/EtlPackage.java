@@ -2,11 +2,11 @@
  */
 package org.eclipse.epsilon.etl.metamodel;
 
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
 
 /**
@@ -23,7 +23,7 @@ import org.eclipse.epsilon.eol.metamodel.EolPackage;
  * @see org.eclipse.epsilon.etl.metamodel.EtlFactory
  * @model kind="package"
  *        annotation="emf.gen classPackageSuffix='metamodel.impl' utilityPackageSuffix='metamodel.util' metaDataPackageSuffix='metamodel' interfacePackageSuffix='metamodel' basePackage='org.eclipse.epsilon'"
- *        annotation="emf.gen.usedGenPackage name='eol' genModel='platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel'"
+ *        annotation="emf.gen.usedGenPackage name='eol' genModel='platform:/resource/org.eclipse.epsilon.haetae.eol.metamodel/model/EOL.genmodel'"
  *        annotation="emf.gen.annotation source='emf.gen' key='extends' value='eol'"
  * @generated
  */

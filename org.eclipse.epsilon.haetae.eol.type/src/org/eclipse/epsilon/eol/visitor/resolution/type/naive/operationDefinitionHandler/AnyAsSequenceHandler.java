@@ -88,7 +88,6 @@ public class AnyAsSequenceHandler extends AnyOperationDefinitionHandler {
 				else {
 					contentType = EcoreUtil.copy(targetType);	
 				}
-				Type _targetType = EcoreUtil.copy(targetType);
 				returnType.setContentType(contentType);
 				TypeResolutionContext.getInstance().setAssets(contentType, returnType);
 				//contentType.getDynamicTypes().add(targetType);

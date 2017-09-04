@@ -3,14 +3,10 @@
 package org.eclipse.epsilon.etl.metamodel.impl;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
-
 import org.eclipse.epsilon.etl.metamodel.EtlPackage;
 import org.eclipse.epsilon.etl.metamodel.RuleDependency;
 import org.eclipse.epsilon.etl.metamodel.TransformationRule;

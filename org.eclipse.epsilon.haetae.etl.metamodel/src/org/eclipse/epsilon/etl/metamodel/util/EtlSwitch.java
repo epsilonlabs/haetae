@@ -4,13 +4,16 @@ package org.eclipse.epsilon.etl.metamodel.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
-
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.EOLLibraryModule;
-
 import org.eclipse.epsilon.etl.metamodel.*;
+import org.eclipse.epsilon.etl.metamodel.ETLElement;
+import org.eclipse.epsilon.etl.metamodel.ETLModule;
+import org.eclipse.epsilon.etl.metamodel.EtlPackage;
+import org.eclipse.epsilon.etl.metamodel.NamedBlock;
+import org.eclipse.epsilon.etl.metamodel.RuleDependency;
+import org.eclipse.epsilon.etl.metamodel.TransformationRule;
 
 /**
  * <!-- begin-user-doc -->

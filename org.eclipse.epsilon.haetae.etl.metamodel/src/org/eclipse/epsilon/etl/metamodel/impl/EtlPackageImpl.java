@@ -6,11 +6,9 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
-
+import org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl;
 import org.eclipse.epsilon.etl.metamodel.ETLElement;
 import org.eclipse.epsilon.etl.metamodel.ETLModule;
 import org.eclipse.epsilon.etl.metamodel.EtlFactory;
@@ -522,7 +520,7 @@ public class EtlPackageImpl extends EPackageImpl implements EtlPackage {
 		   source, 
 		   new String[] {
 			 "name", "eol",
-			 "genModel", "platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel"
+			 "genModel", "platform:/resource/org.eclipse.epsilon.haetae.eol.metamodel/model/EOL.genmodel"
 		   });
 	}
 
