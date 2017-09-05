@@ -12,5 +12,5 @@ Export-Package: org.eclipse.epsilon.etl.metamodel,
  org.eclipse.epsilon.etl.metamodel.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.epsilon.haetae.eol.metamodel;bundle-version="0.1.0";visibility:=reexport
+ org.eclipse.epsilon.haetae.eol.metamodel;visibility:=reexport
 Bundle-ActivationPolicy: lazy

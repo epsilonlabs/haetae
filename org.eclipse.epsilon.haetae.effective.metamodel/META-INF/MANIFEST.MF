@@ -3,6 +3,5 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.epsilon.haetae.effective.metamodel
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.effective.metamodel;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore
 Export-Package: org.eclipse.epsilon.haetae.effective.metamodel.impl
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

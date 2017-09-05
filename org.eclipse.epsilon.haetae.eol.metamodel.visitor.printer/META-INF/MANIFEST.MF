@@ -3,9 +3,10 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.epsilon.eol.visitor.printer
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.eol.metamodel.visitor.printer;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore,
- org.eclipse.epsilon.eol.engine,
- org.eclipse.epsilon.haetae.eol.metamodel,
+Require-Bundle: org.eclipse.epsilon.eol.engine,
  org.eclipse.epsilon.haetae.eol.metamodel.visitor,
  org.eclipse.epsilon.haetae.eol.ast2eol
-Export-Package: org.eclipse.epsilon.eol.visitor.printer.impl
+Export-Package: org.eclipse.epsilon.eol.visitor.printer.context,
+ org.eclipse.epsilon.eol.visitor.printer.impl,
+ org.eclipse.epsilon.eol.visitor.printer.workbench
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

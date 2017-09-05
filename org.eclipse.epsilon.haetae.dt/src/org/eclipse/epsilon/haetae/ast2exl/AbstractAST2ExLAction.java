@@ -45,9 +45,10 @@ public abstract class AbstractAST2ExLAction implements IObjectActionDelegate {
 	@Override
 	public void run(IAction action) {
 
-		IWorkbenchWindow window =
-			    PlatformUI.getWorkbench().getActiveWorkbenchWindow();
-			ISelection selection = window.getSelectionService().getSelection("org.eclipse.jdt.ui.PackageExplorer");
+		IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
+		ISelection selection = window.getSelectionService().getSelection();
+		
+//		ISelection selection = window.getSelectionService().getSelection("org.eclipse.jdt.ui.PackageExplorer");
 
 		
 		IFile file = (IFile) ((IStructuredSelection) selection).getFirstElement();

@@ -565,7 +565,7 @@ public class EvlPackageImpl extends EPackageImpl implements EvlPackage {
 		   source, 
 		   new String[] {
 			 "name", "eol",
-			 "genModel", "platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel"
+			 "genModel", "platform:/resource/org.eclipse.epsilon.haetae.eol.metamodel/model/EOL.genmodel"
 		   });
 	}
 

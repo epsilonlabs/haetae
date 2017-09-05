@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/org.eclipse.epsilon.evl.metamodel/src"
-    modelPluginID="org.eclipse.epsilon.evl.metamodel" modelName="Evl" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/resource/org.eclipse.epsilon.eol.metamodel/model/EOL.genmodel#//eol">
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/org.eclipse.epsilon.haetae.evl.metamodel/src"
+    modelPluginID="org.eclipse.epsilon.haetae.evl.metamodel" modelName="Evl" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/resource/org.eclipse.epsilon.haetae.eol.metamodel/model/EOL.genmodel#//eol">
   <foreignModel>EVL.ecore</foreignModel>
   <genPackages prefix="Evl" basePackage="org.eclipse.epsilon" disposableProviderFactory="true"
       interfacePackageSuffix="metamodel" metaDataPackageSuffix="metamodel" classPackageSuffix="metamodel.impl"

@@ -3,12 +3,11 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.epsilon.haetae.eol.ast2eol
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.eol.ast2eol;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore,
- org.eclipse.epsilon.haetae.eol.metamodel,
+Require-Bundle: org.eclipse.epsilon.haetae.eol.metamodel,
  org.eclipse.epsilon.eol.engine,
- org.junit,
- org.eclipse.epsilon.haetae.problem
+ org.junit
 Export-Package: org.eclipse.epsilon.eol.ast2eol,
  org.eclipse.epsilon.eol.ast2eol.context,
+ org.eclipse.epsilon.eol.ast2eol.test,
  org.eclipse.epsilon.eol.ast2eol.util
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

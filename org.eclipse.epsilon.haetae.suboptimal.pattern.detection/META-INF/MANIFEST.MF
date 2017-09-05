@@ -3,10 +3,13 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.epsilon.eol.suboptimal.performance.detection
 Bundle-SymbolicName: org.eclipse.epsilon.haetae.suboptimal.pattern.detection;singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.emf.ecore,
- org.eclipse.epsilon.eol.engine,
+Require-Bundle: org.eclipse.epsilon.haetae.eol.metamodel,
  org.eclipse.epsilon.epl.engine,
  org.eclipse.epsilon.emc.emf,
  org.eclipse.epsilon.haetae.problem,
  org.eclipse.epsilon.haetae.eol.metamodel.visitor.printer,
- org.eclipse.epsilon.haetae.eol.metamodel
+ org.eclipse.epsilon.eol.engine
+Export-Package: org.eclipse.epsilon.haetae.suboptimal.pattern.detection.context,
+ org.eclipse.epsilon.haetae.suboptimal.pattern.detection.impl,
+ patterns
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
