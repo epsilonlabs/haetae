@@ -7,7 +7,6 @@ import org.eclipse.epsilon.eol.metamodel.Block;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.NameExpression;
 import org.eclipse.epsilon.etl.metamodel.EtlFactory;
-import org.eclipse.epsilon.etl.metamodel.EtlPackage;
 import org.eclipse.epsilon.etl.metamodel.NamedBlock;
 import org.eclipse.epsilon.etl.parse.EtlParser;
 

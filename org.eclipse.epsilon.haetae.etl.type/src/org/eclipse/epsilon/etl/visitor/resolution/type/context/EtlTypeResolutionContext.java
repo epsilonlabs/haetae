@@ -2,8 +2,6 @@ package org.eclipse.epsilon.etl.visitor.resolution.type.context;
 
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.epsilon.eol.EolLibraryModule;
@@ -12,8 +10,6 @@ import org.eclipse.epsilon.eol.metamodel.Expression;
 import org.eclipse.epsilon.eol.metamodel.SimpleAnnotationStatement;
 import org.eclipse.epsilon.eol.metamodel.Statement;
 import org.eclipse.epsilon.eol.metamodel.StringExpression;
-import org.eclipse.epsilon.eol.problem.EOLError;
-import org.eclipse.epsilon.eol.problem.LogBook;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.operationDefinitionUtil.OperationDefinitionManager;
 import org.eclipse.epsilon.etl.metamodel.EtlFactory;

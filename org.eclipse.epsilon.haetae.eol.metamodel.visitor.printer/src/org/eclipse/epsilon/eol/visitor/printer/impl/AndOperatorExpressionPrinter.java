@@ -1,7 +1,6 @@
 package org.eclipse.epsilon.eol.visitor.printer.impl;
 
 import org.eclipse.epsilon.eol.metamodel.AndOperatorExpression;
-import org.eclipse.epsilon.eol.metamodel.OperatorExpression;
 import org.eclipse.epsilon.eol.metamodel.visitor.AndOperatorExpressionVisitor;
 import org.eclipse.epsilon.eol.metamodel.visitor.EolVisitorController;
 import org.eclipse.epsilon.eol.visitor.printer.context.EOLPrinterContext;

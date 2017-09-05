@@ -8,7 +8,6 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.EOLLibraryModule;
-import org.eclipse.epsilon.etl.metamodel.*;
 import org.eclipse.epsilon.etl.metamodel.ETLElement;
 import org.eclipse.epsilon.etl.metamodel.ETLModule;
 import org.eclipse.epsilon.etl.metamodel.EtlPackage;

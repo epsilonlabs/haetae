@@ -3,7 +3,6 @@ package org.eclipse.epsilon.haetae.effective.metamodel.extraction.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.epsilon.eol.metamodel.CollectionType;
-import org.eclipse.epsilon.eol.metamodel.ComparisonOperatorExpression;
 import org.eclipse.epsilon.eol.metamodel.Expression;
 import org.eclipse.epsilon.eol.metamodel.FormalParameterExpression;
 import org.eclipse.epsilon.eol.metamodel.MethodCallExpression;

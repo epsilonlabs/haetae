@@ -8,7 +8,6 @@ import org.eclipse.epsilon.eol.metamodel.ExpressionStatement;
 import org.eclipse.epsilon.eol.metamodel.ReturnStatement;
 import org.eclipse.epsilon.eol.metamodel.Statement;
 import org.eclipse.epsilon.eol.metamodel.StringType;
-import org.eclipse.epsilon.eol.parse.Eol_EolParserRules.elseStatement_return;
 import org.eclipse.epsilon.eol.problem.LogBook;
 import org.eclipse.epsilon.eol.problem.imessages.IMessage_TypeResolution;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;

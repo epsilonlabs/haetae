@@ -1,7 +1,5 @@
 package org.eclipse.epsilon.etl.ast2etl;
 
-import java.security.Guard;
-
 import org.eclipse.epsilon.common.parse.AST;
 import org.eclipse.epsilon.eol.ast2eol.ExpressionOrStatementBlockCreator;
 import org.eclipse.epsilon.eol.ast2eol.context.Ast2EolContext;

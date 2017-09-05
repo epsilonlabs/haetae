@@ -59,6 +59,13 @@
          unpack="false"/>
 
    <plugin
+         id="org.eclipse.epsilon.haetae.eol.metamodel.visitor.printer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
          id="org.eclipse.epsilon.haetae.eol.type"
          download-size="0"
          install-size="0"
@@ -108,20 +115,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.epsilon.haetae.model.connectivity"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.epsilon.haetae.problem"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipse.epsilon.haetae.evl.ast2evl"
          download-size="0"
          install-size="0"
@@ -151,6 +144,27 @@
 
    <plugin
          id="org.eclipse.epsilon.haetae.evl.variable"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.epsilon.haetae.model.connectivity"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.epsilon.haetae.problem"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.epsilon.haetae.suboptimal.pattern.detection"
          download-size="0"
          install-size="0"
          version="0.0.0"

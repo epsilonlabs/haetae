@@ -5,7 +5,6 @@ Bundle-SymbolicName: org.eclipse.epsilon.haetae.evl.metamodel;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: 
-Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.eclipse.epsilon.evl.metamodel,
  org.eclipse.epsilon.evl.metamodel.impl,

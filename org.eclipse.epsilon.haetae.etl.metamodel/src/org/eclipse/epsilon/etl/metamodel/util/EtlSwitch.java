@@ -7,7 +7,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.EOLLibraryModule;
-import org.eclipse.epsilon.etl.metamodel.*;
 import org.eclipse.epsilon.etl.metamodel.ETLElement;
 import org.eclipse.epsilon.etl.metamodel.ETLModule;
 import org.eclipse.epsilon.etl.metamodel.EtlPackage;

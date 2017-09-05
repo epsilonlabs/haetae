@@ -1,6 +1,5 @@
 package org.eclipse.epsilon.etl.visitor.resolution.type.impl;
 
-import org.eclipse.epsilon.eol.EolLibraryModule;
 import org.eclipse.epsilon.eol.metamodel.EOLElement;
 import org.eclipse.epsilon.eol.metamodel.visitor.EolDefaultVisitor;
 import org.eclipse.epsilon.eol.visitor.resolution.type.naive.context.TypeResolutionContext;

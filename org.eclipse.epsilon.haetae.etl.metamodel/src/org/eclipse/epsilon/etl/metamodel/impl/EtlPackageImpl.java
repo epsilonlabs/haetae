@@ -8,7 +8,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.epsilon.eol.metamodel.EolPackage;
-import org.eclipse.epsilon.eol.metamodel.impl.EolPackageImpl;
 import org.eclipse.epsilon.etl.metamodel.ETLElement;
 import org.eclipse.epsilon.etl.metamodel.ETLModule;
 import org.eclipse.epsilon.etl.metamodel.EtlFactory;
