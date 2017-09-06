@@ -10,7 +10,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.epsilon.haetae.problem,
  org.eclipse.epsilon.eol.engine,
  org.eclipse.epsilon.haetae.eol.metamodel,
- org.eclipse.epsilon.haetae.eol.ast2eol,
  org.eclipse.epsilon.common,
  org.eclipse.emf.ecore.xmi,
  org.eclipse.epsilon.evl.engine,
@@ -26,6 +25,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.epsilon.haetae.etl.variable,
  org.eclipse.epsilon.haetae.etl.type,
  org.eclipse.epsilon.common.dt,
- org.eclipse.ui.workbench
+ org.eclipse.ui.workbench,
+ org.eclipse.epsilon.haetae.eol.ast2eol
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
