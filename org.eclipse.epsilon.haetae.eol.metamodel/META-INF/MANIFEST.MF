@@ -10,3 +10,4 @@ Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport
 Export-Package: org.eclipse.epsilon.eol.metamodel,
  org.eclipse.epsilon.eol.metamodel.impl,
  org.eclipse.epsilon.eol.metamodel.util
+Bundle-ActivationPolicy: lazy
